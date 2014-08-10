@@ -3,7 +3,8 @@
   @include hide-title;
   
   @include intro-height(6);
-  background: lightblue;
+  @include colors(black-on-orange);
+  background-image: url("http://www.transparenttextures.com/patterns/retina-dust.png");
   
   #title {
     @include title;

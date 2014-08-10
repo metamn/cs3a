@@ -1,13 +1,22 @@
-$background: white;
-$foreground: hsla(170, 95%, 5%, 1);
+$white: white;
+$black: hsla(170, 95%, 5%, 1);
 
-
+$orange: hsla(39, 100%, 63%, 1);
 
 /* fore very combination check the contrast ratio !!!
   - http://leaverou.github.io/contrast-ratio/
+
+  - black on white: 18.4
+  - black on orange: 11
 */
 
-@mixin color($foreground-color: $foreground, $background-color: $background) {
-  background-color: $background-color;
-  color: $foreground-color;
+@mixin colors($combination: black-on-white) {
+  @if ($combination == black-on-white) {
+    color: $black;
+    background: $white;
+  
+  } @elseif ($combination == black-on-orange) {
+    color: $black;
+    background: $orange;
+  }
 }

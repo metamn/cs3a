@@ -18,10 +18,11 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
 /* fore very combination check the contrast ratio !!! - http://leaverou.github.io/contrast-ratio/
+ - black on white: 18.4 - black on orange: 11
 */
 /* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
 */
-html body { font-size: 100%; line-height: 1.25; font-family: 'Vollkorn', serif; background-color: white; color: #011915; }
+html body { font-size: 100%; line-height: 1.25; font-family: 'Vollkorn', serif; color: #011915; background: white; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 html body header { width: 100%; float: left; text-align: center; height: 6.25em; }
@@ -41,7 +42,7 @@ html body footer { width: 100%; float: left; text-align: center; height: 6.25em;
 html body footer .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html body footer .container ul { margin-top: 1.25em; }
 html body footer .container ul li { line-height: 1.5; }
-html body #intro { width: 100%; float: left; height: 37.5em; background: lightblue; }
+html body #intro { width: 100%; float: left; height: 37.5em; color: #011915; background: #ffbd42; background-image: url("http://www.transparenttextures.com/patterns/retina-dust.png"); }
 html body #intro > h3 { display: none; }
 @media only screen and (max-width: 47.999em) { html body #intro { height: 18.75em; } }
 @media only screen and (min-width: 90.001em) { html body #intro { height: 31.25em; } }

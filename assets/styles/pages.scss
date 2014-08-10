@@ -2,7 +2,7 @@ html {
   body {
     @include grid;
     @include font;
-    @include color;
+    @include colors;
     
     header {
       @include header;
