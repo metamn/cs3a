@@ -2,32 +2,36 @@
   @include block;
   @include hide-title;
   
-  @include intro-height;
+  @include intro-height(6);
   background: lightblue;
   
   #title {
     @include title;
   }
   
-  #button {
-    @include intro-button;
-  }
-  
   #featured-image {
     @include featured-image;
+  }
+  
+  &.with-button {
+    @include intro-height(8);
+    
+    #button {
+      @include intro-button;
+    }
   }
 }
 
 
 
-@mixin intro-height {
-  height: row(6);
+@mixin intro-height($rows) {
+  height: row($rows);
   
   @include below-tablet {
-    height: row(4);
+    height: row($rows - 3);
   }
   
   @include large-screen-and-up {
-    height: row(6);
+    height: row($rows - 1);
   }
 }

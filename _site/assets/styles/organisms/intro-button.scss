@@ -4,7 +4,8 @@
   
   @include center($text-width);
   
-  padding-bottom: $gutter * 2;
+  height: row(1);
+  padding-top: $gutter * 2;
   
   .container {
     .button {

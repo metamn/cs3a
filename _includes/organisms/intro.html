@@ -1,4 +1,6 @@
-<section id="intro">
+{% assign classes = page.classes | join: ' ' %}
+
+<section id="intro" class="{% include atoms/classname.html title=classes %}">
   <h3>Introduction</h3>
   
   <article id="title">
