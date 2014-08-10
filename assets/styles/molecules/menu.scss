@@ -1,3 +1,7 @@
 @mixin menu {
   @include hide-title;
+  
+  ul {
+    @include ul;
+  }
 }

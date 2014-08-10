@@ -24,13 +24,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html body { font-size: 100%; line-height: 1.25; font-family: 'Vollkorn', serif; background-color: white; color: #011915; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
-html body header { width: 100%; float: left; text-align: center; height: 31.25em; }
+html body header { width: 100%; float: left; text-align: center; height: 6.25em; }
 html body header .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html body header .container { padding-top: 2.5em; }
-html body header .container h1 { font-family: 'Nothing You Could Do', cursive; font-size: 1.6154em; }
+html body header .container h1 { font-family: 'Nothing You Could Do', cursive; font-size: 1.6154em; cursor: pointer; }
+html body header .container h1 span { margin-left: 1.25em; }
+html body header .container h1 span:after { content: '#'; }
+html body header .container #menu { display: none; }
 html body header .container #menu > h3 { display: none; }
-html body footer { width: 100%; float: left; text-align: center; height: 6.25em; padding-top: 12.5em; }
+html body header .container #menu ul { margin-top: 1.25em; }
+html body header .container #menu ul li { line-height: 1.5; }
+html body header.active { height: 18.75em; }
+html body header.active .container h1 span:after { content: 'x'; }
+html body header.active .container #menu { display: block; }
+html body footer { width: 100%; float: left; text-align: center; height: 6.25em; padding-top: 12.5em; padding-bottom: 6.25em; }
 html body footer .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html body footer .container ul { margin-top: 1.25em; }
+html body footer .container ul li { line-height: 1.5; }
 html body #intro { width: 100%; float: left; height: 37.5em; background: lightblue; }
 html body #intro > h3 { display: none; }
 @media only screen and (max-width: 47.999em) { html body #intro { height: 18.75em; } }
