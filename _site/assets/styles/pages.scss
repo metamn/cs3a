@@ -8,6 +8,10 @@ html {
       @include header;
     }
     
+    #intro {
+      @include intro;
+    }
+    
     #content {
       @include content;
     }

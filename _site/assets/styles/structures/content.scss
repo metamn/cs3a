@@ -1,8 +1,4 @@
 @mixin content {
   @include block;
   @include hide-title;
-  
-  #intro {
-    @include intro;
-  }
 }

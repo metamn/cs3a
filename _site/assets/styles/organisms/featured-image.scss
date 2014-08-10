@@ -1,0 +1,12 @@
+@mixin featured-image {
+  @include block;
+  @include hide-title;
+  
+  @include center($text-width * 2);
+  
+  .container {
+    figure {
+      @include figure;
+    }
+  }
+}

@@ -53,7 +53,8 @@
     text-align: center;
     display: inline-block;
     
-    padding: 0 $gutter;
+    padding-left: $gutter;
+    padding-right: $gutter;
     width: calc(100% - #{$gutter * 2});
     max-width: $max-width;
   }

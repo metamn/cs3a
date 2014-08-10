@@ -25,20 +25,24 @@ html body { font-size: 100%; line-height: 1.25; font-family: 'Vollkorn', serif; 
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 html body header { width: 100%; float: left; text-align: center; height: 6.25em; }
-html body header .container { text-align: center; display: inline-block; padding: 0 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html body header .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html body header .container { padding-top: 2.5em; }
 html body header .container h1 { font-family: 'Nothing You Could Do', cursive; font-size: 1.6154em; }
+html body #intro { width: 100%; float: left; height: 37.5em; background: lightblue; }
+html body #intro > h3 { display: none; }
+@media only screen and (max-width: 47.999em) { html body #intro { height: 25em; } }
+@media only screen and (min-width: 90.001em) { html body #intro { height: 37.5em; } }
+html body #intro #title { width: 100%; float: left; text-align: center; padding-top: 2.5em; padding-bottom: 2.5em; }
+html body #intro #title .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html body #intro #title .container h1 { font-family: 'Lato', sans-serif; font-size: 2.6154em; }
+html body #intro #featured-image { width: 100%; float: left; text-align: center; }
+html body #intro #featured-image > h3 { display: none; }
+html body #intro #featured-image .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 62.5em; }
+html body #intro #featured-image .container figure { width: 100%; float: left; }
+html body #intro #featured-image .container figure img { max-width: 100%; }
+html body #intro #featured-image .container figure figcaption { display: none; }
 html body #content { width: 100%; float: left; }
 html body #content > h3 { display: none; }
-html body #content #intro { width: 100%; float: left; text-align: center; height: 37.5em; background: lightblue; }
-html body #content #intro .container { text-align: center; display: inline-block; padding: 0 1.25em; width: calc(100% - 2.5em); max-width: 62.5em; }
-@media only screen and (max-width: 47.999em) { html body #content #intro { height: 25em; } }
-@media only screen and (min-width: 90.001em) { html body #content #intro { height: 31.25em; } }
-html body #content #intro .container { padding-top: 2.5em; }
-html body #content #intro .container h1 { font-family: 'Lato', sans-serif; font-size: 2.6154em; }
-html body #content #intro .container figure { padding-top: 2.5em; width: 100%; float: left; }
-html body #content #intro .container figure img { max-width: 100%; }
-html body #content #intro .container figure figcaption { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
