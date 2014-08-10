@@ -1,0 +1,13 @@
+@mixin link($type: body) {
+  @if ($type == body) {
+    a {
+      @include colors;
+    }
+  
+  } @elseif ($type == none) {
+    a {
+      @include colors;
+      text-decoration: none;
+    }
+  }
+}

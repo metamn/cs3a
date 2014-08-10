@@ -1,7 +1,20 @@
 @mixin menu {
   @include hide-title;
   
+  @include font(menu);
+  
   ul {
     @include ul;
+    
+    li {
+      @include link(none);
+      
+      border-bottom: 1px inset;
+      padding: $gutter/4 0;
+      
+      &:hover {
+        border-style: solid;
+      }
+    }
   }
 }

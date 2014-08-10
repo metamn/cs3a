@@ -2,6 +2,7 @@ $white: white;
 $black: hsla(170, 95%, 5%, 1);
 
 $orange: hsla(39, 100%, 63%, 1);
+$green: hsla(89, 51%, 20%, 1);
 
 /* fore very combination check the contrast ratio !!!
   - http://leaverou.github.io/contrast-ratio/
@@ -13,10 +14,14 @@ $orange: hsla(39, 100%, 63%, 1);
 @mixin colors($combination: black-on-white) {
   @if ($combination == black-on-white) {
     color: $black;
-    background: $white;
+    background-color: $white;
   
   } @elseif ($combination == black-on-orange) {
     color: $black;
-    background: $orange;
+    background-color: $orange;
+  
+  } @elseif ($combination == green-on-white) {
+    color: $green;
+    background-color: $white;
   }
 }

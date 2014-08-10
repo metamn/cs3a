@@ -3,6 +3,7 @@ html {
     @include grid;
     @include font;
     @include colors;
+    @include link;
     
     header {
       @include header;
