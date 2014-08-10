@@ -1,7 +1,7 @@
 @mixin intro {
   @include block;
   @include center($text-width * 2);
-  height: row(5);
+  @include intro-height;
   
   background: lightblue;
   
@@ -16,5 +16,18 @@
       padding-top: $gutter * 2;
       @include figure;
     }
+  }
+}
+
+
+@mixin intro-height {
+  height: row(6);
+  
+  @include below-tablet {
+    height: row(4);
+  }
+  
+  @include large-screen-and-up {
+    height: row(5);
   }
 }

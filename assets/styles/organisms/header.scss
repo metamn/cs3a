@@ -1,7 +1,7 @@
 @mixin header {
   @include block;
   @include center($text-width);
-  height: $text-height;
+  height: row(1);
   
   .container {
     padding-top: $gutter*2;
