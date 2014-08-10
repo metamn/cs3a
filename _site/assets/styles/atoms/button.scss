@@ -1,0 +1,7 @@
+@mixin button {
+  padding: $gutter/2 $gutter;
+  border: 2px solid;
+  @include border-radius($gutter/2);
+  
+  cursor: pointer;
+}

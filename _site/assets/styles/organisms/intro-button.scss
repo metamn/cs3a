@@ -1,0 +1,14 @@
+@mixin intro-button {
+  @include block;
+  @include hide-title;
+  
+  @include center($text-width);
+  
+  padding-bottom: $gutter * 2;
+  
+  .container {
+    .button {
+      @include button;
+    }
+  }
+}

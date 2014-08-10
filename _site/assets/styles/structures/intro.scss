@@ -9,6 +9,10 @@
     @include title;
   }
   
+  #button {
+    @include intro-button;
+  }
+  
   #featured-image {
     @include featured-image;
   }

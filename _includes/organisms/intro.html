@@ -7,6 +7,16 @@
     </div>
   </article>
   
+  {% if page.button %}
+    <article id="button">
+      <h3>{{ page.button }}</h3>
+      
+      <div class="container">
+        {% include atoms/button.html text=page.button %}
+      </div>
+    </article>
+  {% endif %}
+  
   {% if page.images[0] %}
     <article id="featured-image">
       <h3>Featured image</h3>
