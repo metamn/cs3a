@@ -1,0 +1,11 @@
+@mixin footer {
+  @include block;
+  @include center($text-width);
+  
+  height: row(1);
+  padding-top: row(2);
+  
+  .container {
+    
+  }
+}
