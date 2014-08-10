@@ -1,13 +1,17 @@
 @mixin header {
   @include block;
   @include center($text-width);
-  height: row(1);
+  height: row(5);
   
   .container {
     padding-top: $gutter*2;
     
     h1 {
       @include font(header);
+    }
+    
+    #menu {
+      @include menu;
     }
   }
 }

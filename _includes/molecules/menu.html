@@ -1,0 +1,9 @@
+<nav id="menu">
+  <h3>Menu</h3>
+  
+  <ul>
+    {% for link in page.links %}
+      <li>{% include atoms/link.html id=forloop.index %}</li> 
+    {% endfor %}
+  </ul>
+</nav>
