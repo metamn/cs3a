@@ -1,0 +1,20 @@
+// Grid functions
+// =======================================================================================================
+
+
+@mixin rows($nr) {
+  height: row($nr);
+}
+
+@mixin cols($nr) {
+  width: col($nr);
+}
+
+
+@function row($nr) {
+  @return $nr * ($text-grid-height + $gutter);
+}
+
+@function col($nr) {
+  @return $nr * ($grid-width + $gutter);
+}
