@@ -18,3 +18,40 @@
 @function col($nr) {
   @return $nr * ($grid-width + $gutter);
 }
+
+
+
+
+// Grid helpers
+// ------------------------
+
+
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+
+/* Center horizontally
+  - works with an inner container only
+  - example:
+    <header>
+      <div class="container">
+    ...
+    header { @include center }
+*/
+@mixin center($max-width) {
+  text-align: center;
+  
+  .container {
+    text-align: center;
+    display: inline-block;
+    max-width: $max-width;
+  }
+}

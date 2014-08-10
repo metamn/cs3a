@@ -1,0 +1,13 @@
+$background: white;
+$foreground: hsla(170, 95%, 5%, 1);
+
+
+
+/* fore very combination check the contrast ratio !!!
+  - http://leaverou.github.io/contrast-ratio/
+*/
+
+@mixin color($foreground-color: $foreground, $background-color: $background) {
+  background-color: $background-color;
+  color: $foreground-color;
+}

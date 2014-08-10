@@ -1,0 +1,13 @@
+@mixin header {
+  @include block;
+  @include center($text-width);
+  height: $text-height;
+  
+  .container {
+    padding-top: $gutter*2;
+    
+    h1 {
+      @include font(header);
+    }
+  }
+}

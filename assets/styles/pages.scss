@@ -1,0 +1,15 @@
+html {
+  body {
+    @include grid;
+    @include font;
+    @include color;
+    
+    header {
+      @include header;
+    }
+    
+    #content {
+      @include content;
+    }
+  }
+}

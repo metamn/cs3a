@@ -1,0 +1,9 @@
+<article id="intro">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+  
+    {% if page.images[0] %}
+      {% include atoms/figure.html id="0" %}
+    {% endif %}
+  </div>
+</article>

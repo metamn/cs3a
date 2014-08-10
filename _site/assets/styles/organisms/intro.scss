@@ -1,0 +1,20 @@
+@mixin intro {
+  @include block;
+  @include center($text-width * 2);
+  height: row(5);
+  
+  background: lightblue;
+  
+  .container {
+    padding-top: $gutter * 2;
+    
+    h1 {
+      @include font(title);
+    }
+    
+    figure {
+      padding-top: $gutter * 2;
+      @include figure;
+    }
+  }
+}

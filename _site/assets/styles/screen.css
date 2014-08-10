@@ -1,4 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400|Nothing+You+Could+Do|Lato:300);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -16,8 +17,27 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-/* No files to import found in organisms/* */
-/* No files to import found in structures/* */
+/* fore very combination check the contrast ratio !!! - http://leaverou.github.io/contrast-ratio/
+*/
+/* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
+*/
+html body { font-size: 100%; line-height: 1.25; font-family: 'Vollkorn', serif; background-color: white; color: #011915; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
+html body header { width: 100%; float: left; text-align: center; height: 5em; }
+html body header .container { text-align: center; display: inline-block; max-width: 31.25em; }
+html body header .container { padding-top: 2.5em; }
+html body header .container h1 { font-family: 'Nothing You Could Do', cursive; font-size: 1.6154em; }
+html body #content { width: 100%; float: left; }
+html body #content > h3 { display: none; }
+html body #content #intro { width: 100%; float: left; text-align: center; height: 31.25em; background: lightblue; }
+html body #content #intro .container { text-align: center; display: inline-block; max-width: 62.5em; }
+html body #content #intro .container { padding-top: 2.5em; }
+html body #content #intro .container h1 { font-family: 'Lato', sans-serif; font-size: 2.6154em; }
+html body #content #intro .container figure { padding-top: 2.5em; width: 100%; float: left; }
+html body #content #intro .container figure img { max-width: 100%; }
+html body #content #intro .container figure figcaption { display: none; }
+
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
 #gravity .h-horizontal { top: calc(50% - 1px); width: 100%; border-bottom: 1px solid red; }
@@ -34,7 +54,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 #grid .gutter-bottom { float: left; border-bottom: 1px solid; height: calc(1.25em - 1px); width: 100%; }
 
-#grid { z-index: 100; }
-#grid .col { color: red; }
-
-#grid, #gravity { display: none; }
+/*
+#grid { z-index: 100;  .col { color: red; }
+}
+*/
+#gravity { display: none; }
