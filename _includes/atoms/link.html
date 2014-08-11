@@ -3,7 +3,6 @@
   {% assign link = page.links[id] %}
   {% assign url = link.url %}
   {% assign title = link.title %}
-  {% assign target = link.target %}
   
   {% if link.text %}
     {% assign text = link.text %}
@@ -22,8 +21,8 @@
 {% endif %}
 
 
-{% if include.target %}
-  <a href="{{ url }}" title="{{ title }}" target="{{ include.target }}">{{ text }}</a>
+{% if include.relative %}
+  <a href="{{ site.url }}{{ url }}" title="{{ title }}">{{ text }}</a>
 {% else %}
   <a href="{{ url }}" title="{{ title }}">{{ text }}</a>
 {% endif %}

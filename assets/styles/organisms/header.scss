@@ -9,13 +9,7 @@
     h1 {
       @include font(header);
       cursor: pointer;
-      
-      span {
-        margin-left: $gutter;
-        &:after {
-          content: '#';
-        }
-      }
+      @include menu-switcher;
     }
     
     #menu {
@@ -25,19 +19,37 @@
   }
   
   &.active {
-    height: row(3);
+    height: row(2);
     
     .container {
       h1 {
-        span {
-          &:after {
-            content: 'x';
-          }
-        }
+        @include menu-switcher(active);
       }
       
       #menu {
         display: block;
+      }
+    }
+  }
+}
+
+
+
+
+@mixin menu-switcher($status: inactive) {
+  @if ($status == inactive) {
+    span {
+      margin-left: $gutter;
+      
+      &:after {
+        content: '#';
+      }
+    }
+  
+  } @else {
+    span {
+      &:after {
+        content: 'x';
       }
     }
   }

@@ -1,19 +1,21 @@
 @mixin menu {
+  @include block;
   @include hide-title;
+  padding-top: $gutter * 2;
   
   @include font(menu);
-  
+    
   ul {
-    @include ul;
+    @include list-inline;
+    display: inline-block;
     
     li {
-      @include link(none);
+      @include link(menu);
       
-      border-bottom: 1px solid;
-      padding: $gutter/4 0;
-      
-      &:hover {
-        border-style: solid;
+      &.active {
+        a {
+          border-bottom: 2px solid;
+        }
       }
     }
   }

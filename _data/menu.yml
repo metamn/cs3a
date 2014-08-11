@@ -1,0 +1,9 @@
+- url: /
+  title: home
+- url: /about
+  title: about csongor
+- url: /portfolio
+  title: view portfolio
+- url: /contact
+  title: contact
+  

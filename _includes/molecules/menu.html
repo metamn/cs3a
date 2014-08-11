@@ -2,8 +2,10 @@
   <h3>Menu</h3>
   
   <ul>
-    {% for link in page.links %}
-      <li>{% include atoms/link.html id=forloop.index %}</li> 
+    {% for link in site.data.menu %}
+      <li id="{% include atoms/classname.html title=link.title %}">
+        {% include atoms/link.html id=forloop.index relative="true" %}
+      </li> 
     {% endfor %}
   </ul>
 </nav>
