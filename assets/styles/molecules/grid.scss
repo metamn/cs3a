@@ -1,5 +1,22 @@
-// Grid functions
-// =======================================================================================================
+@mixin symmetric-grid($cols) {
+  > * {
+    width: 30% !important;
+    margin-right: 5%;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+// Typographic Grid functions
+// ==========================
 
 
 @mixin rows($nr) {
@@ -22,8 +39,10 @@
 
 
 
-// Grid helpers
-// ------------------------
+
+
+// Various Grid helpers
+// =========================
 
 
 @mixin list-inline($margin: $gutter) {
