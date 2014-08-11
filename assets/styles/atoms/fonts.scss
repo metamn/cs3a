@@ -19,6 +19,10 @@ $heading-level-3: 4.2308em;
     font-family: 'Nunito', sans-serif;
     font-size: $heading-level-2;
   
+  } @elseif ($type == subtitle) {
+    font-family: 'Nunito', sans-serif;
+    font-size: $heading-level-1;
+  
   } @elseif ($type == menu) {
     font-family: 'Nunito', sans-serif;
   }

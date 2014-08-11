@@ -2,4 +2,6 @@
   @include block;
   @include hide-title;
   
+  @include center($text-width);
+  padding-top: row(1);
 }

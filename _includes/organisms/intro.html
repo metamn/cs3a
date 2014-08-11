@@ -1,10 +1,19 @@
 
 {% assign classes = page.classes | join: ' ' %}
+
 {% if page.button %}
-  {% assign classes = classes | prepend: 'with button' %}
+  {% assign classes = classes | prepend: ' with-button' %}
 {% endif %}
 
-<section id="intro" class="{% include atoms/classname.html title=classes %}">
+{% if page.subtitle %}
+  {% assign classes = classes | prepend: ' with-subtitle' %}
+{% endif %}
+
+{% if page.images %}
+  {% assign classes = classes | prepend: ' with-featured-image' %}
+{% endif %}
+
+<section id="intro" class="{{ classes }}">
   <h3>Introduction</h3>
   
   <article id="title">
@@ -19,6 +28,16 @@
       
       <div class="container">
         {% include atoms/button.html text=page.button %}
+      </div>
+    </article>
+  {% endif %}
+  
+  {% if page.subtitle %}
+    <article id="subtitle">
+      <h3>Subtitle</h3>
+      
+      <div class="container">
+        <h3>{{ page.subtitle }}</h3>
       </div>
     </article>
   {% endif %}
