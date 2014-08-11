@@ -20,7 +20,7 @@
     
     li {
       @include link(none);
-      border-bottom: 1px dotted #f9f9f9;
+      border-bottom: 1px dotted $menu-item-border;
       
       &.active, &:hover {
         font-weight: bold;
