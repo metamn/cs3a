@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Vollkorn|Nothing+You+Could+Do|Oswald:300,400);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Nothing+You+Could+Do|Nunito);
 
 
 // Heading sizes
@@ -16,16 +16,12 @@ $heading-level-3: 4.2308em;
     font-size: $heading-level-1;
   
   } @elseif ($type == title) {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: $heading-level-2;
   
   } @elseif ($type == menu) {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: larger;
-    @include mobile {
-      font-size: large;
-    }
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
   }
 }

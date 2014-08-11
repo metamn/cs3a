@@ -1,9 +1,9 @@
 - url: /
   title: home
 - url: /about
-  title: about csongor
+  title: about
 - url: /portfolio
-  title: view portfolio
+  title: portfolio
 - url: /contact
   title: contact
   
