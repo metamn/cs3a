@@ -34,7 +34,7 @@ html body header .container h1 span { margin-left: 1.25em; }
 html body header .container h1 span:after { content: '#'; }
 html body header .container #menu { width: 100%; float: left; font-family: 'Oswald', sans-serif; font-size: larger; display: none; }
 html body header .container #menu > h3 { display: none; }
-@media only screen and (max-width: 30em) { html body header .container #menu { font-size: medium; } }
+@media only screen and (max-width: 30em) { html body header .container #menu { font-size: large; } }
 @media only screen and (orientation: landscape) { html body header .container #menu { padding-top: 2.5em; }
   html body header .container #menu ul { display: inline-block; }
   html body header .container #menu ul li { display: inline-block; float: left; padding-right: 1.25em; }
@@ -44,7 +44,7 @@ html body header .container #menu > h3 { display: none; }
   html body header .container #menu ul li.active a { border-bottom: 2px solid; } }
 @media only screen and (orientation: portrait) { html body header .container #menu ul { margin-top: 1.25em; }
   html body header .container #menu ul li { line-height: 1.75; }
-  html body header .container #menu ul li { border-bottom: 1px solid #eee; }
+  html body header .container #menu ul li { border-bottom: 1px dotted #f9f9f9; }
   html body header .container #menu ul li a { color: #011915; background-color: white; text-decoration: none; }
   html body header .container #menu ul li.active, html body header .container #menu ul li:hover { font-weight: bold; } }
 @media only screen and (orientation: landscape) { html body header.active { height: 12.5em; } }

@@ -20,7 +20,7 @@
     
     li {
       @include link(none);
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px dotted #f9f9f9;
       
       &.active, &:hover {
         font-weight: bold;
