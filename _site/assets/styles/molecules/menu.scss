@@ -1,10 +1,39 @@
 @mixin menu {
   @include block;
   @include hide-title;
+  @include font(menu);
+  
+  @include landscape {
+    @include menu-landscape;
+  }
+  
+  @include portrait {
+    @include menu-portrait;
+  }
+}
+
+
+
+@mixin menu-portrait {
+  ul {
+    @include ul;
+    
+    li {
+      @include link(none);
+      border-bottom: 1px solid #eee;
+      
+      &.active, &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+@mixin menu-landscape {
   padding-top: $gutter * 2;
   
-  @include font(menu);
-    
   ul {
     @include list-inline;
     display: inline-block;

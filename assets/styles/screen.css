@@ -32,16 +32,23 @@ html body header .container { padding-top: 2.5em; }
 html body header .container h1 { font-family: 'Nothing You Could Do', cursive; font-size: 1.6154em; cursor: pointer; }
 html body header .container h1 span { margin-left: 1.25em; }
 html body header .container h1 span:after { content: '#'; }
-html body header .container #menu { width: 100%; float: left; padding-top: 2.5em; font-family: 'Oswald', sans-serif; font-size: larger; display: none; }
+html body header .container #menu { width: 100%; float: left; font-family: 'Oswald', sans-serif; font-size: larger; display: none; }
 html body header .container #menu > h3 { display: none; }
 @media only screen and (max-width: 30em) { html body header .container #menu { font-size: medium; } }
-html body header .container #menu ul { display: inline-block; }
-html body header .container #menu ul li { display: inline-block; float: left; padding-right: 1.25em; }
-html body header .container #menu ul li:last-of-type { padding-right: 0; }
-html body header .container #menu ul li a { color: #011915; background-color: white; text-decoration: none; }
-html body header .container #menu ul li a:hover { border-bottom: 2px solid; }
-html body header .container #menu ul li.active a { border-bottom: 2px solid; }
-html body header.active { height: 12.5em; }
+@media only screen and (orientation: landscape) { html body header .container #menu { padding-top: 2.5em; }
+  html body header .container #menu ul { display: inline-block; }
+  html body header .container #menu ul li { display: inline-block; float: left; padding-right: 1.25em; }
+  html body header .container #menu ul li:last-of-type { padding-right: 0; }
+  html body header .container #menu ul li a { color: #011915; background-color: white; text-decoration: none; }
+  html body header .container #menu ul li a:hover { border-bottom: 2px solid; }
+  html body header .container #menu ul li.active a { border-bottom: 2px solid; } }
+@media only screen and (orientation: portrait) { html body header .container #menu ul { margin-top: 1.25em; }
+  html body header .container #menu ul li { line-height: 1.75; }
+  html body header .container #menu ul li { border-bottom: 1px solid #eee; }
+  html body header .container #menu ul li a { color: #011915; background-color: white; text-decoration: none; }
+  html body header .container #menu ul li.active, html body header .container #menu ul li:hover { font-weight: bold; } }
+@media only screen and (orientation: landscape) { html body header.active { height: 12.5em; } }
+@media only screen and (orientation: portrait) { html body header.active { height: 18.75em; } }
 html body header.active .container h1 span:after { content: 'x'; }
 html body header.active .container #menu { display: block; }
 html body footer { width: 100%; float: left; text-align: center; height: 6.25em; padding-top: 12.5em; padding-bottom: 6.25em; }

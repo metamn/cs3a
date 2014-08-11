@@ -21,3 +21,16 @@ $breakpoint-large-screen: 90em; // 1440px
     @content
   }
 }
+
+@mixin portrait {
+  @media only screen and (orientation: portrait) {
+    @content
+  }
+}
+
+
+@mixin landscape {
+  @media only screen and (orientation: landscape) {
+    @content
+  }
+}

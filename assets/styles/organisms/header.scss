@@ -19,7 +19,7 @@
   }
   
   &.active {
-    height: row(2);
+    @include menu-height;
     
     .container {
       h1 {
@@ -34,6 +34,16 @@
 }
 
 
+
+@mixin menu-height {
+  @include landscape {
+    height: row(2);
+  }
+  
+  @include portrait {
+    height: row(3);
+  }
+}
 
 
 @mixin menu-switcher($status: inactive) {
