@@ -16,7 +16,7 @@
   }
   
   &.with-button {
-    @include intro-height(8);
+    @include intro-height(7);
     
     #button {
       @include intro-button;
