@@ -3,7 +3,7 @@
   
   <ul>
     {% for link in site.data.menu %}
-      <li id="{% include atoms/classname.html title=link.title %}">
+      <li class="{% include atoms/active-menu-item.html url=link.url %}">
         {% include atoms/link.html id=forloop.index relative="true" %}
       </li> 
     {% endfor %}
