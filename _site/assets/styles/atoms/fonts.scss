@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Vollkorn|Nothing+You+Could+Do|Oswald:300);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Nothing+You+Could+Do|Oswald:300,400);
 
 
 // Heading sizes
@@ -17,11 +17,12 @@ $heading-level-3: 4.2308em;
   
   } @elseif ($type == title) {
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: $heading-level-2;
   
   } @elseif ($type == menu) {
     font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     font-size: larger;
     @include mobile {
       font-size: large;
