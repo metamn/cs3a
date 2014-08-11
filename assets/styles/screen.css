@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400|Nothing+You+Could+Do|Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Nothing+You+Could+Do|Oswald:300,400);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -32,11 +32,11 @@ html body header .container { padding-top: 2.5em; }
 html body header .container h1 { font-family: 'Nothing You Could Do', cursive; font-size: 1.6154em; cursor: pointer; }
 html body header .container h1 span { margin-left: 1.25em; }
 html body header .container h1 span:after { content: '#'; }
-html body header .container #menu { font-family: 'Lato', sans-serif; display: none; }
+html body header .container #menu { font-family: 'Oswald', sans-serif; font-weight: 400; display: none; }
 html body header .container #menu > h3 { display: none; }
 html body header .container #menu ul { margin-top: 1.25em; }
 html body header .container #menu ul li { line-height: 1.75; }
-html body header .container #menu ul li { border-bottom: 1px inset; padding: 0.3125em 0; }
+html body header .container #menu ul li { border-bottom: 1px solid; padding: 0.3125em 0; }
 html body header .container #menu ul li a { color: #011915; background-color: white; text-decoration: none; }
 html body header .container #menu ul li:hover { border-style: solid; }
 html body header.active { height: 18.75em; }
@@ -52,7 +52,7 @@ html body #intro > h3 { display: none; }
 @media only screen and (min-width: 90.001em) { html body #intro { height: 31.25em; } }
 html body #intro #title { width: 100%; float: left; text-align: center; padding-top: 2.5em; padding-bottom: 2.5em; }
 html body #intro #title .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
-html body #intro #title .container h1 { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 2.6154em; }
+html body #intro #title .container h1 { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 2.6154em; }
 html body #intro #featured-image { width: 100%; float: left; text-align: center; }
 html body #intro #featured-image > h3 { display: none; }
 html body #intro #featured-image .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 62.5em; }

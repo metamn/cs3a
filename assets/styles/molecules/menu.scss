@@ -9,7 +9,7 @@
     li {
       @include link(none);
       
-      border-bottom: 1px inset;
+      border-bottom: 1px solid;
       padding: $gutter/4 0;
       
       &:hover {
