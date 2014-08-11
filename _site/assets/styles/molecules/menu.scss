@@ -17,6 +17,7 @@
 @mixin menu-portrait {
   ul {
     @include ul;
+    font-size: larger;
     
     li {
       @include link(none);
