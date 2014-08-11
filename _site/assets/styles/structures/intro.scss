@@ -4,7 +4,8 @@
   
   @include intro-height(6);
   @include colors(black-on-orange);
-  background-image: url("http://www.transparenttextures.com/patterns/retina-dust.png");
+  //background-image: url("http://www.transparenttextures.com/patterns/retina-dust.png");
+  @include harsh($orange, $white);
   
   #title {
     @include title;
