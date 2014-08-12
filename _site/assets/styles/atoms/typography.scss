@@ -3,7 +3,7 @@
 }
 
 @mixin p {
-  line-height: 1.75;
+  line-height: 1.5;
   
   + p {
     padding-top: $gutter;
