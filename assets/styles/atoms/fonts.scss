@@ -25,5 +25,17 @@ $heading-level-3: 4.2308em;
   
   } @elseif ($type == menu) {
     font-family: 'Nunito', sans-serif;
+  
+  } @elseif ($type == skill) {
+    font-family: 'Nunito', sans-serif;
+    @include color($lightgray);
+    line-height: 1;
+    padding-bottom: $gutter/8;
+    
+    word-wrap: break-word;
+    font-size: $heading-level-3;
+    @include mobile {
+      font-size: $heading-level-2;
+    }
   }
 }

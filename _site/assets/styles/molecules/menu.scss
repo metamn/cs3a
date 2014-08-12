@@ -16,12 +16,11 @@
 
 @mixin menu-portrait {
   ul {
-    @include ul;
     font-size: larger;
     
     li {
       @include link(none);
-      border-bottom: 1px dotted $menu-item-border;
+      border-bottom: 1px dotted $lightgray;
       
       &.active, &:hover {
         font-weight: bold;

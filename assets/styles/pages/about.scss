@@ -6,5 +6,20 @@ html.about {
       
       height: row(4);
     }
+    
+    #content {
+      @include typographic-elements;
+      
+      article {
+        
+        + article {
+          padding-top: row(1);
+        }
+      }
+    }
   }
 }
+
+
+
+

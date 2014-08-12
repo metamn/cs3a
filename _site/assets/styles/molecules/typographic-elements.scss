@@ -1,0 +1,9 @@
+@mixin typographic-elements {
+  h3 {
+    @include h3;
+  }
+  
+  p {
+    @include p;
+  }
+} 

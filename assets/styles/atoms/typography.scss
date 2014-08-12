@@ -1,7 +1,13 @@
-@mixin ul {
-  margin-top: $gutter;
+@mixin h3 {
+  @include font(skill);
+}
+
+@mixin p {
+  line-height: 1.75;
   
-  li {
-    line-height: 1.75;
+  + p {
+    padding-top: $gutter;
   }
 }
+
+
