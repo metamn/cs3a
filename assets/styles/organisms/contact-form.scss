@@ -2,11 +2,21 @@
   @include block;
   @include form-elements;
   
-  font-size: $heading-level-1;
-  
+  p, input, textarea {
+    font-size: $gutter;
+  }
   
   p {
-    line-height: 2.5;
+    line-height: 2;
+  }
+  
+  input, textarea {
+    text-align: center;
+    background: #f9f9f9;
+  }
+  
+  input[name="name"] {
+    width: auto;
   }
   
   input[name="from"] {

@@ -13,15 +13,6 @@
 @mixin text-inputs {
   @include reset-form;
   @include font;
-  font-size: 1em;
-  
-  border-bottom: 1px dotted;
-  text-align: center;
-  
-  color: $grey;
-  &:active, &:hover {
-    color: $green;
-  }
 }
 
 
