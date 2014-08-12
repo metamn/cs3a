@@ -261,7 +261,6 @@ active">
   </span>
 </div>
       </li>
-      
       <li>
         
 
@@ -292,7 +291,29 @@ active">
 </div>
       </li>
     </ul>
+  </article>
+  
+  
+  <article>
+    <h3>Contact form</h3>
     
+    <form action="http://getsimpleform.com/messages?form_api_token=d880283125ae9e07ca71d96259d6647b" method="post">
+      <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+      <input type='hidden' name='redirect_to' value="/contact" />
+      
+      <p>
+        Hello I'm <input type='text' name='name' placeholder="your name"> from <input type='text' name='from' placeholder="your location, or company, or web"> and I <textarea rows="4" name="address" placeholder="your short message here ..."></textarea>
+      </p>
+      
+      <p>
+        Thank you,
+        <input type='text' name='email' placeholder="your email">
+      </p>
+      
+      <p>
+        <input type='submit' value='Send message' />
+      </p>
+    </form>
   </article>
 </div>
 

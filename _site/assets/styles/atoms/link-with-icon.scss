@@ -2,11 +2,11 @@
   display: inline-block;
   
   span {
-    float: left;
+    display: block;
     
     &.link {
       position: relative;
-      top: 25px;
+      top: -$gutter;
     }
   }
 }

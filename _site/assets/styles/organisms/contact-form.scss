@@ -1,0 +1,22 @@
+@mixin contact-form {
+  @include block;
+  @include form-elements;
+  
+  font-size: $heading-level-1;
+  
+  
+  p {
+    line-height: 2.5;
+  }
+  
+  input[name="from"] {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  textarea {
+    width: 100%;
+    padding-top: $gutter;
+  }
+}

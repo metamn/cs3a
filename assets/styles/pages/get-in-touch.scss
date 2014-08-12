@@ -13,24 +13,16 @@ html.get-in-touch {
       article {   
         @include hide-title;
         
-        ul {
-          li {
-            .link-with-icon {
-              @include link-with-icon;
-            }
-            
-            
-            &:first-of-type {
-              .link-with-icon .link {
-                top: 35px;
-              }
-            }
-          }
+        &:first-of-type {
+          @include direct-contact;
         }
         
-        
-        + article {
-          padding-top: row(1);
+        &:last-of-type {
+          padding-top: row(.5);
+          margin-top: row(.5);
+          border-top: 1px solid $lightgrey;
+          
+          @include contact-form;
         }
       }
     }
