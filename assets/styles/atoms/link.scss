@@ -6,7 +6,6 @@
   
   } @elseif ($type == none) {
     a {
-      @include colors;
       text-decoration: none;
     }
   

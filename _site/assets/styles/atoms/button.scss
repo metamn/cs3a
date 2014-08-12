@@ -3,5 +3,8 @@
   border: 2px solid;
   @include border-radius($gutter/2);
   
+  display: inline-block;
   cursor: pointer;
+  
+  @include link(none);
 }

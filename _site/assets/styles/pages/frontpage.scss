@@ -1,0 +1,14 @@
+html.frontpage {
+  body {
+    #intro {
+      @include colors(white-on-violet);
+      @include harsh($violet, $white);
+  
+      #button {
+        a {
+          @include color($white-for-violet);
+        }
+      }
+    }
+  }
+}

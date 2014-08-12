@@ -2,9 +2,9 @@
   <div class="container">
     <h3>Ready for a new project?</h3>
     
-    <ul>
-      <li>{% include atoms/link.html url="mailto:bartus.csongor@gmail.com" title="Contact Csongor via E-mail" text="bartus.csongor@gmail.com" %}</li>
-      <li>{% include atoms/link.html url="https://twitter.com/metamn" title="Contact Csongor via Twitter" text="@metamn" %}</li>
-    </ul>
+    {% capture buttontext %}
+      {% include atoms/link.html url="/contact" relative="true" title="Get in touch" %}
+    {% endcapture %}
+    {% include atoms/button.html text=buttontext %}
   </div>
 </footer>
