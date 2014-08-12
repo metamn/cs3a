@@ -5,9 +5,17 @@
   
   p {
     @include p;
+    
+    @include mobile {
+      font-size: larger;
+    }
   }
   
   .button {
     @include button($gutter/3 $gutter);
+    
+    @include mobile {
+      font-size: smaller;
+    }
   }
 } 
