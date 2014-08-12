@@ -13,6 +13,7 @@
   {% assign tablet = image.tablet %}
   {% assign mobile = image.mobile %}
   {% assign large = image.large %}
+  {% assign svg = image.svg %}
 {% else %}
   {% assign title = include.title %}
   {% assign figcaption = include.figcaption %}
@@ -22,6 +23,7 @@
   {% assign tablet = include.tablet %}
   {% assign mobile = include.mobile %}
   {% assign large = include.large %}
+  {% assign svg = image.svg %}
 {% endif %}
 
 
@@ -49,10 +51,16 @@
     {% endif %}
     <!--[if IE 9]></video><![endif]-->
     
-    {% if desktop2x %}
-      <img src="{{ site.url }}/{{ site.images }}/{{ desktop }}" srcset="{{ site.url }}/{{ site.images }}/{{ desktop2x }} 2x" alt="{{ title }}">
+    {% if svg %}
+      {% include atoms/svg.html svg=svg png=desktop title=title %}
     {% else %}
-      <img src="{{ site.url }}/{{ site.images }}/{{ desktop }}" alt="{{ title }}">
+      
+      {% if desktop2x %}
+        <img src="{{ site.url }}/{{ site.images }}/{{ desktop }}" srcset="{{ site.url }}/{{ site.images }}/{{ desktop2x }} 2x" alt="{{ title }}">
+      {% else %}
+        <img src="{{ site.url }}/{{ site.images }}/{{ desktop }}" alt="{{ title }}">
+      {% endif %}
+    
     {% endif %}
   </picture>
   

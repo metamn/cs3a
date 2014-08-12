@@ -9,7 +9,9 @@ Location: Budapest, Hungary
 
 /* THANKS */
 Harsh backgrounds: Caey Olson, http://www.bookcasey.com/harsh/
-
+Contact Icon: <a href="http://www.thenounproject.com/sapi">Stefan Parnarov</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+Email icon: <a href="http://www.thenounproject.com/eddyyme">Eddy Ymeri</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+Twitter icon: <a href="http://www.thenounproject.com/eddyyme">Eddy Ymeri</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
 
 /* SITE */
 Last update: YYYY/MM/DD

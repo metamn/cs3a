@@ -1,0 +1,12 @@
+@mixin link-with-icon {
+  display: inline-block;
+  
+  span {
+    float: left;
+    
+    &.link {
+      position: relative;
+      top: 25px;
+    }
+  }
+}

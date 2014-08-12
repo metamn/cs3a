@@ -1,0 +1,42 @@
+html.get-in-touch {
+  body {
+    #intro {
+      @include colors(black-on-green);
+      @include harsh($green, $white);
+      
+      height: row(3);
+    }
+    
+    #content {
+      @include typographic-elements;
+      
+      article {   
+        @include hide-title;
+        
+        ul {
+          li {
+            .link-with-icon {
+              @include link-with-icon;
+            }
+            
+            
+            &:first-of-type {
+              .link-with-icon .link {
+                top: 35px;
+              }
+            }
+          }
+        }
+        
+        
+        + article {
+          padding-top: row(1);
+        }
+      }
+    }
+    
+    footer {
+      display: none;
+    }
+  }
+}
