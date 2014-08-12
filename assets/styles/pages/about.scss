@@ -10,11 +10,18 @@ html.about {
     #content {
       @include typographic-elements;
       
-      article {
-        
+      article {   
         + article {
           padding-top: row(1);
         }
+      }
+    }
+    
+    footer {
+      padding-top: 0;
+      
+      .container {
+        @include hide-title;
       }
     }
   }

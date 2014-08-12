@@ -9,6 +9,10 @@ $white-for-violet: hsla(196, 100%, 91%, 1);
 
 
 $lightgray: #f1f1f1;
+$lightgrey: $lightgray;
+
+$gray: #eee;
+$grey: $gray;
 
 
 
@@ -39,4 +43,9 @@ $lightgray: #f1f1f1;
 @mixin color($color) {
   color: $color;
   background-color: transparent;
+  
+  a {
+    color: $color;
+    background-color: transparent;
+  }
 }

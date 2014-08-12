@@ -28,7 +28,7 @@ $heading-level-3: 4.2308em;
   
   } @elseif ($type == skill) {
     font-family: 'Nunito', sans-serif;
-    @include color($lightgray);
+    @include color($gray);
     line-height: 1;
     padding-bottom: $gutter/8;
     

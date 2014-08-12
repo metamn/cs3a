@@ -6,4 +6,8 @@
   p {
     @include p;
   }
+  
+  .button {
+    @include button($gutter/3 $gutter);
+  }
 } 

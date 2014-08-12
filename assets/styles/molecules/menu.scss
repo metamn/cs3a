@@ -17,9 +17,11 @@
 @mixin menu-portrait {
   ul {
     font-size: larger;
+    margin-top: $gutter;
     
     li {
       @include link(none);
+      line-height: 1.75;
       border-bottom: 1px dotted $lightgray;
       
       &.active, &:hover {
