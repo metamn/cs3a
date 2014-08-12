@@ -1,0 +1,10 @@
+html.about {
+  body {
+    #intro {
+      @include colors(black-on-orange);
+      @include harsh($orange, $white);
+      
+      height: row(4);
+    }
+  }
+}

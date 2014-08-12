@@ -6,32 +6,16 @@
     @include title;
   }
   
-  &.with-subtitle {
-    height: row(3);
-    
-    #subtitle {
-      @include subtitle;
-    }
+  #subtitle {
+    @include subtitle;
   }
   
-  &.with-featured-image {
-    height: row(4);
-    
-    #featured-image {
-      @include featured-image;
-    }
+  #featured-image {
+    @include featured-image;
   }
   
-  &.with-button {
-    height: row(6);
-    @include mobile {
-      height: row(4.5);
-    }
-    
-    #button {
-      @include intro-button;
-    }
+  #button {
+    @include intro-button;
   }
-  
 }
 

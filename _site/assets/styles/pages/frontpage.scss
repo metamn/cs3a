@@ -9,6 +9,11 @@ html.frontpage {
           @include color($white-for-violet);
         }
       }
+      
+      height: row(6);
+      @include mobile {
+        height: row(4.75);
+      }
     }
   }
 }
