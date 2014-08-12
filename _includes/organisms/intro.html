@@ -27,7 +27,10 @@
       <h3>{{ page.button }}</h3>
       
       <div class="container">
-        {% include atoms/button.html text=page.button %}
+        {% capture buttontext %}
+          {% include atoms/link.html url="/portfolio" relative="true" title=page.button %}
+        {% endcapture %}
+        {% include atoms/button.html text=buttontext %}
       </div>
     </article>
   {% endif %}
