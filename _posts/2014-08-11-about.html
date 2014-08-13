@@ -9,11 +9,12 @@ images:
     title: Csongor Bartus
 ---
 
-{% include atoms/animation-for-design.html %}
 
 <div class="container">
   <article>
     <h3>Design</h3>
+    
+    <p class="art"></p>
     
     <p>
       Native web designers work directly in the browser skipping Photoshop, Sketch or other mockup tools reducing project time by half. Csongor is one of them.
@@ -23,7 +24,7 @@ images:
       Since 2009 he designed brand identity, e-commerce websites, landing pages for businesses, artist portfolios, blogs and magazines for international companies and organizations.
     </p>
     
-    <p>
+    <p class="next">
       {% capture buttontext %}
         {% include atoms/link.html url="/portfolio" relative="true" title="View portfolio" %}
       {% endcapture %}
@@ -35,6 +36,8 @@ images:
   <article>
     <h3>Development</h3>
     
+    <p class="art"></p>
+    
     <p>
       Front-end development with standards and latest technologies&mdash;HTML5, CSS3, jQuery&mdash;is where Csongor is most skilled.
     </p>
@@ -43,9 +46,9 @@ images:
       On back-end he is using extensively Wordpress and Jekyll&mdash;and&mdash;MVC frameworks like Ruby on Rails and Yii.
     </p>
     
-    <p>
+    <p class="next">
       {% capture buttontext %}
-        {% include atoms/link.html url="https://github.com/metamn/cs2" title="View code on Github" %}
+        {% include atoms/link.html url="https://github.com/metamn/cs2" title="Github" %}
       {% endcapture %}
       {% include atoms/button.html text=buttontext %}
     </p>
@@ -55,9 +58,18 @@ images:
   <article>
     <h3>User Experience</h3>
     
+    <p class="art"></p>
+    
     <p>
       Every website is a product delivering a message for a target audience.
       Products are successful by better-than-expected experiences driving people to engagement.
+    </p>
+    
+    <p class="next">
+      {% capture buttontext %}
+        {% include atoms/link.html url="/contact" relative="true" title="Get in touch" %}
+      {% endcapture %}
+      {% include atoms/button.html text=buttontext %}
     </p>
   </article>
 </div>

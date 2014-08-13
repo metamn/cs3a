@@ -1,22 +1,41 @@
 html.about {
   body {
     #intro {
+      height: row(4);
+      @include mobile {
+        height: row(3.5);
+      }
+      
       @include colors(black-on-orange);
       @include harsh($orange, $white);
-      
-      height: row(4);
     }
     
     #content {
       @include typographic-elements;
+      @include harsh($white, $lightgray, $number-of-gradients: 5);
+      @include color($black);
       
-      canvas {
-        width: 90%;
-        max-height: 10em;
-        position: relative;
-      }
+      padding-bottom: row(1);
       
       article {   
+        
+        p {
+          @include font(skill-body);
+        }
+        
+        .art {
+          border-bottom: 1px solid $lightgrey;
+        }
+        
+        .next {
+          border-top: 1px solid $lightgrey;
+          margin-top: $gutter;
+          
+          max-width: 60%;
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+        
         + article {
           padding-top: row(1);
         }
@@ -24,11 +43,7 @@ html.about {
     }
     
     footer {
-      padding-top: 0;
-      
-      .container {
-        @include hide-title;
-      }
+      display: none;
     }
   }
 }

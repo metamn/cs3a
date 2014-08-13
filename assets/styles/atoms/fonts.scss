@@ -33,9 +33,16 @@ $heading-level-3: 4.2308em;
     padding-bottom: $gutter/8;
     
     word-wrap: break-word;
-    font-size: $heading-level-3;
-    @include mobile {
-      font-size: $heading-level-2;
+    font-size: $heading-level-2;
+    @include large-screen-and-up {
+      font-size: $heading-level-3;
+    }
+  
+  } @elseif ($type == skill-body) {
+    font-size: large;
+    
+    @include large-screen-and-up {
+      font-size: 100%;
     }
   }
 }
