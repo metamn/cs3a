@@ -1,0 +1,5 @@
+@mixin circle($radius: $gutter * 2) {
+  width: $radius;
+  height: $radius;
+  @include border-radius($radius);
+}
