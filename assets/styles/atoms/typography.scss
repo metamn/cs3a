@@ -12,4 +12,5 @@
 
 @mixin em {
   font-style: italic;
+  letter-spacing: $gutter/16;
 }
