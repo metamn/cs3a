@@ -12,8 +12,14 @@ html.about {
     
     #content {
       @include typographic-elements;
+      
+      /*
       @include harsh($white, $lightgray, $number-of-gradients: 5);
+      @include below-tablet {
+        @include harsh($white, $nuance-strength: 20);
+      }
       @include color($black);
+      */
       
       padding-bottom: row(1);
       

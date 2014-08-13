@@ -39,10 +39,8 @@ $heading-level-3: 4.2308em;
     }
   
   } @elseif ($type == skill-body) {
-    font-size: large;
-    
-    @include large-screen-and-up {
-      font-size: 100%;
+    @include below-tablet {
+      font-size: larger;
     }
   }
 }
