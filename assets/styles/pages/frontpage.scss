@@ -10,9 +10,9 @@ html.frontpage {
         }
       }
       
-      height: row(6);
+      height: row(5);
       @include mobile {
-        height: row(4.75);
+        height: row(4);
       }
     }
   }

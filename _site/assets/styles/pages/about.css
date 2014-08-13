@@ -1,13 +1,11 @@
 /*
-Syntax error: Undefined mixin 'mobile'.
-        on line 5 of /home/cs/work/cs2/assets/styles/pages/about.scss, in `mobile'
-        from line 5 of /home/cs/work/cs2/assets/styles/pages/about.scss
-
-1: /home/cs/work/cs2/assets/styles/pages/about.scss
+Syntax error: Undefined mixin 'colors'.
+        on line 8 of /home/cs/work/cs2/assets/styles/pages/about.scss, in `colors'
+        from line 8 of /home/cs/work/cs2/assets/styles/pages/about.scss
 
 Backtrace:
-/home/cs/work/cs2/assets/styles/pages/about.scss:5:in `mobile'
-/home/cs/work/cs2/assets/styles/pages/about.scss:5
+/home/cs/work/cs2/assets/styles/pages/about.scss:8:in `colors'
+/home/cs/work/cs2/assets/styles/pages/about.scss:8
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -102,4 +100,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'mobile'.\A         on line 5 of /home/cs/work/cs2/assets/styles/pages/about.scss, in `mobile'\A         from line 5 of /home/cs/work/cs2/assets/styles/pages/about.scss\A \A 1: /home/cs/work/cs2/assets/styles/pages/about.scss"; }
+  content: "Syntax error: Undefined mixin 'colors'.\A         on line 8 of /home/cs/work/cs2/assets/styles/pages/about.scss, in `colors'\A         from line 8 of /home/cs/work/cs2/assets/styles/pages/about.scss"; }

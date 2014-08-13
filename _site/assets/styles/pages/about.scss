@@ -1,10 +1,9 @@
 html.about {
   body {
     #intro {
-      height: row(4);
-      @include mobile {
-        height: row(3.5);
-      }
+      
+      height: row(3.5);
+      
       
       @include colors(black-on-orange);
       @include harsh($orange, $white);
