@@ -11,6 +11,7 @@ html.about {
     }
     
     #content {
+      @include harsh($lightgrey, $white);
       @include typographic-elements;
       
       article {   
