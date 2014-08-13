@@ -5,14 +5,16 @@ html.about {
       @include harsh($orange, $white);
       
       height: row(4);
-      @include mobile {
-        height: row(3.5);
-      }
     }
     
     #content {
-      @include harsh($lightgrey, $white);
       @include typographic-elements;
+      
+      canvas {
+        width: 90%;
+        max-height: 10em;
+        position: relative;
+      }
       
       article {   
         + article {
