@@ -1,0 +1,13 @@
+@mixin tooltip-popup {
+  @include block;
+  margin-top: $gutter;
+  position: relative;
+  
+  span {
+    display: inline-block;
+    padding: $gutter $gutter * 2;
+    max-width: calc(100% - #{$gutter * 4});
+    
+    @include colors(white-on-violet);
+  }
+}

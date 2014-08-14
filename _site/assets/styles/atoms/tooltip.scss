@@ -1,8 +1,7 @@
 @mixin tooltip {
+  cursor: pointer;
   
   .tooltip-item {
-    cursor: pointer;
-    
     .tooltip-text {
       display: none;
     }

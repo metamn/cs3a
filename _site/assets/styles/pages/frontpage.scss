@@ -35,10 +35,19 @@ html.frontpage {
           
           ul {
             @include circles;
+            
+            li {
+              &.active {
+                @include colors(white-on-violet);
+              }
+            }
           }
         }
         
         @include tooltip;
+        .tooltip {
+          @include tooltip-popup;
+        }
       }
     }
   }

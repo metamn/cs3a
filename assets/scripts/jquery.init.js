@@ -2,8 +2,11 @@ $(document).ready(function() {
   
   // Tooltip 
   $('.tooltip-item').click(function() {
-    $('.tooltip').html($(this).find('.tooltip-text').html());
+    $('.tooltip span').html($(this).find('.tooltip-text').html());
     $('.tooltip').addClass('active');
+    
+    $(this).parent().siblings().removeClass('active');
+    $(this).parent().addClass('active');
   });
 
   // Click to show the menu
