@@ -4,10 +4,11 @@ html.get-in-touch {
       @include colors(black-on-green);
       @include harsh($green, $white);
       
-      height: row(3);
+      height: row(2.75);
     }
     
     #content {
+      padding-top: row(1);
       @include typographic-elements;
       
       article {   
