@@ -3,11 +3,25 @@
   margin-top: $gutter;
   position: relative;
   
+  &:before, &:after {
+    content: '/';
+    color: transparent;
+    border-left: 2px solid $violet;
+    
+    display: inline-block;
+    @include transform(rotate(15deg));
+    height: $gutter * 3;
+    position: relative;
+    top: -$gutter;
+  }
+  
   span {
     display: inline-block;
     padding: $gutter $gutter * 2;
-    max-width: calc(100% - #{$gutter * 4});
+    max-width: calc(100% - #{$gutter * 5});
+  
+    @include font(menu);
     
-    @include colors(white-on-violet);
+    @include color($violet);
   }
 }

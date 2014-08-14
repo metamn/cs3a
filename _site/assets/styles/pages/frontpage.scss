@@ -38,7 +38,7 @@ html.frontpage {
             
             li {
               &.active {
-                @include colors(white-on-violet);
+                color: $violet;
               }
             }
           }
