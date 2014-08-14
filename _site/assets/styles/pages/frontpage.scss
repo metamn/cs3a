@@ -24,6 +24,10 @@ html.frontpage {
         @include block;
         @include hide-title;
         
+        p {
+          @include font(subtitle);
+        }
+        
         nav {
           padding-top: $gutter;
           
