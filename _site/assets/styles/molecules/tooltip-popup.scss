@@ -1,7 +1,9 @@
 @mixin tooltip-popup {
   @include block;
-  margin-top: $gutter;
+  margin-top: $gutter * 2;
   position: relative;
+  
+  @include font(menu);
   
   &:before, &:after {
     content: '/';
@@ -18,10 +20,9 @@
   span {
     display: inline-block;
     padding: $gutter $gutter * 2;
-    max-width: calc(100% - #{$gutter * 5});
+    max-width: calc(100% - #{$gutter * 5});  
   
-    @include font(menu);
-    
-    @include color($violet);
+  
+  @include color($violet);
   }
 }
