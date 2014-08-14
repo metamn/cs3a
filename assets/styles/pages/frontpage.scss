@@ -15,5 +15,25 @@ html.frontpage {
         height: row(4);
       }
     }
+    
+    #content {
+      padding-top: row(2);
+      padding-bottom: row(1);
+      
+      article {
+        @include block;
+        @include hide-title;
+        
+        nav {
+          padding-top: $gutter;
+          
+          @include hide-title;
+          
+          ul {
+            @include circles;
+          }
+        }
+      }
+    }
   }
 }
