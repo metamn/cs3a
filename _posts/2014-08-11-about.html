@@ -20,22 +20,29 @@ images:
   <article>
     <h3>Design</h3>
     
-    <aside>
+    <nav>
       <h3>Logos</h3>
-      <div id="psd"><span>PSD</span></div>
-      <div is="ai"><span>AI</span></div>
-      <div is="rwd"><span>RWD</span></div>
-    </aside>
+      <ul>
+        <li>{% include atoms/circle.html text="PSD" %}</li>
+        <li>{% include atoms/circle.html text="AI" %}</li>
+        <li>{% include atoms/circle.html text="RWD" %}</li>
+      </ul>
+    </nav>
+    
+    {% include atoms/line.html where="bottom" %}
 
     <p>
-      Native web design using the browser instead of Photoshop, Sketch or other mockup tools to <em>reduce project time by half</em>.
+      Native web design using the browser instead of Photoshop or other mockup tools to <em>reduce project time by half</em>.
     </p>
     
     <p>
-      Responsive web design, branding, e-commerce for international companies and organizations.
+      Responsive web design, branding, e-commerce services for international companies and organizations.
     </p>
     
-    <p class="next">
+    
+    {% include atoms/line.html where="top" %}
+    
+    <p>
       {% capture buttontext %}
         {% include atoms/link.html url="/portfolio" relative="true" title="View portfolio" %}
       {% endcapture %}
@@ -47,22 +54,30 @@ images:
   <article>
     <h3>Development</h3>
     
-    <aside>
+    <nav>
       <h3>Logos</h3>
-      <div id="html5"><span>HTML5</span></div>
-      <div id="css3"><span>CSS3</span></div>
-      <div id="js"><span>JS</span></div>
-    </aside>
+      <ul>
+        <li>{% include atoms/circle.html text="HTML5" %}</li>
+        <li>{% include atoms/circle.html text="CSS3" %}</li>
+        <li>{% include atoms/circle.html text="JS" %}</li>
+        <li>{% include atoms/circle.html text="CMS" %}</li>
+        <li>{% include atoms/circle.html text="MVC" %}</li>
+      </ul>
+    </nav>
+    
+    {% include atoms/line.html where="bottom" %}
     
     <p>
-      Front-end development based on standards and latest, stable technologies.
+      Front-end development based on standards and latest stable technologies.
     </p>
     
     <p>
-      Back-end development with Wordpress and Jekyll&mdash;and&mdash;<abbr>MVC</abbr> frameworks like Ruby on Rails and Yii.
+      Back-end development with Wordpress and Jekyll&mdash;and&mdash;frameworks like Ruby on Rails and Yii.
     </p>
     
-    <p class="next">
+    {% include atoms/line.html where="top" %}
+    
+    <p>
       {% capture buttontext %}
         {% include atoms/link.html url="https://github.com/metamn/cs2" title="Github" %}
       {% endcapture %}
@@ -74,18 +89,24 @@ images:
   <article>
     <h3>Product</h3>
     
-    <aside>
+    <nav>
       <h3>Logos</h3>
-      <div id="html5"><span>UX</span></div>
-      <div id="html5"><span>UI</span></div>
-    </aside>
+      <ul>
+        <li>{% include atoms/circle.html text="UX" %}</li>
+        <li>{% include atoms/circle.html text="UI" %}</li>
+      </ul>
+    </nav>
+    
+    {% include atoms/line.html where="bottom" %}
     
     <p>
       Every website is a product delivering a message for a target audience.
       Products are successful by better-than-expected <em>experiences</em> driving people to <em>engagement</em>.
     </p>
     
-    <p class="next">
+    {% include atoms/line.html where="top" %}
+    
+    <p>
       {% capture buttontext %}
         {% include atoms/link.html url="/contact" relative="true" title="Get in touch" %}
       {% endcapture %}

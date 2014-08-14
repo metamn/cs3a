@@ -1,56 +1,17 @@
 html.about {
   body {
     #intro {
-      
       height: row(3.5);
-      
-      
       @include colors(black-on-orange);
       @include harsh($orange, $white);
     }
     
     #content {
+      padding-bottom: row(1);
       @include typographic-elements;
       
-      /*
-      @include harsh($white, $lightgray, $number-of-gradients: 5);
-      @include below-tablet {
-        @include harsh($white, $nuance-strength: 20);
-      }
-      @include color($black);
-      */
-      
-      padding-bottom: row(1);
-      
       article {   
-        
-        p {
-          @include font(skill-body);
-        }
-        
-        aside {
-          @include block;
-          @include hide-title;
-          
-          border-top: 1px solid $lightgrey;
-          padding-top: $gutter;
-          padding-bottom: $gutter;
-          
-          div {
-            @include circle-with-text($gutter * 3);
-            @include font(menu);
-          }
-        }
-        
-        
-        .next {
-          border-top: 1px solid $lightgrey;
-          margin-top: $gutter;
-          
-          max-width: 60%;
-          margin-left: 20%;
-          margin-right: 20%;
-        }
+        @include article-about;
         
         + article {
           padding-top: row(1);
