@@ -37,6 +37,8 @@ html.frontpage {
             @include circles;
           }
         }
+        
+        @include tooltip;
       }
     }
   }

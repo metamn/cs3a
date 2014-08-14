@@ -20,12 +20,34 @@ images:
     <nav>
       <h3>Logos</h3>
       <ul>
-        <li>{% include atoms/circle.html text="RWD" %}</li>
-        <li>{% include atoms/circle.html text="UX" %}</li>
-        <li>{% include atoms/circle.html text="UI" %}</li>
-        <li>{% include atoms/circle.html text="CMS" %}</li>
+        <li>
+          {% capture c %}
+            {% include atoms/circle.html text="RWD" %}
+          {% endcapture %}
+          {% include atoms/tooltip.html content=c text="Responsive web design since 2009" %}
+        </li>
+        <li>
+          {% capture c %}
+            {% include atoms/circle.html text="UX" %}
+          {% endcapture %}
+          {% include atoms/tooltip.html content=c text="User experience design" %}
+        </li>
+        <li>
+          {% capture c %}
+            {% include atoms/circle.html text="UI" %}
+          {% endcapture %}
+          {% include atoms/tooltip.html content=c text="User interaction for engagement" %}
+        </li>
+        <li>
+          {% capture c %}
+            {% include atoms/circle.html text="CMS" %}
+          {% endcapture %}
+          {% include atoms/tooltip.html content=c text="Extensive experience with content management systems like Wordpress" %}
+        </li>
       </ul>
     </nav>
+    
+    <div class="tooltip"></div>
   </article>
 </div>
 
