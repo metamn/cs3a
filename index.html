@@ -30,7 +30,7 @@ images:
           {% capture c %}
             {% include atoms/circle.html text="UX" %}
           {% endcapture %}
-          {% include atoms/tooltip.html content=c text="User experience design (better than expected)" %}
+          {% include atoms/tooltip.html content=c text="Creating better user experiences" %}
         </li>
         <li>
           {% capture c %}
@@ -48,6 +48,13 @@ images:
     </nav>
     
     <div class="tooltip"><span></span></div>
+    
+    <div>
+      {% capture buttontext %}
+        {% include atoms/link.html url="/contact" relative="true" title="Get in touch" %}
+      {% endcapture %}
+      {% include atoms/button.html text=buttontext %}
+    </div>
   </article>
 </div>
 

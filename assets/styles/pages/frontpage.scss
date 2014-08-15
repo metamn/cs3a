@@ -37,8 +37,10 @@ html.frontpage {
             @include circles;
             
             li {
+              color: $darkgray;
+              
               &.active {
-                color: $violet;
+                color: $black;
               }
             }
           }
@@ -47,6 +49,11 @@ html.frontpage {
         @include tooltip;
         .tooltip {
           @include tooltip-popup;
+        }
+        
+        .button {
+          margin-top: $gutter * 2;
+          @include button;
         }
       }
     }
