@@ -8,6 +8,10 @@
   @include landscape {
     @include values-landscape;
   }
+  
+  @include large-screen-and-up {
+    @include values-large-screen;
+  }
 }
 
 
@@ -54,14 +58,31 @@
   float: left;
   
   #about {
-    margin-top: row(1);
+    margin-top: 30%;
+    max-width: $text-width / 1.5;
   }
   
   nav {
-    margin-top: $gutter;
+    ul {
+      font-size: small;
+    }
   }
   
   #content {
     margin-top: $gutter;
+  }
+}
+
+
+
+@mixin values-large-screen {
+  #about {
+    margin-top: 27.5%;
+  }
+  
+  nav {
+    ul {
+      font-size: medium;
+    }
   }
 }

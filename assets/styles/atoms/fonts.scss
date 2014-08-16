@@ -27,6 +27,8 @@ $heading-level-3: 4.2308em;
   
   } @elseif ($type == title) {
     font-family: 'Montserrat', sans-serif;
-    font-size: $heading-level-1;
+    @include portrait {
+      font-size: $heading-level-1;
+    }
   }
 }
