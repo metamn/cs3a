@@ -1,31 +1,21 @@
 @mixin strapline {
-  width: 50%;
   margin-left: 5%;
-  margin-top: $gutter * 2;
+  margin-top: $gutter;
+  width: 50%;
   
   @include portrait {
-    width: 80%;
+    width: 90%;
   }
   
   .container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; 
-    vertical-align: middle; 
-    overflow: hidden; 
+    @include svg-cliptext;
     
     svg {
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      
       @include portrait-or-landscape;
-      
       text {
         @include font(strapline);
       }
     }
   }
 }
+

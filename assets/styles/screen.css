@@ -23,6 +23,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
 */
+/* Center vertically or horizontally using transformations
+- http://davidwalsh.name/css-vertical-center
+*/
 /* No files to import found in structures/* */
 html body { font-size: 125%; line-height: 1.25; font-family: 'Montserrat', sans-serif; color: #011915; background-color: white; }
 @media only screen and (orientation: portrait) { html body { font-size: 100%; } }
@@ -31,8 +34,8 @@ html body a { color: #011915; background-color: white; }
 html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
 
-html.frontpage body #strapline { width: 50%; margin-left: 5%; margin-top: 2.5em; }
-@media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 80%; } }
+html.frontpage body #strapline { margin-left: 5%; margin-top: 1.25em; width: 50%; }
+@media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 90%; } }
 html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; padding-bottom: 100%; vertical-align: middle; overflow: hidden; }
 html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
 html.frontpage body #strapline .container svg.portrait { display: none; }
@@ -40,7 +43,7 @@ html.frontpage body #strapline .container svg.portrait { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
 html.frontpage body #strapline .container svg text { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.6154em; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
-html.frontpage body #values { width: 45%; float: left; }
+html.frontpage body #values { display: none; width: 45%; float: left; }
 html.frontpage body #values #about { margin-top: 6.25em; max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; font-size: 1.6154em; }
 html.frontpage body #values nav { margin-top: 1.25em; }
