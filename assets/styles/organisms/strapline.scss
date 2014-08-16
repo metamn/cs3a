@@ -1,5 +1,7 @@
 @mixin strapline {
   width: 50%;
+  margin-left: 5%;
+  margin-top: $gutter * 2;
   
   @include portrait {
     width: 80%;

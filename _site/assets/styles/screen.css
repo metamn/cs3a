@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700|Montserrat);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -24,14 +24,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
 */
 /* No files to import found in structures/* */
-html body { font-size: 125%; line-height: 1.25; font-family: serif; color: #011915; background-color: white; }
+html body { font-size: 125%; line-height: 1.25; font-family: 'Montserrat', sans-serif; color: #011915; background-color: white; }
 @media only screen and (orientation: portrait) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
 html body a { color: #011915; background-color: white; }
 html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
 
-html.frontpage body #strapline { width: 50%; }
+html.frontpage body #strapline { width: 50%; margin-left: 5%; margin-top: 2.5em; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 80%; } }
 html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; padding-bottom: 100%; vertical-align: middle; overflow: hidden; }
 html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
@@ -40,7 +40,19 @@ html.frontpage body #strapline .container svg.portrait { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
 html.frontpage body #strapline .container svg text { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.6154em; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
-html.frontpage body #values { display: none; }
+html.frontpage body #values { width: 45%; float: left; }
+html.frontpage body #values #about { margin-top: 6.25em; max-width: 31.25em; }
+html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; font-size: 1.6154em; }
+html.frontpage body #values nav { margin-top: 1.25em; }
+html.frontpage body #values nav ul { width: 100%; float: left; }
+html.frontpage body #values nav ul > h3 { display: none; }
+html.frontpage body #values nav ul li { display: inline-block; width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; font-size: smaller; text-align: center; }
+html.frontpage body #values nav ul li span { position: relative; top: 1.33333em; }
+html.frontpage body #values nav ul li .tooltip-text { display: none; }
+html.frontpage body #values #content { margin-top: 1.25em; }
+html.frontpage body #values #content figure { width: 100%; float: left; position: relative; left: -6.45833em; }
+html.frontpage body #values #content figure img { max-width: 100%; }
+html.frontpage body #values #content figure figcaption { display: none; }
 html.frontpage body footer { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }

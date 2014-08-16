@@ -1,3 +1,37 @@
 @mixin values {
-  display: none;
+  width: 45%;
+  float: left;
+  
+  #about {
+    margin-top: row(1);
+    max-width: $text-width;
+    
+    h2 {
+      @include font(title);
+    }
+  }
+  
+  nav {
+    margin-top: $gutter;
+    
+    ul {
+      @include circles;
+      
+      li {
+        .tooltip-text {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  #content {
+    margin-top: $gutter;
+    
+    figure {
+      @include figure;
+      position: relative;
+      left: col(-1);
+    }
+  }
 }
