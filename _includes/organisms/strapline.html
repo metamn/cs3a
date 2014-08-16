@@ -2,6 +2,19 @@
   <h3>Strapline</h3>
   
   <div class="container">
-    {% include atoms/link.html url=site.url title=page.title %}
+    <svg viewBox="0 0 350 550" preserveAspectRatio="xMinYMin meet" version="1.1">
+      <title>{{ page.title }}</title>
+      
+      <defs> 
+        <clippath id="clip1">
+          <text x="0" y="50" width="100%">One</text>
+          <text x="0" y="100" width="100%">Stop Shop</text>
+          <text x="0" y="150" width="100%">For Your Next</text>
+          <text x="0" y="200" width="100%">Website</text>
+        </clippath>
+      </defs>
+      
+      <image xlink:href="{{ site.url }}/{{ site.images }}/watercolor_1.jpg" clip-path="url(#clip1)" width="100%" height="100%" preserveAspectRatio="none" />
+    </svg>
   </div>
 </section>

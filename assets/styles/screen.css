@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Nothing+You+Could+Do|Nunito);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -24,13 +24,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
 */
 /* No files to import found in structures/* */
-html body { font-size: 125%; line-height: 1.25; font-family: 'Vollkorn', serif; color: #011915; background-color: white; }
+html body { font-size: 125%; line-height: 1.25; font-family: serif; color: #011915; background-color: white; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
 html body a { color: #011915; background-color: white; }
 html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
 
+html.frontpage body #strapline { width: 80%; }
+html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; padding-bottom: 100%; vertical-align: middle; overflow: hidden; }
+html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
+html.frontpage body #strapline .container svg text { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.6154em; }
 html.frontpage body #values { display: none; }
 html.frontpage body footer { display: none; }
 
