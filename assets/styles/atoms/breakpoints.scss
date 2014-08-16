@@ -19,3 +19,22 @@ $breakpoint-large-screen: 90em; // 1440px
     @content
   }
 }
+
+
+@mixin portrait-or-landscape {
+  &.portrait {
+    display: none;
+  }
+  
+  @include portrait {
+    &.landscape {
+      display: none;
+    }
+
+    &.portrait {
+      display: block;
+    }
+  }
+}
+      
+      

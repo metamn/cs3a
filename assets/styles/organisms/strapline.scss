@@ -19,24 +19,11 @@
       top: 0;
       left: 0;
       
+      @include portrait-or-landscape;
+      
       text {
         @include font(strapline);
       }
-      
-      &.mobile {
-        display: none;
-      }
-      @include portrait {
-        &.desktop {
-          display: none;
-        }
-        
-        &.mobile {
-          display: block;
-        }
-      }
-      
-      
     }
   }
 }
