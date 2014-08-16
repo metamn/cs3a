@@ -1,11 +1,21 @@
 @mixin values {
-  display: none;
+  @include values-common;
   
-  width: 45%;
-  float: left;
+  @include portrait {
+    @include values-portrait;
+  }
   
+  @include landscape {
+    @include values-landscape;
+  }
+}
+
+
+
+
+
+@mixin values-common {
   #about {
-    margin-top: row(1);
     max-width: $text-width;
     
     h2 {
@@ -15,25 +25,43 @@
   
   nav {
     margin-top: $gutter;
+    margin-bottom: $gutter;
     
     ul {
-      @include circles;
-      
       li {
-        .tooltip-text {
-          display: none;
-        }
+        @include circle-with-text($gutter * 3.2);
       }
     }
   }
   
-  #content {
-    margin-top: $gutter;
-    
+  #content { 
     figure {
       @include figure;
-      position: relative;
-      left: col(-1);
     }
+  }
+}
+
+
+@mixin values-portrait {
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+
+@mixin values-landscape {
+  width: 45%;
+  float: left;
+  
+  #about {
+    margin-top: row(1);
+  }
+  
+  nav {
+    margin-top: $gutter;
+  }
+  
+  #content {
+    margin-top: $gutter;
   }
 }

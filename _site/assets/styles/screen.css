@@ -43,19 +43,19 @@ html.frontpage body #strapline .container svg.portrait { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
 html.frontpage body #strapline .container svg text { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.6154em; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
-html.frontpage body #values { display: none; width: 45%; float: left; }
-html.frontpage body #values #about { margin-top: 6.25em; max-width: 31.25em; }
+html.frontpage body #values #about { max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; font-size: 1.6154em; }
-html.frontpage body #values nav { margin-top: 1.25em; }
-html.frontpage body #values nav ul { width: 100%; float: left; }
-html.frontpage body #values nav ul > h3 { display: none; }
-html.frontpage body #values nav ul li { display: inline-block; width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; font-size: smaller; text-align: center; }
+html.frontpage body #values nav { margin-top: 1.25em; margin-bottom: 1.25em; }
+html.frontpage body #values nav ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
 html.frontpage body #values nav ul li span { position: relative; top: 1.33333em; }
-html.frontpage body #values nav ul li .tooltip-text { display: none; }
-html.frontpage body #values #content { margin-top: 1.25em; }
-html.frontpage body #values #content figure { width: 100%; float: left; position: relative; left: -6.45833em; }
+html.frontpage body #values #content figure { width: 100%; float: left; }
 html.frontpage body #values #content figure img { max-width: 100%; }
 html.frontpage body #values #content figure figcaption { display: none; }
+@media only screen and (orientation: portrait) { html.frontpage body #values { width: 90%; margin-left: 5%; } }
+@media only screen and (orientation: landscape) { html.frontpage body #values { width: 45%; float: left; }
+  html.frontpage body #values #about { margin-top: 6.25em; }
+  html.frontpage body #values nav { margin-top: 1.25em; }
+  html.frontpage body #values #content { margin-top: 1.25em; } }
 html.frontpage body footer { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
