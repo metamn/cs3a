@@ -21,7 +21,7 @@ $heading-level-3: 4.2308em;
     font-weight: 700;
     
     font-size: $heading-level-2;
-    @include below-tablet {
+    @include portrait {
       font-size: $heading-level-3;
     }
   }

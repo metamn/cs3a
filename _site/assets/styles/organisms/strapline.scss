@@ -1,7 +1,7 @@
 @mixin strapline {
   width: 50%;
   
-  @include below-tablet {
+  @include portrait {
     width: 80%;
   }
   
@@ -26,7 +26,7 @@
       &.mobile {
         display: none;
       }
-      @include below-tablet {
+      @include portrait {
         &.desktop {
           display: none;
         }
