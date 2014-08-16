@@ -11,10 +11,4 @@ $(document).ready(function() {
   
   $('.tooltip-item').first().trigger('click');
   
-
-  // Click to show the menu
-  $('header').click(function() {
-    $('header').toggleClass('active');
-  });
-  
 });

@@ -1,61 +1,11 @@
 ---
 layout: default
 title: One-stop shop for your next website
-type: frontpage
-button: View portfolio
-images:
-  - desktop: devices.png
-    mobile: devices-portrait.png
-    title: Responsive web design
 ---
 
 
-<div class="container">
-  <article>
-    <h3>About</h3>
-    
-    <p>
-      Csongor is a web designer and developer with great product skills
-    </p>
-    
-    <nav>
-      <h3>Logos</h3>
-      <ul>
-        <li>
-          {% capture c %}
-            {% include atoms/circle.html text="RWD" %}
-          {% endcapture %}
-          {% include atoms/tooltip.html content=c text="Responsive web design since 2009" %}
-        </li>
-        <li>
-          {% capture c %}
-            {% include atoms/circle.html text="UX" %}
-          {% endcapture %}
-          {% include atoms/tooltip.html content=c text="Creating better user experiences" %}
-        </li>
-        <li>
-          {% capture c %}
-            {% include atoms/circle.html text="UI" %}
-          {% endcapture %}
-          {% include atoms/tooltip.html content=c text="User interaction design for engagement" %}
-        </li>
-        <li>
-          {% capture c %}
-            {% include atoms/circle.html text="CMS" %}
-          {% endcapture %}
-          {% include atoms/tooltip.html content=c text="Content management and optimization" %}
-        </li>
-      </ul>
-    </nav>
-    
-    <div class="tooltip"><span></span></div>
-    
-    <div>
-      {% capture buttontext %}
-        {% include atoms/link.html url="/contact" relative="true" title="Get in touch" %}
-      {% endcapture %}
-      {% include atoms/button.html text=buttontext %}
-    </div>
-  </article>
-</div>
+{% include organisms/strapline.html %}
 
+{% include organisms/values.html %}
+
+{% include organisms/footer.html %}

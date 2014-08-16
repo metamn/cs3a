@@ -5,16 +5,8 @@ html {
     @include colors;
     @include link;
     
-    header {
-      @include header;
-    }
-    
-    #intro {
-      @include intro;
-    }
-    
-    #content {
-      @include content;
+    section, article, nav, header, footer {
+      @include hide-title;
     }
   }
 }
