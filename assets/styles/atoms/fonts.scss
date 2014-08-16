@@ -19,6 +19,10 @@ $heading-level-3: 4.2308em;
   } @elseif ($type == strapline) {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
+    
     font-size: $heading-level-2;
+    @include below-tablet {
+      font-size: $heading-level-3;
+    }
   }
 }

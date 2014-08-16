@@ -1,5 +1,9 @@
 @mixin strapline {
-  width: 80%;
+  width: 50%;
+  
+  @include below-tablet {
+    width: 80%;
+  }
   
   .container {
     display: inline-block;
@@ -18,6 +22,21 @@
       text {
         @include font(strapline);
       }
+      
+      &.mobile {
+        display: none;
+      }
+      @include below-tablet {
+        &.desktop {
+          display: none;
+        }
+        
+        &.mobile {
+          display: block;
+        }
+      }
+      
+      
     }
   }
 }

@@ -31,10 +31,15 @@ html body a { color: #011915; background-color: white; }
 html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
 
-html.frontpage body #strapline { width: 80%; }
+html.frontpage body #strapline { width: 50%; }
+@media only screen and (max-width: 47.999em) { html.frontpage body #strapline { width: 80%; } }
 html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; padding-bottom: 100%; vertical-align: middle; overflow: hidden; }
 html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
 html.frontpage body #strapline .container svg text { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.6154em; }
+@media only screen and (max-width: 47.999em) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
+html.frontpage body #strapline .container svg.mobile { display: none; }
+@media only screen and (max-width: 47.999em) { html.frontpage body #strapline .container svg.desktop { display: none; }
+  html.frontpage body #strapline .container svg.mobile { display: block; } }
 html.frontpage body #values { display: none; }
 html.frontpage body footer { display: none; }
 
