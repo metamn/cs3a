@@ -26,9 +26,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Center vertically or horizontally using transformations
 - http://davidwalsh.name/css-vertical-center
 */
-@keyframes move-mask { 0%, 100% { opacity: 1; }
-  50% { opacity: .5; } }
-
 /* No files to import found in structures/* */
 html body { font-size: 125%; line-height: 1.25; font-family: 'Montserrat', sans-serif; color: #011915; background-color: white; }
 @media only screen and (orientation: portrait) { html body { font-size: 100%; } }
@@ -39,35 +36,20 @@ html body section > h3, html body article > h3, html body nav > h3, html body he
 
 html.frontpage { height: 100%; }
 html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; }
-html.frontpage body #strapline { overflow: hidden; width: 35%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/subtle-zebra-3d.png"); }
-@media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 100%; } }
-html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; padding-bottom: 100%; }
-html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; /* this replaces vievBox="" */ width: 100%; height: 100%; }
-html.frontpage body #strapline .container svg.portrait { display: none; }
-@media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg.landscape { display: none; }
-  html.frontpage body #strapline .container svg.portrait { display: block; } }
-html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 5.5385em; }
-@media only screen and (min-width: 90.001em) { html.frontpage body #strapline .container svg text { font-size: 6.8462em; } }
-html.frontpage body #values #about { max-width: 31.25em; }
+html.frontpage body #strapline { overflow: hidden; width: 25%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/subtle-zebra-3d.png"); }
+html.frontpage body #values { position: relative; width: 50%; padding-left: 5%; float: left; }
+html.frontpage body #values #about { position: absolute; top: 15%; max-width: 20.83333em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
 @media only screen and (orientation: portrait) { html.frontpage body #values #about h2 { font-size: 1.3077em; } }
-html.frontpage body #values #skills { margin-top: 1.25em; margin-bottom: 1.25em; }
-html.frontpage body #values #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
-html.frontpage body #values #skills ul li span { position: relative; top: 1.33333em; }
-html.frontpage body #values #content figure { width: 100%; float: left; margin-bottom: 2.5em; }
-html.frontpage body #values #content figure img { max-width: 100%; }
-html.frontpage body #values #content figure figcaption { display: none; }
-html.frontpage body #values #menu { margin-top: 1.25em; margin-bottom: 1.25em; }
-html.frontpage body #values #menu ul li { display: inline-block; float: left; padding-right: 1.25em; }
-html.frontpage body #values #menu ul li:last-of-type { padding-right: 0; }
-html.frontpage body #values #menu ul li { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; }
-html.frontpage body #values #menu ul li a { text-decoration: none; }
-@media only screen and (orientation: portrait) { html.frontpage body #values { width: 90%; margin-left: 5%; } }
-@media only screen and (orientation: landscape) { html.frontpage body #values { width: 50%; padding-left: 5%; float: left; }
-  html.frontpage body #values #about { margin-top: 6.25em; max-width: 20.83333em; }
-  html.frontpage body #values nav ul { font-size: small; }
-  html.frontpage body #values #content { margin-top: 1.25em; } }
-@media only screen and (min-width: 90.001em) { html.frontpage body #values nav ul { font-size: medium; } }
+html.frontpage body #values #about #skills { margin-top: 1.25em; }
+html.frontpage body #values #about #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
+html.frontpage body #values #about #skills ul li span { position: relative; top: 1.33333em; }
+html.frontpage body #values #navigation { position: absolute; bottom: 15%; }
+html.frontpage body #values #navigation ul li { display: inline-block; float: left; padding-right: 1.25em; }
+html.frontpage body #values #navigation ul li:last-of-type { padding-right: 0; }
+html.frontpage body #values #navigation ul li { margin-left: 1.25em; padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; }
+html.frontpage body #values #navigation ul li a { text-decoration: none; }
+html.frontpage body #values ul { font-size: medium; }
 html.frontpage body footer { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
