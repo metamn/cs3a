@@ -37,14 +37,23 @@ html body section > h3, html body article > h3, html body nav > h3, html body he
 html.frontpage { height: 100%; }
 html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; }
 html.frontpage body #strapline { overflow: hidden; width: 25%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/subtle-zebra-3d.png"); }
-html.frontpage body #values { position: relative; width: 50%; padding-left: 5%; float: left; }
-html.frontpage body #values #about { position: absolute; top: 15%; max-width: 20.83333em; }
+html.frontpage body #values { position: relative; width: 70%; padding-left: 5%; float: left; }
+html.frontpage body #values #about { position: absolute; top: 10%; max-width: 20.83333em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
 @media only screen and (orientation: portrait) { html.frontpage body #values #about h2 { font-size: 1.3077em; } }
 html.frontpage body #values #about #skills { margin-top: 1.25em; }
 html.frontpage body #values #about #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
 html.frontpage body #values #about #skills ul li span { position: relative; top: 1.33333em; }
-html.frontpage body #values #navigation { position: absolute; bottom: 15%; }
+html.frontpage body #values #content figure { width: 100%; float: left; position: absolute; width: auto; }
+html.frontpage body #values #content figure img { max-width: 100%; }
+html.frontpage body #values #content figure figcaption { display: none; }
+html.frontpage body #values #content figure#imac { float: right; right: 5%; top: 15%; z-index: 3; }
+html.frontpage body #values #content figure#imac img { max-width: 700px; }
+html.frontpage body #values #content figure#ipad { top: 51%; z-index: 2; }
+html.frontpage body #values #content figure#ipad img { max-width: 200px; }
+html.frontpage body #values #content figure#mbp { top: 50%; left: 22.5%; z-index: 1; }
+html.frontpage body #values #content figure#mbp img { max-width: 500px; }
+html.frontpage body #values #navigation { position: absolute; bottom: 10%; }
 html.frontpage body #values #navigation ul li { display: inline-block; float: left; padding-right: 1.25em; }
 html.frontpage body #values #navigation ul li:last-of-type { padding-right: 0; }
 html.frontpage body #values #navigation ul li { margin-left: 1.25em; padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; }
