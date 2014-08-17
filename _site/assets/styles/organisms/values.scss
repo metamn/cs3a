@@ -76,7 +76,7 @@
     max-width: $text-width / 1.5;
   }
   
-  #skills {
+  nav {
     ul {
       font-size: small;
     }
@@ -91,7 +91,7 @@
 
 @mixin values-large-screen {
   
-  #skills {
+  nav {
     ul {
       font-size: medium;
     }
