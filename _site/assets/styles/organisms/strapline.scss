@@ -21,11 +21,6 @@
       text {
         @include font(strapline);
       }
-      
-      image {
-        animation-name: move-mask;
-        animation-duration: 2s;
-      }
     }
   }
 }

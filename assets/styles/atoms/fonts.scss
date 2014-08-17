@@ -4,11 +4,16 @@
 
 
 // Heading sizes
-// - based on lamb.cc/typography using Fibonacci numbers
-$heading-level-1: 1.6154em;
-$heading-level-2: 2.6154em;
-$heading-level-3: 4.2308em;
-
+// - based on lamb.cc/typograph using Le Corbuisier
+// - the even sizes are like the Fibonacci, the odd size are an in between ratio
+$heading-level-1: 1.3077em;
+$heading-level-2: 1.6154em;
+$heading-level-3: 2.1154em;
+$heading-level-4: 2.6154em;
+$heading-level-5: 3.4231em;
+$heading-level-6: 4.2308em;
+$heading-level-7: 5.5385em;
+$heading-level-8: 6.8462em;
 
 
 
@@ -21,9 +26,12 @@ $heading-level-3: 4.2308em;
     font-weight: 700;
     text-transform: uppercase;
     
-    font-size: $heading-level-2;
+    font-size: $heading-level-7;
     @include portrait {
-      font-size: $heading-level-3;
+      font-size: $heading-level-6;
+    }
+    @include large-screen-and-up {
+      font-size: $heading-level-8;
     }
   
   } @elseif ($type == title) {

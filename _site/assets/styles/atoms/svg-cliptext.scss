@@ -4,6 +4,7 @@
   width: 100%;
   vertical-align: middle; 
   overflow: hidden;
+  /* this sets the aspect ratio */
   padding-bottom: 130%;
 
   svg {
@@ -11,5 +12,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    /* this replaces vievBox="" */
+    width: 100%;
+    height: 100%;
   }
 }

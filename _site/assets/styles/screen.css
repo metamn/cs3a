@@ -41,17 +41,17 @@ html.frontpage { height: 100%; }
 html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; }
 html.frontpage body #strapline { overflow: hidden; width: 35%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/twinkle-twinkle.png"); }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 100%; } }
-html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; padding-bottom: 130%; }
-html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
+html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; /* this sets the aspect ratio */ padding-bottom: 130%; }
+html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; /* this replaces vievBox="" */ width: 100%; height: 100%; }
 html.frontpage body #strapline .container svg.portrait { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg.landscape { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
-html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 2.6154em; }
+html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 5.5385em; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
-html.frontpage body #strapline .container svg image { animation-name: move-mask; animation-duration: 2s; }
+@media only screen and (min-width: 90.001em) { html.frontpage body #strapline .container svg text { font-size: 6.8462em; } }
 html.frontpage body #values #about { max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
-@media only screen and (orientation: portrait) { html.frontpage body #values #about h2 { font-size: 1.6154em; } }
+@media only screen and (orientation: portrait) { html.frontpage body #values #about h2 { font-size: 1.3077em; } }
 html.frontpage body #values nav { margin-top: 1.25em; margin-bottom: 1.25em; }
 html.frontpage body #values nav ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
 html.frontpage body #values nav ul li span { position: relative; top: 1.33333em; }
