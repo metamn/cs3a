@@ -1,6 +1,5 @@
 $breakpoint-large-screen: 90em; // 1440px
 
-
 @mixin large-screen-and-up {
   @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
     @content

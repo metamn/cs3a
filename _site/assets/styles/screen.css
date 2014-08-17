@@ -41,13 +41,13 @@ html.frontpage { height: 100%; }
 html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; }
 html.frontpage body #strapline { overflow: hidden; width: 35%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/twinkle-twinkle.png"); }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 100%; } }
-html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; /* this sets the aspect ratio */ padding-bottom: 130%; }
+html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; padding-bottom: 100%; }
 html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; /* this replaces vievBox="" */ width: 100%; height: 100%; }
 html.frontpage body #strapline .container svg.portrait { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg.landscape { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
-html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 5.5385em; }
-@media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
+html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 4.2308em; }
+@media only screen and (orientation: landscape) { html.frontpage body #strapline .container svg text { font-size: 5.5385em; } }
 @media only screen and (min-width: 90.001em) { html.frontpage body #strapline .container svg text { font-size: 6.8462em; } }
 html.frontpage body #values #about { max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
