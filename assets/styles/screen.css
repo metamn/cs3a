@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Oswald:700|Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -34,14 +34,14 @@ html body a { color: #011915; background-color: white; }
 html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
 
-html.frontpage body #strapline { padding-left: 5%; padding-top: 1.25em; width: 45%; }
-@media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 90%; } }
-html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; padding-bottom: 130%; vertical-align: middle; overflow: hidden; }
+html.frontpage body #strapline { width: 45%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/worn-dots.png"); }
+@media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 100%; } }
+html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; padding-bottom: 120%; }
 html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
 html.frontpage body #strapline .container svg.portrait { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg.landscape { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
-html.frontpage body #strapline .container svg text { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.6154em; }
+html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 2.6154em; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
 html.frontpage body #values #about { max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
@@ -53,11 +53,11 @@ html.frontpage body #values #content figure { width: 100%; float: left; }
 html.frontpage body #values #content figure img { max-width: 100%; }
 html.frontpage body #values #content figure figcaption { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #values { width: 90%; margin-left: 5%; } }
-@media only screen and (orientation: landscape) { html.frontpage body #values { width: 50%; float: left; }
+@media only screen and (orientation: landscape) { html.frontpage body #values { width: 50%; padding-left: 5%; float: left; }
   html.frontpage body #values #about { margin-top: 30%; max-width: 20.83333em; }
   html.frontpage body #values nav ul { font-size: small; }
   html.frontpage body #values #content { margin-top: 1.25em; } }
-@media only screen and (min-width: 90.001em) { html.frontpage body #values #about { margin-top: 27.5%; }
+@media only screen and (min-width: 90.001em) { html.frontpage body #values #about { margin-top: 30%; }
   html.frontpage body #values nav ul { font-size: medium; } }
 html.frontpage body footer { display: none; }
 
