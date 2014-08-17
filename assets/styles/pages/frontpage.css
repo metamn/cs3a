@@ -1,34 +1,14 @@
 /*
-Syntax error: Undefined mixin 'strapline'.
-        on line 4 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss, in `strapline'
-        from line 4 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss
+Syntax error: Undefined mixin 'full-height'.
+        on line 2 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss, in `full-height'
+        from line 2 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss
 
 1: /home/cs/work/cs2/assets/styles/pages/frontpage.scss
 
 Backtrace:
-/home/cs/work/cs2/assets/styles/pages/frontpage.scss:4:in `strapline'
-/home/cs/work/cs2/assets/styles/pages/frontpage.scss:4
+/home/cs/work/cs2/assets/styles/pages/frontpage.scss:2:in `full-height'
+/home/cs/work/cs2/assets/styles/pages/frontpage.scss:2
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -102,4 +82,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'strapline'.\A         on line 4 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss, in `strapline'\A         from line 4 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss\A \A 1: /home/cs/work/cs2/assets/styles/pages/frontpage.scss"; }
+  content: "Syntax error: Undefined mixin 'full-height'.\A         on line 2 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss, in `full-height'\A         from line 2 of /home/cs/work/cs2/assets/styles/pages/frontpage.scss\A \A 1: /home/cs/work/cs2/assets/styles/pages/frontpage.scss"; }

@@ -26,6 +26,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Center vertically or horizontally using transformations
 - http://davidwalsh.name/css-vertical-center
 */
+@keyframes move-mask { 0%, 100% { opacity: 1; }
+  50% { opacity: .5; } }
+
 /* No files to import found in structures/* */
 html body { font-size: 125%; line-height: 1.25; font-family: 'Montserrat', sans-serif; color: #011915; background-color: white; }
 @media only screen and (orientation: portrait) { html body { font-size: 100%; } }
@@ -34,15 +37,18 @@ html body a { color: #011915; background-color: white; }
 html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
 
-html.frontpage body #strapline { width: 45%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/worn-dots.png"); }
+html.frontpage { height: 100%; }
+html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; }
+html.frontpage body #strapline { overflow: hidden; width: 35%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/twinkle-twinkle.png"); }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 100%; } }
-html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; padding-bottom: 120%; }
+html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; vertical-align: middle; overflow: hidden; padding-bottom: 130%; }
 html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
 html.frontpage body #strapline .container svg.portrait { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg.landscape { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
 html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 2.6154em; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg text { font-size: 4.2308em; } }
+html.frontpage body #strapline .container svg image { animation-name: move-mask; animation-duration: 2s; }
 html.frontpage body #values #about { max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
 @media only screen and (orientation: portrait) { html.frontpage body #values #about h2 { font-size: 1.6154em; } }

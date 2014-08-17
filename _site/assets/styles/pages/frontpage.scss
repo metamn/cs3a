@@ -1,4 +1,6 @@
 html.frontpage {
+  @include full-height;
+  
   body {
     #strapline {
       @include strapline;
