@@ -34,9 +34,9 @@ html body a { color: #011915; background-color: white; }
 html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
 
-html.frontpage body #strapline { margin-left: 5%; margin-top: 1.25em; width: 50%; }
+html.frontpage body #strapline { padding-left: 5%; padding-top: 1.25em; width: 45%; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline { width: 90%; } }
-html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; padding-bottom: 100%; vertical-align: middle; overflow: hidden; }
+html.frontpage body #strapline .container { display: inline-block; position: relative; width: 100%; padding-bottom: 130%; vertical-align: middle; overflow: hidden; }
 html.frontpage body #strapline .container svg { display: inline-block; position: absolute; top: 0; left: 0; }
 html.frontpage body #strapline .container svg.portrait { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg.landscape { display: none; }
@@ -53,7 +53,7 @@ html.frontpage body #values #content figure { width: 100%; float: left; }
 html.frontpage body #values #content figure img { max-width: 100%; }
 html.frontpage body #values #content figure figcaption { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #values { width: 90%; margin-left: 5%; } }
-@media only screen and (orientation: landscape) { html.frontpage body #values { width: 45%; float: left; }
+@media only screen and (orientation: landscape) { html.frontpage body #values { width: 50%; float: left; }
   html.frontpage body #values #about { margin-top: 30%; max-width: 20.83333em; }
   html.frontpage body #values nav ul { font-size: small; }
   html.frontpage body #values #content { margin-top: 1.25em; } }
