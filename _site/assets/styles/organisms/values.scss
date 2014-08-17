@@ -27,7 +27,7 @@
     }
   }
   
-  nav {
+  #skills {
     margin-top: $gutter;
     margin-bottom: $gutter;
     
@@ -41,6 +41,19 @@
   #content { 
     figure {
       @include figure;
+      margin-bottom: $gutter * 2;
+    }
+  }
+  
+  #menu {
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    
+    ul {
+      @include list-inline;
+      li {
+        @include button;
+      }
     }
   }
 }
@@ -59,11 +72,11 @@
   float: left;
   
   #about {
-    margin-top: 30%;
+    margin-top: row(1);
     max-width: $text-width / 1.5;
   }
   
-  nav {
+  #skills {
     ul {
       font-size: small;
     }
@@ -77,11 +90,8 @@
 
 
 @mixin values-large-screen {
-  #about {
-    margin-top: 30%;
-  }
   
-  nav {
+  #skills {
     ul {
       font-size: medium;
     }

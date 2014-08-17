@@ -51,19 +51,23 @@ html.frontpage body #strapline .container svg text { font-family: 'Montserrat', 
 html.frontpage body #values #about { max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
 @media only screen and (orientation: portrait) { html.frontpage body #values #about h2 { font-size: 1.3077em; } }
-html.frontpage body #values nav { margin-top: 1.25em; margin-bottom: 1.25em; }
-html.frontpage body #values nav ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
-html.frontpage body #values nav ul li span { position: relative; top: 1.33333em; }
-html.frontpage body #values #content figure { width: 100%; float: left; }
+html.frontpage body #values #skills { margin-top: 1.25em; margin-bottom: 1.25em; }
+html.frontpage body #values #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
+html.frontpage body #values #skills ul li span { position: relative; top: 1.33333em; }
+html.frontpage body #values #content figure { width: 100%; float: left; margin-bottom: 2.5em; }
 html.frontpage body #values #content figure img { max-width: 100%; }
 html.frontpage body #values #content figure figcaption { display: none; }
+html.frontpage body #values #menu { margin-top: 1.25em; margin-bottom: 1.25em; }
+html.frontpage body #values #menu ul li { display: inline-block; float: left; padding-right: 1.25em; }
+html.frontpage body #values #menu ul li:last-of-type { padding-right: 0; }
+html.frontpage body #values #menu ul li { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; }
+html.frontpage body #values #menu ul li a { text-decoration: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #values { width: 90%; margin-left: 5%; } }
 @media only screen and (orientation: landscape) { html.frontpage body #values { width: 50%; padding-left: 5%; float: left; }
-  html.frontpage body #values #about { margin-top: 30%; max-width: 20.83333em; }
-  html.frontpage body #values nav ul { font-size: small; }
+  html.frontpage body #values #about { margin-top: 6.25em; max-width: 20.83333em; }
+  html.frontpage body #values #skills ul { font-size: small; }
   html.frontpage body #values #content { margin-top: 1.25em; } }
-@media only screen and (min-width: 90.001em) { html.frontpage body #values #about { margin-top: 30%; }
-  html.frontpage body #values nav ul { font-size: medium; } }
+@media only screen and (min-width: 90.001em) { html.frontpage body #values #skills ul { font-size: medium; } }
 html.frontpage body footer { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }

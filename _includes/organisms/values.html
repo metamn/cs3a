@@ -8,7 +8,7 @@
       <h2>Csongor is a web designer and developer with great product skills</h2>
     </article>
     
-    <nav>
+    <nav id="skills">
       <h3>Skills</h3>
       <ul>
         <li>
@@ -22,6 +22,29 @@
         </li>
         <li>
           {% include atoms/circle.html text="PSD" %}
+        </li>
+      </ul>
+    </nav>
+    
+    <article id="content">
+      <h3>RWD</h3>
+      
+      {% include atoms/figure.html id="0" %}
+      
+      <p>
+        Responsive web design since 2010
+      </p>
+    </article>
+    
+    <nav id="menu">
+      <h3>Menu</h3>
+      <ul>
+        <li>
+          {% include atoms/button.html text="View portfolio" %}
+        </li>
+        
+        <li>
+          {% include atoms/button.html text="Get in touch" %}
         </li>
       </ul>
     </nav>
