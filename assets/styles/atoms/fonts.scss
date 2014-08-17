@@ -26,10 +26,7 @@ $heading-level-8: 6.8462em;
     font-weight: 700;
     text-transform: uppercase;
     
-    font-size: $heading-level-6;
-    @include landscape {
-      font-size: $heading-level-7;
-    }
+    font-size: $heading-level-7;
     @include large-screen-and-up {
       font-size: $heading-level-8;
     }

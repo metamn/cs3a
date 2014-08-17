@@ -46,8 +46,7 @@ html.frontpage body #strapline .container svg { display: inline-block; position:
 html.frontpage body #strapline .container svg.portrait { display: none; }
 @media only screen and (orientation: portrait) { html.frontpage body #strapline .container svg.landscape { display: none; }
   html.frontpage body #strapline .container svg.portrait { display: block; } }
-html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 4.2308em; }
-@media only screen and (orientation: landscape) { html.frontpage body #strapline .container svg text { font-size: 5.5385em; } }
+html.frontpage body #strapline .container svg text { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 5.5385em; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #strapline .container svg text { font-size: 6.8462em; } }
 html.frontpage body #values #about { max-width: 31.25em; }
 html.frontpage body #values #about h2 { font-family: 'Montserrat', sans-serif; }
