@@ -25,11 +25,20 @@
   
   
   #ux-slide {
+    //display: none;
     @include block;
     margin-top: $gutter * 2;
     
     p {
       @include font;
+      font-size: $heading-level-4;
+    }
+    
+    figure {
+      @include figure;
+      img {
+        max-width: 100px;
+      }
     }
   }
   
