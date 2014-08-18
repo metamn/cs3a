@@ -42,7 +42,9 @@ html.frontpage body #values #about { margin-top: 10%; max-width: 20.83333em; }
 html.frontpage body #values #about #skills { margin-top: 1.25em; }
 html.frontpage body #values #about #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
 html.frontpage body #values #about #skills ul li span { position: relative; top: 1.33333em; }
-html.frontpage body #values #ux-slide { width: 100%; float: left; margin-top: 2.5em; }
+html.frontpage body #values #psd-slide { width: 100%; float: left; margin-top: 2.5em; }
+html.frontpage body #values #psd-slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; }
+html.frontpage body #values #ux-slide { display: none; width: 100%; float: left; margin-top: 2.5em; }
 html.frontpage body #values #ux-slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; font-size: 2.6154em; }
 html.frontpage body #values #ux-slide figure { width: 100%; float: left; }
 html.frontpage body #values #ux-slide figure img { max-width: 100%; }

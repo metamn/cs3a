@@ -23,9 +23,19 @@
     }
   }
   
+  #psd-slide {
+    //display: none;
+    @include block;
+    margin-top: $gutter * 2;
+    
+    p {
+      @include font;
+    }
+  }
+  
   
   #ux-slide {
-    //display: none;
+    display: none;
     @include block;
     margin-top: $gutter * 2;
     
