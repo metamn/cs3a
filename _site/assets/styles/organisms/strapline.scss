@@ -1,7 +1,7 @@
 @mixin strapline {
   overflow: hidden;
   
-  width: 35%;
+  width: 100%;
   
   @include portrait {
     width: 100%;
