@@ -2,22 +2,23 @@
   .container {
     figure {
       width: auto;
+      position: relative;
 
       // Proportional mockups
       // 51.6, 20, 24 are device heights in cm
       &#ipad {
-        top: 50%;
+        top: 10%;
+        left: 0;
         z-index: 0;
-        left: 1%;
-
+        
         img {
           @include mockup-size(ipad);
         }
       }
 
       &#mbp {
-        top: 48%;
-        left: 23%;
+        top: -18%;
+        left: 13%;
         z-index: 1;
 
         img {
@@ -28,7 +29,7 @@
       &#imac {
         float: right;
         right: 2%;
-        top: 15%;
+        top: -20%;
         z-index: 2;
 
         img {

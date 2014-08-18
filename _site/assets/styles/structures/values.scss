@@ -13,6 +13,9 @@
   
   #slider {
     @include slider;
+    /* to make the iMac look good
+    */
+    overflow: visible;
     
     .slide {
       @include slider-common-elements;
