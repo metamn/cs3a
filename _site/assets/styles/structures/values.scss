@@ -1,0 +1,38 @@
+@mixin values {
+  width: 70%;
+  padding-left: 5%;
+  overflow: hidden;
+  
+  #about {
+    @include about;
+    
+    #skills {
+      @include skills;
+    }
+  }
+  
+  #slider {
+    @include slider;
+    
+    .slide {
+      @include slider-common-elements;
+      
+      &#rwd {
+        @include rwd;
+      }
+
+      &#ux {
+        @include ux;
+      }
+
+      &#cms {
+        @include cms;
+      }
+
+      &#psd {
+        @include psd;
+      }
+    }
+  }
+}
+

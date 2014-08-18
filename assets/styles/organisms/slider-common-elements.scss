@@ -1,0 +1,13 @@
+@mixin slider-common-elements {
+  .container {
+    padding-top: $gutter * 2;
+    
+    p {
+      @include font;
+    }
+
+    figure {
+      @include figure;
+    }
+  }
+}

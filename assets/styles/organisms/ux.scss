@@ -1,0 +1,13 @@
+@mixin ux {
+  .container {
+    p {
+      font-size: $heading-level-4;
+    }
+
+    figure {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}

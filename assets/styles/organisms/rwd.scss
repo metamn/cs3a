@@ -1,0 +1,40 @@
+@mixin rwd {
+  .container {
+    figure {
+      width: auto;
+
+      // Proportional mockups
+      // 51.6, 20, 24 are device heights in cm
+      &#ipad {
+        top: 50%;
+        z-index: 0;
+        left: 1%;
+
+        img {
+          @include mockup-size(ipad);
+        }
+      }
+
+      &#mbp {
+        top: 48%;
+        left: 23%;
+        z-index: 1;
+
+        img {
+          @include mockup-size(mbp);
+        }
+      }
+
+      &#imac {
+        float: right;
+        right: 2%;
+        top: 15%;
+        z-index: 2;
+
+        img {
+          @include mockup-size(imac);
+        }
+      }
+    }
+  }
+}
