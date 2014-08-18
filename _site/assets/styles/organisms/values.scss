@@ -1,4 +1,54 @@
 @mixin values {
+  width: 70%;
+  padding-left: 5%;
+  overflow: hidden;
+  
+  #about {
+    @include about;
+    
+    #skills {
+      @include skills;
+    }
+  }
+  
+  #slides {
+    position: relative;
+    
+    .slide {
+      @include block;
+      margin-top: $gutter * 2;
+      position: relative;
+      
+      p {
+        @include font;
+      }
+      
+      figure {
+        @include figure;
+      }
+      
+      &#rwd {
+        @include rwd;
+      }
+
+      &#ux {
+        @include ux;
+      }
+
+      &#cms {
+        @include cms;
+      }
+
+      &#psd {
+        @include psd;
+      }
+    }
+  }
+}
+
+
+
+@mixin values2 {
   position: relative;
   width: 70%;
   padding-left: 5%;
@@ -23,34 +73,6 @@
     }
   }
   
-  #psd-slide {
-    //display: none;
-    @include block;
-    margin-top: $gutter * 2;
-    
-    p {
-      @include font;
-    }
-  }
-  
-  
-  #ux-slide {
-    display: none;
-    @include block;
-    margin-top: $gutter * 2;
-    
-    p {
-      @include font;
-      font-size: $heading-level-4;
-    }
-    
-    figure {
-      @include figure;
-      img {
-        max-width: 100px;
-      }
-    }
-  }
   
   
   

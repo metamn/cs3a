@@ -1,0 +1,9 @@
+@mixin mockup-size($device, $divider: 2) {
+  @if ($device == imac) {
+    max-height: $gutter * 51.6 / $divider;
+  } @elseif ($device == ipad) {
+    max-height: $gutter * 20 / $divider;
+  } @elseif ($device == mbp) {
+    max-height: $gutter * 24 / $divider;
+  }
+}

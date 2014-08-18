@@ -1,87 +1,20 @@
 <section id="values">
   <h3>Values</h3>
   
-  <div class="container">
-    <article id="about">
-      <h3>About</h3>
-      
-      <h2>Csongor is a web designer and developer with great product skills</h2>
-      
-      <nav id="skills">
-        <h3>Skills</h3>
-        <ul>
-          <li>
-            {% include atoms/circle.html text="RWD" %}
-          </li>
-          <li>
-            {% include atoms/circle.html text="UX" %}
-          </li>
-          <li>
-            {% include atoms/circle.html text="CMS" %}
-          </li>
-          <li>
-            {% include atoms/circle.html text="PSD" %}
-          </li>
-        </ul>
-      </nav>
-    </article>
+  <article id="about">
+    <h3>About</h3>
+
+    <h2>Csongor is a web designer and developer with great product skills</h2>
+
+    {% include molecules/skills.html %}
+  </article>
+  
+  <aside id="slides">
+    <h3>Slides</h3>
     
-    <article id="psd-slide">
-      <h3>Native wed design</h3>
-      
-      <p>
-        Native web design
-      </p>
-      <p>
-        Designing in the browser and skipping Photoshop and other mockup tools
-      </p>
-      <p>
-        Reducing project time by half
-      </p>
-    </article>
-    
-    <article id="ux-slide">
-      <h3>User Experience and Interaction</h3>
-      
-      <p>
-        User Experience and Interaction
-      </p>
-      <p>
-        is driving engagement
-      </p>
-      <p>
-        and makes a website a product
-      </p>
-      
-      {% include atoms/figure.html id="3" %}
-    </article>
-    
-    <article id="rwd-slide">
-      <h3>Responsive web design</h3>
-      
-      <p>
-        Responsive web design
-      </p>
-      <p>
-        Since 2010
-      </p>
-      
-      {% include atoms/figure.html id="0" %}
-      {% include atoms/figure.html id="1" %}
-      {% include atoms/figure.html id="2" %}
-    </article>
-    
-    <nav id="navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li>
-          {% include atoms/button.html text="View portfolio" %}
-        </li>
-        
-        <li>
-          {% include atoms/button.html text="Get in touch" %}
-        </li>
-      </ul>
-    </nav>
-  </div>
+    {% include molecules/rwd.html %}
+    {% include molecules/ux.html %}
+    {% include molecules/cms.html %}
+    {% include molecules/psd.html %}
+  </aside>
 </section>

@@ -1,24 +1,19 @@
 <footer>
-  <h3>Footer</h3>
-  <div class="container">
-    
-    <nav>
-      <h3>Navigation</h3>
-      <ul>
-        <li>
-          {% capture buttontext %}
-            {% include atoms/link.html url="/portfolio" relative="true" title="Portfolio" %}
-          {% endcapture %}
-          {% include atoms/button.html text=buttontext %}
-        </li>
-        
-        <li>
-          {% capture buttontext %}
-            {% include atoms/link.html url="/contact" relative="true" title="Get in touch" %}
-          {% endcapture %}
-          {% include atoms/button.html text=buttontext %}
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <h3>Navigation</h3>
+  
+  <ul>
+    <li>
+      {% capture buttontext %}
+        {% include atoms/link.html url="/portfolio" relative="true" title="Portfolio" %}
+      {% endcapture %}
+      {% include atoms/button.html text=buttontext %}
+    </li>
+
+    <li>
+      {% capture buttontext %}
+        {% include atoms/link.html url="/contact" relative="true" title="Get in touch" %}
+      {% endcapture %}
+      {% include atoms/button.html text=buttontext %}
+    </li>
+  </ul>
 </footer>

@@ -1,0 +1,8 @@
+@mixin about {
+  margin-top: 10%;
+  @include font(title);
+  
+  h2 {
+    max-width: $text-width / 1.5;
+  }
+}

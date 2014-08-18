@@ -31,43 +31,39 @@ html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condense
 @media only screen and (orientation: portrait) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
 html body a { color: #011915; background-color: white; }
-html body section, html body article, html body nav, html body header, html body footer { width: 100%; float: left; }
-html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3 { display: none; }
+html body section, html body article, html body nav, html body header, html body footer, html body aside { width: 100%; float: left; }
+html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3, html body aside > h3 { display: none; }
 
 html.frontpage { height: 100%; }
 html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; }
-html.frontpage body #strapline { overflow: hidden; width: 25%; background-color: #011915; background-image: url("http://www.transparenttextures.com/patterns/subtle-zebra-3d.png"); }
-html.frontpage body #values { position: relative; width: 70%; padding-left: 5%; float: left; overflow: hidden; font-family: 'Montserrat', sans-serif; font-style: normal; }
-html.frontpage body #values #about { margin-top: 10%; max-width: 20.83333em; }
+html.frontpage body header { width: 25%; height: 100%; overflow: hidden; background-color: #011915; background-image: url("/assets/images/subtle-zebra-3d.png"); }
+html.frontpage body #values { width: 70%; padding-left: 5%; overflow: hidden; }
+html.frontpage body #values #about { margin-top: 10%; font-family: 'Montserrat', sans-serif; font-style: normal; }
+html.frontpage body #values #about h2 { max-width: 20.83333em; }
 html.frontpage body #values #about #skills { margin-top: 1.25em; }
-html.frontpage body #values #about #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; }
+html.frontpage body #values #about #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; font-size: medium; }
 html.frontpage body #values #about #skills ul li span { position: relative; top: 1.33333em; }
-html.frontpage body #values #psd-slide { width: 100%; float: left; margin-top: 2.5em; }
-html.frontpage body #values #psd-slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; }
-html.frontpage body #values #ux-slide { display: none; width: 100%; float: left; margin-top: 2.5em; }
-html.frontpage body #values #ux-slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; font-size: 2.6154em; }
-html.frontpage body #values #ux-slide figure { width: 100%; float: left; }
-html.frontpage body #values #ux-slide figure img { max-width: 100%; }
-html.frontpage body #values #ux-slide figure figcaption { display: none; }
-html.frontpage body #values #ux-slide figure img { max-width: 100px; }
-html.frontpage body #values #rwd-slide { display: none; width: 100%; float: left; margin-top: 2.5em; }
-html.frontpage body #values #rwd-slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; }
-html.frontpage body #values #rwd-slide figure { width: 100%; float: left; position: absolute; width: auto; }
-html.frontpage body #values #rwd-slide figure img { max-width: 100%; }
-html.frontpage body #values #rwd-slide figure figcaption { display: none; }
-html.frontpage body #values #rwd-slide figure#imac img { max-height: 32.25em; }
-html.frontpage body #values #rwd-slide figure#ipad img { max-height: 12.5em; }
-html.frontpage body #values #rwd-slide figure#mbp img { max-height: 15em; }
-html.frontpage body #values #rwd-slide figure#imac { float: right; right: 2%; top: 15%; z-index: 2; }
-html.frontpage body #values #rwd-slide figure#ipad { top: 50%; z-index: 0; left: 1%; }
-html.frontpage body #values #rwd-slide figure#mbp { top: 48%; left: 23%; z-index: 1; }
-html.frontpage body #values #navigation { position: absolute; bottom: 5%; }
-html.frontpage body #values #navigation ul li { display: inline-block; float: left; padding-right: 1.25em; }
-html.frontpage body #values #navigation ul li:last-of-type { padding-right: 0; }
-html.frontpage body #values #navigation ul li { margin-left: 1.25em; padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; }
-html.frontpage body #values #navigation ul li a { text-decoration: none; }
-html.frontpage body #values ul { font-size: medium; }
-html.frontpage body footer { display: none; }
+html.frontpage body #values #slides { position: relative; }
+html.frontpage body #values #slides .slide { width: 100%; float: left; margin-top: 2.5em; position: relative; }
+html.frontpage body #values #slides .slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; }
+html.frontpage body #values #slides .slide figure { width: 100%; float: left; }
+html.frontpage body #values #slides .slide figure img { max-width: 100%; }
+html.frontpage body #values #slides .slide figure figcaption { display: none; }
+html.frontpage body #values #slides .slide#rwd figure { width: auto; }
+html.frontpage body #values #slides .slide#rwd figure#ipad { top: 50%; z-index: 0; left: 1%; }
+html.frontpage body #values #slides .slide#rwd figure#ipad img { max-height: 12.5em; }
+html.frontpage body #values #slides .slide#rwd figure#mbp { top: 48%; left: 23%; z-index: 1; }
+html.frontpage body #values #slides .slide#rwd figure#mbp img { max-height: 15em; }
+html.frontpage body #values #slides .slide#rwd figure#imac { float: right; right: 2%; top: 15%; z-index: 2; }
+html.frontpage body #values #slides .slide#rwd figure#imac img { max-height: 32.25em; }
+html.frontpage body #values #slides .slide#ux p { font-size: 2.6154em; }
+html.frontpage body #values #slides .slide#ux figure img { max-width: 100px; }
+html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; }
+html.frontpage body footer ul { font-family: 'Montserrat', sans-serif; font-style: normal; }
+html.frontpage body footer ul li { display: inline-block; float: left; padding-right: 1.25em; }
+html.frontpage body footer ul li:last-of-type { padding-right: 0; }
+html.frontpage body footer ul li { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-size: medium; margin-left: 1.25em; }
+html.frontpage body footer ul li a { text-decoration: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

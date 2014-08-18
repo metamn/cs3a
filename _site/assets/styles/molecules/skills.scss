@@ -1,0 +1,10 @@
+@mixin skills {
+  margin-top: $gutter;
+
+  ul {
+    li {
+      @include circle-with-text($gutter * 3.2);
+      font-size: medium;
+    }
+  }
+}

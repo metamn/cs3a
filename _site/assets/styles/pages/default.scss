@@ -5,7 +5,7 @@ html {
     @include colors;
     @include link;
     
-    section, article, nav, header, footer {
+    section, article, nav, header, footer, aside {
       @include block;
       @include hide-title;
     }
