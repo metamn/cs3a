@@ -11,13 +11,10 @@
     }
   }
   
-  #slides {
-    position: relative;
+  #slider {
+    @include slider;
     
     .slide {
-      @include block;
-      margin-top: $gutter * 2;
-      position: relative;
       
       p {
         @include font;
@@ -43,114 +40,6 @@
         @include psd;
       }
     }
-  }
-}
-
-
-
-@mixin values2 {
-  position: relative;
-  width: 70%;
-  padding-left: 5%;
-  float: left;
-  overflow: hidden;
-  
-  @include font(title);
-  
-  #about {
-    margin-top: 10%;
-    
-    max-width: $text-width / 1.5;
-    
-    #skills {
-      margin-top: $gutter;
-
-      ul {
-        li {
-          @include circle-with-text($gutter * 3.2);
-        }
-      }
-    }
-  }
-  
-  
-  
-  
-  
-  #rwd-slide {
-    display: none;
-    @include block;
-    margin-top: $gutter * 2;
-    
-    p {
-      @include font;
-    }
-    
-    figure {
-      @include figure;
-      position: absolute;
-      width: auto;
-      
-      // Proportional mockups
-      // 51.6, 20, 24 are device heights in cm
-      &#imac {
-        img {
-          max-height: $gutter * 51.6 / 2;
-        }
-      }
-      
-      &#ipad {
-        img {
-          max-height: $gutter * 20 / 2;
-        }
-      }
-      
-      &#mbp {
-        img {
-          max-height: $gutter * 24 / 2;
-        }
-      }
-      
-      &#imac {
-        float: right;
-        right: 2%;
-        top: 15%;
-        z-index: 2;
-      }
-      
-      &#ipad {
-        //display: none;
-        top: 50%;
-        z-index: 0;
-        left: 1%;
-      }
-      
-      &#mbp {
-        //display: none;
-        top: 48%;
-        left: 23%;
-        z-index: 1;
-      }
-    }
-  }
-  
-  
-  #navigation {
-    position: absolute;
-    bottom: 5%;
-    
-    ul {
-      @include list-inline;
-      
-      li {
-        margin-left: 1.25em; 
-        @include button;
-      }
-    }
-  }
-  
-  ul {
-    font-size: medium;
   }
 }
 

@@ -26,6 +26,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Center vertically or horizontally using transformations
 - http://davidwalsh.name/css-vertical-center
 */
+/* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
+*/
 /* No files to import found in structures/* */
 html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; color: #011915; background-color: white; }
 @media only screen and (orientation: portrait) { html body { font-size: 100%; } }
@@ -43,21 +45,22 @@ html.frontpage body #values #about h2 { max-width: 20.83333em; }
 html.frontpage body #values #about #skills { margin-top: 1.25em; }
 html.frontpage body #values #about #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; font-size: medium; }
 html.frontpage body #values #about #skills ul li span { position: relative; top: 1.33333em; }
-html.frontpage body #values #slides { position: relative; }
-html.frontpage body #values #slides .slide { width: 100%; float: left; margin-top: 2.5em; position: relative; }
-html.frontpage body #values #slides .slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; }
-html.frontpage body #values #slides .slide figure { width: 100%; float: left; }
-html.frontpage body #values #slides .slide figure img { max-width: 100%; }
-html.frontpage body #values #slides .slide figure figcaption { display: none; }
-html.frontpage body #values #slides .slide#rwd figure { width: auto; }
-html.frontpage body #values #slides .slide#rwd figure#ipad { top: 50%; z-index: 0; left: 1%; }
-html.frontpage body #values #slides .slide#rwd figure#ipad img { max-height: 12.5em; }
-html.frontpage body #values #slides .slide#rwd figure#mbp { top: 48%; left: 23%; z-index: 1; }
-html.frontpage body #values #slides .slide#rwd figure#mbp img { max-height: 15em; }
-html.frontpage body #values #slides .slide#rwd figure#imac { float: right; right: 2%; top: 15%; z-index: 2; }
-html.frontpage body #values #slides .slide#rwd figure#imac img { max-height: 32.25em; }
-html.frontpage body #values #slides .slide#ux p { font-size: 2.6154em; }
-html.frontpage body #values #slides .slide#ux figure img { max-width: 100px; }
+html.frontpage body #values #slider { width: 100%; height: 100%; overflow: hidden; position: relative; }
+html.frontpage body #values #slider .slide { width: 100%; height: 100%; position: absolute; left: 0; top: 0; /* let the browser know we plan to animate each view in and out */ will-change: transform; -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+html.frontpage body #values #slider .active { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -ms-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); }
+html.frontpage body #values #slider .slide p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; }
+html.frontpage body #values #slider .slide figure { width: 100%; float: left; }
+html.frontpage body #values #slider .slide figure img { max-width: 100%; }
+html.frontpage body #values #slider .slide figure figcaption { display: none; }
+html.frontpage body #values #slider .slide#rwd figure { width: auto; }
+html.frontpage body #values #slider .slide#rwd figure#ipad { top: 50%; z-index: 0; left: 1%; }
+html.frontpage body #values #slider .slide#rwd figure#ipad img { max-height: 12.5em; }
+html.frontpage body #values #slider .slide#rwd figure#mbp { top: 48%; left: 23%; z-index: 1; }
+html.frontpage body #values #slider .slide#rwd figure#mbp img { max-height: 15em; }
+html.frontpage body #values #slider .slide#rwd figure#imac { float: right; right: 2%; top: 15%; z-index: 2; }
+html.frontpage body #values #slider .slide#rwd figure#imac img { max-height: 32.25em; }
+html.frontpage body #values #slider .slide#ux p { font-size: 2.6154em; }
+html.frontpage body #values #slider .slide#ux figure img { max-width: 100px; }
 html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; }
 html.frontpage body footer ul { font-family: 'Montserrat', sans-serif; font-style: normal; }
 html.frontpage body footer ul li { display: inline-block; float: left; padding-right: 1.25em; }

@@ -1,14 +1,10 @@
 $(document).ready(function() {
   
-  // Tooltip 
-  $('.tooltip-item').on('click', function() {
-    $('.tooltip span').html($(this).find('.tooltip-text').html());
-    $('.tooltip').addClass('active');
-    
-    $(this).parent().siblings().removeClass('active');
-    $(this).parent().addClass('active');
+  // Slider 
+  $('#skills ul li').click(function() {
+    var index = $('#skills ul li').index(this);
+    $('#slider .slide').removeClass('active');
+    $("#slider .slide:eq(" + index + ")").addClass('active');
   });
-  
-  $('.tooltip-item').first().trigger('click');
-  
 });
+
