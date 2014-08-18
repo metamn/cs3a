@@ -1,4 +1,6 @@
 @mixin values {
+  display: none;
+  
   @include values-common;
   
   @include portrait {
