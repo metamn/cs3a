@@ -3,16 +3,14 @@
   width: 70%;
   padding-left: 5%;
   float: left;
+  overflow: hidden;
+  
+  @include font(title);
   
   #about {
-    position: absolute;
-    top: 10%;
+    margin-top: 10%;
     
     max-width: $text-width / 1.5;
-    
-    h2 {
-      @include font(title);
-    }
     
     #skills {
       margin-top: $gutter;
@@ -25,7 +23,28 @@
     }
   }
   
-  #content {
+  
+  #ux-slide {
+    @include block;
+    margin-top: $gutter * 2;
+    
+    p {
+      @include font;
+    }
+  }
+  
+  
+  
+  
+  #rwd-slide {
+    display: none;
+    @include block;
+    margin-top: $gutter * 2;
+    
+    p {
+      @include font;
+    }
+    
     figure {
       @include figure;
       position: absolute;
@@ -77,7 +96,7 @@
   
   #navigation {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     
     ul {
       @include list-inline;

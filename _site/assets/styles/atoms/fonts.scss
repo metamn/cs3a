@@ -1,5 +1,5 @@
 // Typefaces
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans+Condensed:300italic);
 
 
 
@@ -19,22 +19,12 @@ $heading-level-8: 6.8462em;
 
 @mixin font($type: body) {
   @if ($type == body) {
-    font-family: 'Montserrat', sans-serif;
-  
-  } @elseif ($type == strapline) {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    
-    font-size: $heading-level-7;
-    @include large-screen-and-up {
-      font-size: $heading-level-8;
-    }
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-style: italic;
   
   } @elseif ($type == title) {
     font-family: 'Montserrat', sans-serif;
-    @include portrait {
-      font-size: $heading-level-1;
-    }
+    font-style: normal;
   }
 }
