@@ -39,8 +39,8 @@ html body section > h3, html body article > h3, html body nav > h3, html body he
 html.frontpage { height: 100%; }
 html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; }
 html.frontpage body header { width: 25%; height: 100%; overflow: hidden; background-color: #011915; background-image: url("/assets/images/subtle-zebra-3d.png"); }
-html.frontpage body #values { width: 70%; padding-left: 5%; overflow: hidden; }
-html.frontpage body #values #about { margin-top: 10%; font-family: 'Montserrat', sans-serif; font-style: normal; }
+html.frontpage body #values { width: 70%; padding-left: 5%; margin-top: 5%; overflow: hidden; }
+html.frontpage body #values #about { font-family: 'Montserrat', sans-serif; font-style: normal; }
 html.frontpage body #values #about h2 { max-width: 20.83333em; }
 html.frontpage body #values #about #skills { margin-top: 1.25em; }
 html.frontpage body #values #about #skills ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; font-size: medium; }
