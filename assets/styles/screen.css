@@ -47,12 +47,12 @@ html.frontpage body #values #about #skills ul li span { position: relative; top:
 html.frontpage body #values #content figure { width: 100%; float: left; position: absolute; width: auto; }
 html.frontpage body #values #content figure img { max-width: 100%; }
 html.frontpage body #values #content figure figcaption { display: none; }
+html.frontpage body #values #content figure#imac img { max-height: 32.25em; }
+html.frontpage body #values #content figure#ipad img { max-height: 12.5em; }
+html.frontpage body #values #content figure#mbp img { max-height: 15em; }
 html.frontpage body #values #content figure#imac { float: right; right: 5%; top: 15%; z-index: 2; }
-html.frontpage body #values #content figure#imac img { max-width: 700px; }
-html.frontpage body #values #content figure#ipad { top: 56%; z-index: 0; left: 10%; }
-html.frontpage body #values #content figure#ipad img { max-width: 180px; }
-html.frontpage body #values #content figure#mbp { top: 52%; left: 20%; z-index: 1; }
-html.frontpage body #values #content figure#mbp img { max-width: 500px; }
+html.frontpage body #values #content figure#ipad { top: 50%; z-index: 0; left: 7%; }
+html.frontpage body #values #content figure#mbp { top: 48%; left: 12%; z-index: 1; }
 html.frontpage body #values #navigation { position: absolute; bottom: 10%; }
 html.frontpage body #values #navigation ul li { display: inline-block; float: left; padding-right: 1.25em; }
 html.frontpage body #values #navigation ul li:last-of-type { padding-right: 0; }
