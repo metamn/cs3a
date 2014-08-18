@@ -54,13 +54,17 @@ html.frontpage body #values #slider .slide .container p { font-family: 'Open San
 html.frontpage body #values #slider .slide .container figure { width: 100%; float: left; }
 html.frontpage body #values #slider .slide .container figure img { max-width: 100%; }
 html.frontpage body #values #slider .slide .container figure figcaption { display: none; }
-html.frontpage body #values #slider .slide#rwd .container figure { width: auto; position: relative; }
-html.frontpage body #values #slider .slide#rwd .container figure#ipad { top: 10%; left: 0; z-index: 0; }
-html.frontpage body #values #slider .slide#rwd .container figure#ipad img { max-height: 12.5em; }
-html.frontpage body #values #slider .slide#rwd .container figure#mbp { top: -18%; left: 13%; z-index: 1; }
-html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-height: 15em; }
-html.frontpage body #values #slider .slide#rwd .container figure#imac { float: right; right: 2%; top: -20%; z-index: 2; }
-html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 32.25em; }
+html.frontpage body #values #slider .slide#rwd .container { position: relative; }
+html.frontpage body #values #slider .slide#rwd .container figure { width: auto; position: absolute; }
+html.frontpage body #values #slider .slide#rwd .container figure#ipad { bottom: 55%; z-index: 0; left: 1%; }
+html.frontpage body #values #slider .slide#rwd .container figure#ipad img { max-height: 10em; }
+@media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#ipad img { max-height: 12.5em; } }
+html.frontpage body #values #slider .slide#rwd .container figure#mbp { bottom: 50%; left: 20%; z-index: 1; }
+html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-height: 12em; }
+@media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-height: 15em; } }
+html.frontpage body #values #slider .slide#rwd .container figure#imac { bottom: 35%; right: 2%; z-index: 2; float: right; }
+html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 25.8em; }
+@media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 32.25em; } }
 html.frontpage body #values #slider .slide#ux .container p { font-size: 2.6154em; }
 html.frontpage body #values #slider .slide#ux .container figure img { max-width: 100px; }
 html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; }

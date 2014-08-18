@@ -1,24 +1,26 @@
 @mixin rwd {
   .container {
+    position: relative;
+    
     figure {
       width: auto;
-      position: relative;
+      position: absolute;
 
       // Proportional mockups
       // 51.6, 20, 24 are device heights in cm
       &#ipad {
-        top: 10%;
-        left: 0;
+        bottom: 55%;
         z-index: 0;
-        
+        left: 1%;
+
         img {
           @include mockup-size(ipad);
         }
       }
 
       &#mbp {
-        top: -18%;
-        left: 13%;
+        bottom: 50%;
+        left: 20%;
         z-index: 1;
 
         img {
@@ -27,11 +29,11 @@
       }
 
       &#imac {
-        float: right;
+        bottom: 35%;
         right: 2%;
-        top: -20%;
         z-index: 2;
-
+        float: right;
+          
         img {
           @include mockup-size(imac);
         }
