@@ -35,7 +35,7 @@
         float: right;
         right: 5%;
         top: 15%;
-        z-index: 3;
+        z-index: 2;
 
         img {
           max-width: 700px;
@@ -43,17 +43,18 @@
       }
       
       &#ipad {
-        top: 51%;
-        z-index: 2;
+        top: 56%;
+        z-index: 0;
+        left: 10%;
         
         img {
-          max-width: 200px;
+          max-width: 180px;
         }
       }
       
       &#mbp {
-        top: 50%;
-        left: 22.5%;
+        top: 52%;
+        left: 20%;
         z-index: 1;
         
         img {
