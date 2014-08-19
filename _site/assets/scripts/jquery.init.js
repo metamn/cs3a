@@ -1,5 +1,36 @@
 $(document).ready(function() {
   
+  // UX
+  // - split sentence into words
+  $('#slider #ux p').blast({ delimiter: "word" });
+  
+  // - colorize word backgrounds
+  $('#slider #ux p span').each(function(index) {
+    $(this).css('background-color', 'red');
+  });
+  
+  // - reveal words on click
+  $('#slider #ux p span').click(function() {
+    $(this).addClass('active');
+    checkCompletion();
+  });
+  
+  // - reveal words on hover
+  $('#slider #ux p span').hover(function() {
+    $(this).addClass('active');
+    checkCompletion();
+  }); 
+  
+  // - final effect when all words revealed
+  function checkCompletion() {
+    var count = $('#slider #ux p span').not('.active').length;
+    if (count == 0) {
+      $('#slider #ux p').addClass('done');
+    }
+  }
+  
+  
+  
   // Slider 
   $('#skills ul li').click(function() {
     var index = $('#skills ul li').index(this);

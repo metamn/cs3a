@@ -1,5 +1,5 @@
 // Typefaces
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans+Condensed:300italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans+Condensed:300,300italic);
 
 
 
@@ -21,7 +21,6 @@ $heading-level-8: 6.8462em;
   @if ($type == body) {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
-    font-style: italic;
   
   } @elseif ($type == title) {
     font-family: 'Montserrat', sans-serif;

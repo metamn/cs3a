@@ -2,12 +2,35 @@
   .container {
     p {
       font-size: $heading-level-4;
-    }
-
-    figure {
-      img {
-        max-width: 100px;
+      
+      span {
+        @include reveal-span;
+      }
+      
+      &.done {
+        @include final-effect;
       }
     }
+  }
+}
+
+
+@mixin final-effect {
+  font-style: italic;
+  line-height: 1.25;
+  
+  span {
+    cursor: default;
+  }
+}
+
+
+@mixin reveal-span {
+  color: transparent;
+  cursor: pointer;
+
+  &:hover, &.active {
+    @include colors;
+    background-color: $white !important;
   }
 }

@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans+Condensed:300italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans+Condensed:300,300italic);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -29,7 +29,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
 */
 /* No files to import found in molecules/* */
-html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; color: #011915; background-color: white; }
+html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #011915; background-color: white; }
 @media only screen and (orientation: portrait) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
 html body a { color: #011915; background-color: white; }
@@ -50,7 +50,7 @@ html.frontpage body #values #slider { width: 100%; height: 100%; overflow: hidde
 html.frontpage body #values #slider .slide { width: 100%; height: 100%; position: absolute; left: 0; top: 0; /* let the browser know we plan to animate each view in and out */ will-change: transform; -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
 html.frontpage body #values #slider .active { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -ms-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); }
 html.frontpage body #values #slider .slide .container { padding-top: 2.5em; }
-html.frontpage body #values #slider .slide .container p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; font-style: italic; }
+html.frontpage body #values #slider .slide .container p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; max-width: 12.5em; line-height: 1.5; }
 html.frontpage body #values #slider .slide .container figure { width: 100%; float: left; }
 html.frontpage body #values #slider .slide .container figure img { max-width: 100%; }
 html.frontpage body #values #slider .slide .container figure figcaption { display: none; }
@@ -66,12 +66,15 @@ html.frontpage body #values #slider .slide#rwd .container figure#imac { bottom: 
 html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 25.8em; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 32.25em; } }
 html.frontpage body #values #slider .slide#ux .container p { font-size: 2.6154em; }
-html.frontpage body #values #slider .slide#ux .container figure img { max-width: 100px; }
+html.frontpage body #values #slider .slide#ux .container p span { color: transparent; cursor: pointer; }
+html.frontpage body #values #slider .slide#ux .container p span:hover, html.frontpage body #values #slider .slide#ux .container p span.active { color: #011915; background-color: white; background-color: white !important; }
+html.frontpage body #values #slider .slide#ux .container p.done { font-style: italic; line-height: 1.25; }
+html.frontpage body #values #slider .slide#ux .container p.done span { cursor: default; }
 html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; }
 html.frontpage body footer ul { font-family: 'Montserrat', sans-serif; font-style: normal; }
 html.frontpage body footer ul li { display: inline-block; float: left; padding-right: 1.25em; }
 html.frontpage body footer ul li:last-of-type { padding-right: 0; }
-html.frontpage body footer ul li { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-size: medium; margin-left: 1.25em; }
+html.frontpage body footer ul li { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-size: medium; margin-right: 1.25em; }
 html.frontpage body footer ul li a { text-decoration: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }

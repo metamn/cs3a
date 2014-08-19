@@ -11,7 +11,7 @@
     li {
       @include button;
       font-size: medium;
-      margin-left: 1.25em; 
+      margin-right: $gutter; 
     }
   }
 }
