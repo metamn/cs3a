@@ -16,20 +16,20 @@
 
 
 @mixin final-effect {
+  font-weight: 700;
+  
   span {
+    color: $black;
     cursor: default;
   }
 }
 
 
 @mixin reveal-span {
-  color: transparent;
   cursor: pointer;
-  
-  @include gradients($yellow $orange $green $violet, 11);
+  @include gradients($yellow $orange $green $violet, 11, 5%);
 
   &:hover, &.active {
-    @include colors;
     background-color: $white !important;
   }
 }

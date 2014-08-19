@@ -63,13 +63,14 @@ $darkgray: #999;
 
 
 // Generate $total gradients from a list of $colors
-@mixin gradients($colors, $total) {
-  $gradients-per-color: $total % length($colors) + 1;
+// - the colors are lightened by $step percent
+@mixin gradients($colors, $total, $step) {
+  $gradients-per-color: $total % length($colors);
   $gradients: null;
   
   @each $color in $colors {
     @for $i from 1 through $gradients-per-color {
-      $gradients: append($gradients, lighten($color, $i * 2%));
+      $gradients: append($gradients, lighten($color, $i * $step));
     }
   }
   
@@ -81,6 +82,8 @@ $darkgray: #999;
   @for $i from 1 through length($list) {
     &:nth-of-type(#{$i - 1}) {
       background-color: nth($list, $i);
+      color: nth($list, $i);
+      text-shadow: 5px 5px 0 nth($list, $i);
     }
   }
 }
