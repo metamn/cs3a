@@ -2,13 +2,13 @@
   <h3>Content management</h3>
   
   <div class="container">
-    
-    <ul id="logos">
-      <li>{% include atoms/figure.html id="4" %}</li>
-      <li>{% include atoms/figure.html id="5" %}</li>
-      <li>{% include atoms/figure.html id="6" %}</li>
-      <li>{% include atoms/figure.html id="7" %}</li>
-    </ul>
-    
+    <aside>
+      <h3>Systems</h3>
+      
+      {% for i in (4..7) %}
+        {% capture id %}{{ forloop.index | plus:3 }}{% endcapture %}
+        {% include organisms/cms-entry.html id=id %}
+      {% endfor %}
+    </aside>
   </div>
 </article>
