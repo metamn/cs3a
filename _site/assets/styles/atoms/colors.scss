@@ -60,3 +60,27 @@ $darkgray: #999;
     background-color: transparent;
   }
 }
+
+
+// Generate $total gradients from a list of $colors
+@mixin gradients($colors, $total) {
+  $gradients-per-color: $total % length($colors) + 1;
+  $gradients: null;
+  
+  @each $color in $colors {
+    @for $i from 1 through $gradients-per-color {
+      $gradients: append($gradients, lighten($color, $i * 2%));
+    }
+  }
+  
+  @include gradient($gradients);
+}
+
+
+@mixin gradient($list) {
+  @for $i from 1 through length($list) {
+    &:nth-of-type(#{$i - 1}) {
+      background-color: nth($list, $i);
+    }
+  }
+}

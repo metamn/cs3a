@@ -16,9 +16,6 @@
 
 
 @mixin final-effect {
-  font-style: italic;
-  line-height: 1.25;
-  
   span {
     cursor: default;
   }
@@ -28,6 +25,8 @@
 @mixin reveal-span {
   color: transparent;
   cursor: pointer;
+  
+  @include gradients($yellow $orange $green $violet, 11);
 
   &:hover, &.active {
     @include colors;

@@ -67,8 +67,23 @@ html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 32.25em; } }
 html.frontpage body #values #slider .slide#ux .container p { font-size: 2.6154em; }
 html.frontpage body #values #slider .slide#ux .container p span { color: transparent; cursor: pointer; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(1) { background-color: #e0ff17; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(2) { background-color: #e2ff21; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(3) { background-color: #e3ff2c; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(4) { background-color: #e4ff36; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(5) { background-color: #ffc14d; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(6) { background-color: #ffc457; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(7) { background-color: #ffc861; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(8) { background-color: #ffcb6b; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(9) { background-color: #0aff54; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(10) { background-color: #14ff5b; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(11) { background-color: #1fff62; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(12) { background-color: #29ff69; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(13) { background-color: #d65cc6; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(14) { background-color: #d864c9; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(15) { background-color: #da6ccc; }
+html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(16) { background-color: #dc74ce; }
 html.frontpage body #values #slider .slide#ux .container p span:hover, html.frontpage body #values #slider .slide#ux .container p span.active { color: #011915; background-color: white; background-color: white !important; }
-html.frontpage body #values #slider .slide#ux .container p.done { font-style: italic; line-height: 1.25; }
 html.frontpage body #values #slider .slide#ux .container p.done span { cursor: default; }
 html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; }
 html.frontpage body footer ul { font-family: 'Montserrat', sans-serif; font-style: normal; }

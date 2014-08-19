@@ -4,11 +4,6 @@ $(document).ready(function() {
   // - split sentence into words
   $('#slider #ux p').blast({ delimiter: "word" });
   
-  // - colorize word backgrounds
-  $('#slider #ux p span').each(function(index) {
-    $(this).css('background-color', 'red');
-  });
-  
   // - reveal words on click
   $('#slider #ux p span').click(function() {
     $(this).addClass('active');
@@ -30,8 +25,8 @@ $(document).ready(function() {
   }
   
   
-  
-  // Slider 
+  // Values
+  // - the Slider 
   $('#skills ul li').click(function() {
     var index = $('#skills ul li').index(this);
     $('#slider .slide').removeClass('active');
