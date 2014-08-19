@@ -1,11 +1,10 @@
-@mixin symmetric-grid($cols) {
-  > * {
-    width: 30% !important;
-    margin-right: 5%;
-    
-    &:last-of-type {
-      margin-right: 0;
-    }
+@mixin symmetric-grid {
+  float: left;
+  width: 22%;
+  margin-right: 4%;
+
+  &:last-of-type {
+    margin-right: 0;
   }
 }
 

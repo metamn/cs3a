@@ -81,11 +81,17 @@ html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(11) 
 html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(12) { background-color: #e391d8; color: #e391d8; }
 html.frontpage body #values #slider .slide#ux .container p span.active { background: #011915; }
 html.frontpage body #values #slider .slide#ux .container p.done span { cursor: default; }
-html.frontpage body #values #slider .slide#cms .container #logos li { display: inline-block; float: left; padding-right: 1.25em; }
-html.frontpage body #values #slider .slide#cms .container #logos li:last-of-type { padding-right: 0; }
-html.frontpage body #values #slider .slide#cms .container #logos figure img { max-height: 5em; max-width: 10em; position: relative; }
-html.frontpage body #values #slider .slide#cms .container #logos figure#docpad img { max-width: 15em; top: 0.625em; }
-html.frontpage body #values #slider .slide#cms .container #logos figure#craft img { max-width: 5em; top: 1.5625em; }
+html.frontpage body #values #slider .slide#cms .container { width: 95%; margin-right: 5%; }
+html.frontpage body #values #slider .slide#cms .container aside .cms { position: relative; float: left; width: 22%; margin-right: 4%; }
+html.frontpage body #values #slider .slide#cms .container aside .cms:last-of-type { margin-right: 0; }
+html.frontpage body #values #slider .slide#cms .container aside .cms figure, html.frontpage body #values #slider .slide#cms .container aside .cms div { width: 100%; float: left; margin-bottom: 1.25em; }
+html.frontpage body #values #slider .slide#cms .container aside .cms figure { height: 5em; width: 100%; float: left; }
+html.frontpage body #values #slider .slide#cms .container aside .cms figure img { max-width: 100%; }
+html.frontpage body #values #slider .slide#cms .container aside .cms figure figcaption { display: none; }
+html.frontpage body #values #slider .slide#cms .container aside .cms figure img { position: relative; max-height: 5em; }
+html.frontpage body #values #slider .slide#cms .container aside .cms figure#docpad img { top: 1.25em; }
+html.frontpage body #values #slider .slide#cms .container aside .cms figure#craft img { max-width: 5em; top: 1.5625em; }
+html.frontpage body #values #slider .slide#cms .container aside .cms .description { height: 3.75em; display: none; }
 html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; }
 html.frontpage body footer ul { font-family: 'Montserrat', sans-serif; font-style: normal; }
 html.frontpage body footer ul li { display: inline-block; float: left; padding-right: 1.25em; }

@@ -1,26 +1,47 @@
 @mixin cms {
   .container {
+    width: 95%;
+    margin-right: 5%;
     
-    #logos {
-      @include list-inline;
-      
-      figure {
-        img {
-          max-height: 5em;
-          max-width: 10em;
-          position: relative;
+    aside {
+      .cms {
+        position: relative;
+        @include symmetric-grid;
+        
+        figure, div {
+          @include block;
+          margin-bottom: $gutter;
         }
         
-        &#docpad img {
-          max-width: 15em;
-          top: $gutter/2;
+        figure {
+          height: $gutter * 4;
+          @include figure;
+          @include cms-figures;
         }
         
-        &#craft img {
-          max-width: 5em;
-          top: $gutter + $gutter/4;
+        .description {
+          height: $gutter * 3;
+          display: none;
         }
       }
     }
+  }
+}
+
+
+
+@mixin cms-figures {
+  img {
+    position: relative;
+    max-height: $gutter * 4;
+  }
+  
+  &#docpad img {
+    top: $gutter;
+  }
+  
+  &#craft img {
+    max-width: $gutter * 4;
+    top: $gutter + $gutter / 4;
   }
 }
