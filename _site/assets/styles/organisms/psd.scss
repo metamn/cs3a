@@ -1,5 +1,7 @@
 @mixin psd {
   .container {
-  
+    p + p {
+      margin-top: $gutter;
+    }
   }
 }
