@@ -6,15 +6,23 @@ $(document).ready(function() {
   
   // - reveal words on click
   $('#slider #ux p span').click(function() {
-    $(this).addClass('active');
+    changeClass($(this));
     checkCompletion();
   });
   
   // - reveal words on hover
-  $('#slider #ux p span').hover(function() {
-    $(this).addClass('active');
-    checkCompletion();
-  }); 
+  $('#slider #ux p span').hover(
+    function() {
+      changeClass($(this));
+      checkCompletion();
+    }, function() {
+      // do nothing on exit
+    }
+  );
+  
+  function changeClass(item) {
+    item.addClass('active');
+  }
   
   // - final effect when all words revealed
   function checkCompletion() {

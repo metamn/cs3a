@@ -83,7 +83,6 @@ $darkgray: #999;
     &:nth-of-type(#{$i - 1}) {
       background-color: nth($list, $i);
       color: nth($list, $i);
-      text-shadow: 5px 5px 0 nth($list, $i);
     }
   }
 }

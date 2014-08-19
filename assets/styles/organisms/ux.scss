@@ -1,7 +1,11 @@
 @mixin ux {
   .container {
     p {
-      font-size: $heading-level-4;
+      @include font(title);
+      font-size: $heading-level-3;
+      font-weight: 700;
+      max-width: $text-width / 2;
+      text-transform: uppercase;
       
       span {
         @include reveal-span;
@@ -16,10 +20,7 @@
 
 
 @mixin final-effect {
-  font-weight: 700;
-  
   span {
-    color: $black;
     cursor: default;
   }
 }
@@ -27,9 +28,13 @@
 
 @mixin reveal-span {
   cursor: pointer;
+  
+  display: inline-block;
+  padding: $gutter/8;
+  margin-bottom: $gutter/8;
   @include gradients($yellow $orange $green $violet, 11, 5%);
 
-  &:hover, &.active {
-    background-color: $white !important;
+  &.active {
+    background: $black;
   }
 }
