@@ -26,12 +26,12 @@
 
       &#cms {
         @include cms;
-        //display: none;
+        display: none;
       }
 
       &#psd {
         @include psd;
-        //display: none;
+        display: none;
       }
     }
   }

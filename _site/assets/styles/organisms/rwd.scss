@@ -25,6 +25,23 @@
     @include portrait {
       @include rwd-portrait;
     }
+    
+    @include tablet {
+      @include rwd-tablet;
+    }
+  }
+}
+
+
+@mixin rwd-tablet {
+  overflow: hidden;
+  
+  figure {
+    &#ipad {
+      position: relative;
+      top: 27em;
+      left: 22em;
+    }
   }
 }
 
