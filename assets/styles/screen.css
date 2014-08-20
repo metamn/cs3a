@@ -60,7 +60,7 @@ html.frontpage body #values #skills .container ul li.active { color: white; back
   html.frontpage body #values #skills.ux ul li.active, html.frontpage body #values #skills.psd ul li.active { color: #011915; background-color: white; border-color: white; } }
 @media only screen and (min-width: 64em) { html.frontpage body #values #slider { width: 100%; height: 100%; overflow: hidden; position: relative; /* to make the iMac look good
 */ overflow: visible; }
-  html.frontpage body #values #slider .slide { width: 100%; height: 100%; position: absolute; left: 0; top: 0; /* let the browser know we plan to animate each view in and out */ will-change: transform; -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+  html.frontpage body #values #slider .slide { width: 100%; height: 100%; position: absolute; left: 0; top: 0; /* let the browser know we plan to animate each view in and out */ will-change: transform; -webkit-transform: translateX(220%); -moz-transform: translateX(220%); -ms-transform: translateX(220%); -o-transform: translateX(220%); transform: translateX(220%); transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
   html.frontpage body #values #slider .active { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -ms-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); } }
 html.frontpage body #values #slider .slide .container { padding-top: 2.5em; }
 html.frontpage body #values #slider .slide .container p { font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; max-width: 12.5em; }
@@ -103,18 +103,23 @@ html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(12) 
 html.frontpage body #values #slider .slide#ux .container p span.active { background: #011915; }
 html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(1), html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(4), html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(7) { background-color: #011915; cursor: default; }
 html.frontpage body #values #slider .slide#ux .container p.done span { cursor: default; }
-@media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#cms .container { width: 95%; margin-right: 5%; margin-top: 1.25em; } }
-html.frontpage body #values #slider .slide#cms .container aside .cms { position: relative; float: left; width: 22%; margin-right: 4%; }
-html.frontpage body #values #slider .slide#cms .container aside .cms:last-of-type { margin-right: 0; }
-html.frontpage body #values #slider .slide#cms .container aside .cms figure, html.frontpage body #values #slider .slide#cms .container aside .cms div { width: 100%; float: left; margin-bottom: 1.25em; }
-html.frontpage body #values #slider .slide#cms .container aside .cms figure { height: 5em; width: 100%; float: left; }
-html.frontpage body #values #slider .slide#cms .container aside .cms figure img { max-width: 100%; }
-html.frontpage body #values #slider .slide#cms .container aside .cms figure figcaption { display: none; }
-html.frontpage body #values #slider .slide#cms .container aside .cms figure img { position: relative; max-height: 5em; }
-html.frontpage body #values #slider .slide#cms .container aside .cms figure#docpad img { top: 1.25em; }
-html.frontpage body #values #slider .slide#cms .container aside .cms figure#craft img { max-width: 5em; top: 1.5625em; }
-html.frontpage body #values #slider .slide#cms .container aside .cms .description { height: 3.75em; }
-html.frontpage body #values #slider .slide#cms .container aside .cms .year, html.frontpage body #values #slider .slide#cms .container aside .cms .type { display: none; }
+html.frontpage body #values #slider .slide#cms .container figure, html.frontpage body #values #slider .slide#cms .container div { width: 100%; float: left; margin-bottom: 1.25em; }
+html.frontpage body #values #slider .slide#cms .container aside .cms { max-width: 20em; float: left; margin-right: 5%; }
+@media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#cms .container { width: 95%; margin-right: 5%; margin-top: 1.25em; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms { position: relative; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms figure { height: 5em; width: 100%; float: left; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms figure img { max-width: 100%; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms figure figcaption { display: none; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms figure img { position: relative; max-height: 5em; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms figure#docpad img { top: 1.25em; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms figure#craft img { max-width: 5em; top: 1.5625em; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms .description { height: 3.75em; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms .year, html.frontpage body #values #slider .slide#cms .container aside .cms .type { display: none; } }
+@media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#cms .container aside { width: 100%; height: 100%; overflow: hidden; position: relative; min-height: 30em; }
+  html.frontpage body #values #slider .slide#cms .container aside .slide { width: 100%; height: 100%; position: absolute; left: 0; top: 0; /* let the browser know we plan to animate each view in and out */ will-change: transform; -webkit-transform: translateX(220%); -moz-transform: translateX(220%); -ms-transform: translateX(220%); -o-transform: translateX(220%); transform: translateX(220%); transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+  html.frontpage body #values #slider .slide#cms .container aside .active { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -ms-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); }
+  html.frontpage body #values #slider .slide#cms .container aside .cms div p { font-size: 1.3077em; max-width: 15.625em; }
+  html.frontpage body #values #slider .slide#cms .container aside .cms figure img { max-height: 10em; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#psd { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#psd .container p + p { margin-top: 1.25em; }
 html.frontpage body footer { padding-left: 5%; }

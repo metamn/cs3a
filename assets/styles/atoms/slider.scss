@@ -18,7 +18,7 @@
     will-change: transform;
     
     // This will push out the slide right of the viewport
-    @include transform(translateX(100%));
+    @include transform(translateX(220%));
     
     // there is a bug in compass and can't do @include transition(transform(.....)) 
     transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);

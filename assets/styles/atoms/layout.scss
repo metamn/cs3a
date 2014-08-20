@@ -9,7 +9,11 @@
 }
 
 
-
+@mixin fixed-width-grid($size, $gutter) {
+  max-width: $size;
+  float: left;
+  margin-right: $gutter;
+}
 
 
 

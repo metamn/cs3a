@@ -1,42 +1,78 @@
 @mixin cms {
   .container {
-    @include landscape {
-      @include cms-landscape;
+    figure, div {
+      @include block;
+      margin-bottom: $gutter;
     }
     
     aside {
       .cms {
-        position: relative;
-        @include symmetric-grid;
-        
-        figure, div {
-          @include block;
-          margin-bottom: $gutter;
+        @include fixed-width-grid(20em, 5%);
+      }
+    }
+    
+    @include landscape {
+      @include cms-landscape;
+    }
+    
+    @include portrait {
+      @include cms-portrait;
+    }
+  }
+}
+
+
+@mixin cms-portrait {
+  aside {
+    @include slider;
+    min-height: 30em;
+    
+    .cms {  
+      div {
+        p {
+          font-size: $heading-level-1;
+          max-width: $text-width / 2;
         }
-        
-        figure {
-          height: $gutter * 4;
-          @include figure;
-          @include cms-figures;
-        }
-        
-        .description {
-          height: $gutter * 3;
-        }
-        
-        .year, .type {
-          display: none;
+      }
+      
+      figure {
+        img {
+          max-height: $gutter * 8;
         }
       }
     }
   }
 }
 
+
+
 @mixin cms-landscape {
   width: 95%;
   margin-right: 5%;
   margin-top: $gutter;
+  
+  aside {
+    .cms {
+      position: relative;
+
+      figure {
+        height: $gutter * 4;
+        @include figure;
+        @include cms-figures;
+      }
+
+      .description {
+        height: $gutter * 3;
+      }
+
+      .year, .type {
+        display: none;
+      }
+    }
+  }
 }
+
+
 
 @mixin cms-figures {
   img {
