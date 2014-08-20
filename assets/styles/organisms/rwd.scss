@@ -2,42 +2,72 @@
   .container {
     position: relative;
     
+    // Proportional mockups
+    // 51.6, 20, 24 are device heights in cm
     figure {
-      width: auto;
-      position: absolute;
-
-      // Proportional mockups
-      // 51.6, 20, 24 are device heights in cm
-      &#ipad {
-        bottom: 55%;
-        z-index: 0;
-        left: 1%;
-
-        img {
-          @include mockup-size(ipad);
-        }
+      &#ipad img {
+        @include mockup-size(ipad);
       }
-
-      &#mbp {
-        bottom: 50%;
-        left: 20%;
-        z-index: 1;
-
-        img {
-          @include mockup-size(mbp);
-        }
+      
+      &#mbp img {
+        @include mockup-size(mbp);
       }
-
-      &#imac {
-        bottom: 35%;
-        right: 2%;
-        z-index: 2;
-        float: right;
-          
-        img {
-          @include mockup-size(imac);
-        }
+      
+      &#imac img {
+        @include mockup-size(imac);
       }
+    }
+    
+    @include landscape {
+      @include rwd-landscape;
+    }
+    
+    @include portrait {
+      @include rwd-portrait;
+    }
+  }
+}
+
+
+@mixin rwd-portrait {
+  figure {
+    width: auto;
+    max-width: 100%;
+    float: left;
+    
+    &#imac {
+      float: right;
+    }
+    
+    &#ipad {
+      padding-top: $gutter;
+      padding-bottom: $gutter;
+    }
+  }
+}
+
+
+@mixin rwd-landscape {
+  figure {
+    position: absolute;
+
+    &#ipad {
+      bottom: 55%;
+      z-index: 0;
+      left: 1%;
+    }
+
+    &#mbp {
+      bottom: 50%;
+      left: 20%;
+      z-index: 1;
+    }
+
+    &#imac {
+      bottom: 35%;
+      right: 2%;
+      z-index: 2;
+      float: right;
     }
   }
 }

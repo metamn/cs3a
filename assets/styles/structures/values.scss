@@ -1,8 +1,5 @@
 @mixin values {
-  width: 70%;
-  padding-left: 5%;
-  margin-top: 5%;
-  overflow: hidden;
+  @include values-grid;
   
   #about {
     @include about;
@@ -13,10 +10,7 @@
   }
   
   #slider {
-    @include slider;
-    /* to make the iMac look good
-    */
-    overflow: visible;
+    @include slider-grid;
     
     .slide {
       @include slider-common-elements;
@@ -37,6 +31,31 @@
         @include psd;
       }
     }
+  }
+}
+
+
+@mixin slider-grid {
+  @include landscape {
+    @include slider;
+    /* to make the iMac look good
+    */
+    overflow: visible;
+  }
+}
+
+
+@mixin values-grid {
+  @include landscape {
+    width: 70%;
+    overflow: hidden;
+  }
+  
+  padding-left: 5%;
+  padding-top: 5%;
+  
+  @include portrait {
+    width: 90%;
   }
 }
 

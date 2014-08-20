@@ -1,5 +1,8 @@
 html.frontpage {
-  @include full-height;
+  
+  @include landscape {
+    @include full-height;
+  }
   
   body {
     header {
