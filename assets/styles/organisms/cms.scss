@@ -24,7 +24,7 @@
 
 @mixin cms-portrait {
   aside {
-    @include slider;
+    @include slider(300%);
     min-height: 30em;
     
     .cms {  

@@ -3,7 +3,7 @@ $(document).ready(function() {
   
   // CMS
   // - the slider
-  $('#slider-for-cms .slide').first().addClass('active');
+  $('#slider-for-cms .slide').last().addClass('active');
   $('#slider-for-cms .slide').click(function() {
     $('#slider-for-cms .slide').removeClass('active');
     $(this).addClass('active');
