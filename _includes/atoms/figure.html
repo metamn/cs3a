@@ -44,7 +44,7 @@
 <figure id="{% include atoms/classname.html title=title %}" class="{{ class }}">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source media="(max-width: 30em" srcset="{{ site.url }}/{{ site.images }}/{{ mobile }}, {{ site.url }}/{{ site.images }}/{{ tablet }} 2x">
+    <source media="(max-width: 30em" srcset="{{ site.url }}/{{ site.images }}/{{ mobile }}, {{ site.url }}/{{ site.images }}/{{ mobile }} 2x">
     <source media="(max-width: 48em" srcset="{{ site.url }}/{{ site.images }}/{{ tablet }}">
     {% if large %}
       <source media="(min-width: 90em" srcset="{{ site.url }}/{{ site.images }}/{{ large }}">
