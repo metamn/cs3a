@@ -86,7 +86,8 @@ html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#ux { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#ux .container p { font-family: 'Montserrat', sans-serif; font-style: normal; font-size: 1.6154em; font-weight: 700; max-width: 15.625em; text-transform: uppercase; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#ux .container p { font-size: 2.1154em; } }
-html.frontpage body #values #slider .slide#ux .container p span { cursor: pointer; display: inline-block; padding: 0.15625em; margin-bottom: 0.15625em; }
+html.frontpage body #values #slider .slide#ux .container p span { cursor: pointer; display: inline-block; margin-bottom: 0.15625em; }
+@media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#ux .container p span { padding: 0.15625em; } }
 html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(1) { background-color: #e2ff27; color: #e2ff27; }
 html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(2) { background-color: #e6ff40; color: #e6ff40; }
 html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(3) { background-color: #e9ff5a; color: #e9ff5a; }
@@ -102,7 +103,6 @@ html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(12) 
 html.frontpage body #values #slider .slide#ux .container p span.active { background: #011915; }
 html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(1), html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(4), html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(7) { background-color: #011915; cursor: default; }
 html.frontpage body #values #slider .slide#ux .container p.done span { cursor: default; }
-html.frontpage body #values #slider .slide#cms { display: none; }
 @media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#cms .container { width: 95%; margin-right: 5%; margin-top: 1.25em; } }
 html.frontpage body #values #slider .slide#cms .container aside .cms { position: relative; float: left; width: 22%; margin-right: 4%; }
 html.frontpage body #values #slider .slide#cms .container aside .cms:last-of-type { margin-right: 0; }
@@ -115,7 +115,6 @@ html.frontpage body #values #slider .slide#cms .container aside .cms figure#docp
 html.frontpage body #values #slider .slide#cms .container aside .cms figure#craft img { max-width: 5em; top: 1.5625em; }
 html.frontpage body #values #slider .slide#cms .container aside .cms .description { height: 3.75em; }
 html.frontpage body #values #slider .slide#cms .container aside .cms .year, html.frontpage body #values #slider .slide#cms .container aside .cms .type { display: none; }
-html.frontpage body #values #slider .slide#psd { display: none; }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#psd { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#psd .container p + p { margin-top: 1.25em; }
 html.frontpage body footer { padding-left: 5%; }

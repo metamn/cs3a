@@ -21,17 +21,14 @@
 
       &#ux {
         @include ux;
-        //display: none;
       }
 
       &#cms {
         @include cms;
-        display: none;
       }
 
       &#psd {
         @include psd;
-        display: none;
       }
     }
   }

@@ -43,8 +43,11 @@
 @mixin reveal-span {
   cursor: pointer;
   
+  @include landscape {
+    padding: $gutter/8;
+  }
+  
   display: inline-block;
-  padding: $gutter/8;
   margin-bottom: $gutter/8;
   @include gradients($yellow $orange $green $violet, 11, 5%);
 
