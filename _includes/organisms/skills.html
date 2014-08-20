@@ -3,16 +3,16 @@
   
   <div class="container">
     <ul>
-      <li>
+      <li class="{% include atoms/active-menu-item-2.html active=include.active current="rwd" %}">
         {% include atoms/circle.html text="RWD" %}
       </li>
-      <li>
+      <li class="{% include atoms/active-menu-item-2.html active=include.active current="ux" %}">
         {% include atoms/circle.html text="UX" %}
       </li>
-      <li>
+      <li class="{% include atoms/active-menu-item-2.html active=include.active current="cms" %}">
         {% include atoms/circle.html text="CMS" %}
       </li>
-      <li>
+      <li class="{% include atoms/active-menu-item-2.html active=include.active current="psd" %}">
         {% include atoms/circle.html text="PSD" %}
       </li>
     </ul>

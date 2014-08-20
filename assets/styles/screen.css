@@ -53,9 +53,11 @@ html.frontpage body #values #about #skills .container { width: 100%; float: left
 html.frontpage body #values #skills { margin-top: 1.25em; }
 html.frontpage body #values #skills .container ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; font-family: 'Montserrat', sans-serif; font-style: normal; font-size: small; }
 html.frontpage body #values #skills .container ul li span { position: relative; top: 1.33333em; }
+html.frontpage body #values #skills .container ul li.active { color: white; background-color: #011915; border-color: #011915; }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #skills { padding-bottom: 1.25em; }
   html.frontpage body #values #skills.portrait { padding-top: 6.25em; }
-  html.frontpage body #values #skills.ux, html.frontpage body #values #skills.psd { color: white; background-color: #011915; } }
+  html.frontpage body #values #skills.ux, html.frontpage body #values #skills.psd { color: white; background-color: #011915; }
+  html.frontpage body #values #skills.ux ul li.active, html.frontpage body #values #skills.psd ul li.active { color: #011915; background-color: white; border-color: white; } }
 @media only screen and (min-width: 64em) { html.frontpage body #values #slider { width: 100%; height: 100%; overflow: hidden; position: relative; /* to make the iMac look good
 */ overflow: visible; }
   html.frontpage body #values #slider .slide { width: 100%; height: 100%; position: absolute; left: 0; top: 0; /* let the browser know we plan to animate each view in and out */ will-change: transform; -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
