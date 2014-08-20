@@ -35,6 +35,10 @@ $darkgray: #999;
   @if ($combination == black-on-white) {
     color: $black;
     background-color: $white;
+    
+  } @elseif ($combination == white-on-black) {
+    color: $white;
+    background-color: $black;
   
   } @elseif ($combination == black-on-orange) {
     color: $black;

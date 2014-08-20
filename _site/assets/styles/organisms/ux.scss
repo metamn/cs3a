@@ -1,11 +1,19 @@
 @mixin ux {
+  @include portrait {
+    @include colors(white-on-black);
+  }
+  
   .container {
     p {
       @include font(title);
-      font-size: $heading-level-3;
+      font-size: $heading-level-2;
       font-weight: 700;
       max-width: $text-width / 2;
       text-transform: uppercase;
+      
+      @include large-screen-and-up {
+        font-size: $heading-level-3;
+      }
       
       span {
         @include reveal-span;

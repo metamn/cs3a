@@ -3,10 +3,10 @@
   
   #about {
     @include about;
-    
-    #skills {
-      @include skills;
-    }
+  }
+  
+  #skills {
+    @include skills;
   }
   
   #slider {
@@ -47,15 +47,19 @@
 
 @mixin values-grid {
   @include landscape {
+    padding-left: 5%;
+    padding-top: 5%;
     width: 70%;
     overflow: hidden;
   }
   
-  padding-left: 5%;
-  padding-top: 5%;
-  
   @include portrait {
-    width: 90%;
+    @include block;
+    
+    .container {
+      width: 90%;
+      padding-left: 5%;
+    }
   }
 }
 
