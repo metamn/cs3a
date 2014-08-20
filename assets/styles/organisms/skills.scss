@@ -12,11 +12,10 @@
   }
   
   @include portrait {
-    padding-bottom: row(1);
+    padding-bottom: $gutter;
     
     &.portrait {
       padding-top: row(1);
-      padding-bottom: $gutter;
     }
     
     &.ux, &.psd {

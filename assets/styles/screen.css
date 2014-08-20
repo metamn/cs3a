@@ -30,30 +30,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* No files to import found in molecules/* */
 html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #011915; background-color: white; }
-@media only screen and (orientation: portrait) { html body { font-size: 100%; } }
+@media only screen and (max-width: 63.999em) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
 html body a { color: #011915; background-color: white; }
+html body .portrait { display: none; }
+@media only screen and (max-width: 63.999em) { html body .landscape { display: none; }
+  html body .portrait { display: block; } }
 html body section, html body article, html body nav, html body header, html body footer, html body aside { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3, html body aside > h3 { display: none; }
 
-@media only screen and (orientation: landscape) { html.frontpage { height: 100%; }
+@media only screen and (min-width: 64em) { html.frontpage { height: 100%; }
   html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; } }
-@media only screen and (orientation: landscape) { html.frontpage body header { width: 25%; height: 100%; overflow: hidden; background-color: #011915; background-image: url("/assets/images/subtle-zebra-3d.png"); } }
-@media only screen and (orientation: landscape) { html.frontpage body #values { padding-left: 5%; padding-top: 5%; width: 70%; overflow: hidden; } }
-@media only screen and (orientation: portrait) { html.frontpage body #values { width: 100%; float: left; }
+@media only screen and (min-width: 64em) { html.frontpage body header { width: 25%; height: 100%; overflow: hidden; background-color: #011915; background-image: url("/assets/images/subtle-zebra-3d.png"); } }
+@media only screen and (min-width: 64em) { html.frontpage body #values { padding-left: 5%; padding-top: 5%; width: 70%; overflow: hidden; } }
+@media only screen and (max-width: 63.999em) { html.frontpage body #values { width: 100%; float: left; }
   html.frontpage body #values .container { width: 90%; padding-left: 5%; } }
 html.frontpage body #values #about { font-family: 'Montserrat', sans-serif; font-style: normal; /* skills is already inside a .container, so here we avoid double padding 
 */ }
 html.frontpage body #values #about h2 { max-width: 20.83333em; }
-@media only screen and (orientation: portrait) { html.frontpage body #values #about { padding-top: 6.25em; } }
+@media only screen and (max-width: 63.999em) { html.frontpage body #values #about { padding-top: 6.25em; } }
 html.frontpage body #values #about #skills .container { width: 100%; float: left; padding-left: 0; }
 html.frontpage body #values #skills { margin-top: 1.25em; }
 html.frontpage body #values #skills .container ul li { width: 4em; height: 4em; -webkit-border-radius: 4em; -moz-border-radius: 4em; -ms-border-radius: 4em; -o-border-radius: 4em; border-radius: 4em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; font-family: 'Montserrat', sans-serif; font-style: normal; font-size: small; }
 html.frontpage body #values #skills .container ul li span { position: relative; top: 1.33333em; }
-@media only screen and (orientation: portrait) { html.frontpage body #values #skills { padding-bottom: 6.25em; }
-  html.frontpage body #values #skills.portrait { padding-top: 6.25em; padding-bottom: 1.25em; }
+@media only screen and (max-width: 63.999em) { html.frontpage body #values #skills { padding-bottom: 1.25em; }
+  html.frontpage body #values #skills.portrait { padding-top: 6.25em; }
   html.frontpage body #values #skills.ux, html.frontpage body #values #skills.psd { color: white; background-color: #011915; } }
-@media only screen and (orientation: landscape) { html.frontpage body #values #slider { width: 100%; height: 100%; overflow: hidden; position: relative; /* to make the iMac look good
+@media only screen and (min-width: 64em) { html.frontpage body #values #slider { width: 100%; height: 100%; overflow: hidden; position: relative; /* to make the iMac look good
 */ overflow: visible; }
   html.frontpage body #values #slider .slide { width: 100%; height: 100%; position: absolute; left: 0; top: 0; /* let the browser know we plan to animate each view in and out */ will-change: transform; -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
   html.frontpage body #values #slider .active { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -ms-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); } }
@@ -69,14 +72,14 @@ html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-h
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-height: 15em; } }
 html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 25.8em; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 32.25em; } }
-@media only screen and (orientation: landscape) { html.frontpage body #values #slider .slide#rwd .container figure { position: absolute; }
+@media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#rwd .container figure { position: absolute; }
   html.frontpage body #values #slider .slide#rwd .container figure#ipad { bottom: 55%; z-index: 0; left: 1%; }
   html.frontpage body #values #slider .slide#rwd .container figure#mbp { bottom: 50%; left: 20%; z-index: 1; }
   html.frontpage body #values #slider .slide#rwd .container figure#imac { bottom: 35%; right: 2%; z-index: 2; float: right; } }
-@media only screen and (orientation: portrait) { html.frontpage body #values #slider .slide#rwd .container figure { width: auto; max-width: 100%; float: left; }
+@media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#rwd .container figure { width: auto; max-width: 100%; float: left; }
   html.frontpage body #values #slider .slide#rwd .container figure#imac { float: right; }
   html.frontpage body #values #slider .slide#rwd .container figure#ipad { padding-top: 1.25em; padding-bottom: 1.25em; } }
-@media only screen and (orientation: portrait) { html.frontpage body #values #slider .slide#ux { color: white; background-color: #011915; } }
+@media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#ux { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#ux .container p { font-family: 'Montserrat', sans-serif; font-style: normal; font-size: 1.6154em; font-weight: 700; max-width: 15.625em; text-transform: uppercase; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#ux .container p { font-size: 2.1154em; } }
 html.frontpage body #values #slider .slide#ux .container p span { cursor: pointer; display: inline-block; padding: 0.15625em; margin-bottom: 0.15625em; }
@@ -107,11 +110,11 @@ html.frontpage body #values #slider .slide#cms .container aside .cms figure#docp
 html.frontpage body #values #slider .slide#cms .container aside .cms figure#craft img { max-width: 5em; top: 1.5625em; }
 html.frontpage body #values #slider .slide#cms .container aside .cms .description { height: 3.75em; }
 html.frontpage body #values #slider .slide#cms .container aside .cms .year, html.frontpage body #values #slider .slide#cms .container aside .cms .type { display: none; }
-@media only screen and (orientation: portrait) { html.frontpage body #values #slider .slide#psd { color: white; background-color: #011915; } }
+@media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#psd { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#psd .container p + p { margin-top: 1.25em; }
 html.frontpage body footer { padding-left: 5%; }
-@media only screen and (orientation: landscape) { html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; } }
-@media only screen and (orientation: portrait) { html.frontpage body footer { width: 90%; } }
+@media only screen and (min-width: 64em) { html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; } }
+@media only screen and (max-width: 63.999em) { html.frontpage body footer { width: 90%; } }
 html.frontpage body footer ul { font-family: 'Montserrat', sans-serif; font-style: normal; }
 html.frontpage body footer ul li { display: inline-block; float: left; padding-right: 1.25em; }
 html.frontpage body footer ul li:last-of-type { padding-right: 0; }

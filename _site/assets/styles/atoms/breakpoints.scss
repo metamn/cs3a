@@ -1,4 +1,20 @@
+$breakpoint-normal-screen: 64em; // 1024px
 $breakpoint-large-screen: 90em; // 1440px
+
+
+
+@mixin portrait {
+  @media only screen and (max-width: $breakpoint-normal-screen - 0.001) {
+    @content
+  }
+}
+
+
+@mixin landscape {
+  @media only screen and (min-width: $breakpoint-normal-screen) {
+    @content
+  }
+}
 
 @mixin large-screen-and-up {
   @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
@@ -6,31 +22,18 @@ $breakpoint-large-screen: 90em; // 1440px
   }
 }
 
-@mixin portrait {
-  @media only screen and (orientation: portrait) {
-    @content
-  }
-}
-
-
-@mixin landscape {
-  @media only screen and (orientation: landscape) {
-    @content
-  }
-}
-
 
 @mixin portrait-or-landscape {
-  &.portrait {
+  .portrait {
     display: none;
   }
   
   @include portrait {
-    &.landscape {
+    .landscape {
       display: none;
     }
 
-    &.portrait {
+    .portrait {
       display: block;
     }
   }
