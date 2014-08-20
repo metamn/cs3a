@@ -100,7 +100,7 @@ html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(12) 
 html.frontpage body #values #slider .slide#ux .container p span.active { background: #011915; }
 html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(1), html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(4), html.frontpage body #values #slider .slide#ux .container p span:nth-of-type(7) { background-color: #011915; cursor: default; }
 html.frontpage body #values #slider .slide#ux .container p.done span { cursor: default; }
-html.frontpage body #values #slider .slide#cms .container { width: 95%; margin-right: 5%; margin-top: 1.25em; }
+@media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#cms .container { width: 95%; margin-right: 5%; margin-top: 1.25em; } }
 html.frontpage body #values #slider .slide#cms .container aside .cms { position: relative; float: left; width: 22%; margin-right: 4%; }
 html.frontpage body #values #slider .slide#cms .container aside .cms:last-of-type { margin-right: 0; }
 html.frontpage body #values #slider .slide#cms .container aside .cms figure, html.frontpage body #values #slider .slide#cms .container aside .cms div { width: 100%; float: left; margin-bottom: 1.25em; }
