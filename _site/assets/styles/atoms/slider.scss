@@ -19,7 +19,7 @@
        each view in and out */
     will-change: transform;
     
-    
+    // This will push out the slides right of the viewport
     @include slider-arrangement($type);
     
     // there is a bug in compass and can't do @include transition(transform(.....)) 
@@ -27,11 +27,21 @@
     transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
   }
   
-  
+  // This brings back the slide
   .active {
-    // This brings back the slide
     @include transform(translateX(0px));
   }
+  
+  
+  // This scrolls left the slides
+  @for $i from 1 through 4 {
+    &.left-#{$i} {
+      .slide {
+        @include move-slides($i);
+      }
+    }
+  }
+  
 }
 
 
@@ -39,7 +49,6 @@
 
 @mixin slider-arrangement($type) {
   @if ($type == stacked) {
-    // This will push out the slides right of the viewport
     // - each slide is stacked, like a pack of cards, one upon the another
     @include transform(translateX(100%));
   
@@ -47,11 +56,16 @@
     // Each slide is aligned left
     // - some are visible, some invisible depending on the viewport width
     // - it's like cards arranged in a row
-    
-    @for $i from 1 through 10 {
-      &:nth-of-type(#{$i - 1}) {
-        @include transform(translateX(calc(100% * #{$i - 2})));
-      }
+    @include move-slides(0);
+  }
+}
+
+
+@mixin move-slides($index) {
+  @for $i from 1 through 5 {
+    &:nth-of-type(#{$i - 1}) {
+      $counter: $i - 2 - $index;
+      @include transform(translateX(calc(100% * #{$counter})));
     }
   }
 }
