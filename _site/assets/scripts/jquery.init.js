@@ -9,8 +9,11 @@ $(document).ready(function() {
     swipeLeft(index);
   });
   
-  $('#slider-for-cms .slide').on('swipe', function() {
-    swipeLeft(1);
+  $('#slider-for-cms .slide').swipe({
+    swipe:function(event) {
+      swipeLeft(1); 
+    },
+    threshold: 0
   });
   
   function swipeLeft(index) {
