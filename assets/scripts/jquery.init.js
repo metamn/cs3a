@@ -3,12 +3,23 @@ $(document).ready(function() {
   
   // CMS
   // - the slider
+  
   $('#slider-for-cms .slide').click(function() {
     var index = $('#slider-for-cms .slide').index(this) + 1;
-    
+    swipeLeft(index);
+  });
+  
+  $('#slider-for-cms .slide').on('swipe', function() {
+    swipeLeft(1);
+  });
+  
+  function swipeLeft(index) {
     $('#slider-for-cms').removeClass();
     $('#slider-for-cms').addClass('left-' + index);
-  });
+  }
+  
+  
+  
   
   // UX
   // - split sentence into words
