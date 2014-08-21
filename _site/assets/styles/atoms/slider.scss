@@ -1,6 +1,8 @@
 /* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
 */
-@mixin slider($push: 100%) {
+
+
+@mixin slider($type: stacked) {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -17,8 +19,8 @@
        each view in and out */
     will-change: transform;
     
-    // This will push out the slide right of the viewport
-    @include transform(translateX($push));
+    
+    @include slider-arrangement($type);
     
     // there is a bug in compass and can't do @include transition(transform(.....)) 
     transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
@@ -29,5 +31,27 @@
   .active {
     // This brings back the slide
     @include transform(translateX(0px));
+  }
+}
+
+
+
+
+@mixin slider-arrangement($type) {
+  @if ($type == stacked) {
+    // This will push out the slides right of the viewport
+    // - each slide is stacked, like a pack of cards, one upon the another
+    @include transform(translateX(100%));
+  
+  } @elseif ($type == aligned) {
+    // Each slide is aligned left
+    // - some are visible, some invisible depending on the viewport width
+    // - it's like cards arranged in a row
+    
+    @for $i from 1 through 10 {
+      &:nth-of-type(#{$i - 1}) {
+        @include transform(translateX(calc(100% * #{$i - 2})));
+      }
+    }
   }
 }
