@@ -13,7 +13,10 @@
     @include slider-grid;
     
     .slide {
-      @include slider-common-elements;
+      padding-top: $gutter * 2;
+      figure {
+        @include figure;
+      }
       
       &#rwd {
         @include rwd;

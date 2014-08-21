@@ -29,15 +29,18 @@
     
     .cms {  
       div {
-        p {
-          font-size: $heading-level-1;
-          max-width: $text-width / 2;
+        max-width: $text-width / 2;
+
+        &.type {
+          p {
+            font-size: $heading-level-1;
+          }
         }
       }
       
       figure {
         img {
-          max-height: $gutter * 8;
+          max-height: $gutter * 6;
         }
       }
     }
