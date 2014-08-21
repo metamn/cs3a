@@ -30,10 +30,15 @@
     .cms {  
       div {
         max-width: $text-width / 2;
+        
+        p {
+          font-size: large;
+        }
 
         &.type {
           p {
             font-size: $heading-level-1;
+            font-weight: 700;
           }
         }
       }
