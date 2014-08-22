@@ -37,7 +37,7 @@
 
 @mixin cms-slider {
   min-height: 30em;
-  @include slider(aligned);
+  @include slider(aligned, 4);
 }
 
 

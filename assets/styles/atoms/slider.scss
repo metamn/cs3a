@@ -2,7 +2,17 @@
 */
 
 
-@mixin slider($type: stacked) {
+// There are two types of sliders:
+// - stacked: 
+//    - slides are stacked upon each other like a pack of cards
+//    - only a single slide is visible at a time
+//    - on swipe the next slide is shown
+// - aligned: 
+//    - slides are aligned left to right
+//    - many slides can be visible at a time, depending on the viewport width
+//    - on swipe the next set of slides are shown
+
+@mixin slider($type: stacked, $number-of-slides: 0) {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -20,21 +30,28 @@
     will-change: transform;
     
     // This will push out the slides right of the viewport
-    @include slider-arrangement($type);
+    @include slider-alignment($type);
     
     // there is a bug in compass and can't do @include transition(transform(.....)) 
     transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
     transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
   }
   
-  // This brings back the slide
+  @include show-slides-on-swipe($number-of-slides);
+}
+
+
+@mixin show-slides-on-swipe($number-of-slides) {
+  // This brings back a single slide
+  // - used with the stacked slide
   .active {
     @include transform(translateX(0px));
   }
   
   
   // This scrolls left and right the slides
-  @for $i from 1 through 5 {
+  // - use with the aligned slides
+  @for $i from 1 through $number-of-slides + 1 {
     &.left-#{$i} {
       .slide {
         @include move-slides($i);
@@ -47,24 +64,22 @@
       }
     }
   }
-  
 }
 
 
 
-
-@mixin slider-arrangement($type) {
+@mixin slider-alignment($type) {
   @if ($type == stacked) {
-    // - each slide is stacked, like a pack of cards, one upon the another
+    // - slides are stacked
     @include transform(translateX(100%));
   
   } @elseif ($type == aligned) {
-    // Each slide is aligned left
-    // - some are visible, some invisible depending on the viewport width
-    // - it's like cards arranged in a row
+    // - slides are aligned left
     @include move-slides(0);
   }
 }
+
+
 
 
 @mixin move-slides($index, $direction: left) {

@@ -4,11 +4,6 @@ $(document).ready(function() {
   // CMS
   // - the slider
   
-  //$('#slider-for-cms .slide').click(function() {
-  //  var index = $('#slider-for-cms .slide').index(this) + 1;
-  //  swipeLeft(index);
-  //});
-  
   $('#slider-for-cms .slide').swipe({
     swipeLeft:function(event) {
       var index = $('#slider-for-cms .slide').index(this) + 1;
