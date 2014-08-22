@@ -90,9 +90,12 @@ html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-
   html.frontpage body #values #slider .slide#rwd .container figure#mbp { margin-top: 10em; position: absolute; z-index: 1; float: left; }
   html.frontpage body #values #slider .slide#rwd .container figure#imac { z-index: 2; float: right; text-align: right; } }
 @media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#rwd .container figure { top: -5em; }
-  html.frontpage body #values #slider .slide#rwd .container figure#ipad { display: inline-block; position: absolute; margin-top: 11em; left: 14em; } }
-@media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#mbp { margin-top: 12em; }
-  html.frontpage body #values #slider .slide#rwd .container figure#ipad { margin-top: 13em; left: 16em; } }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad { display: inline-block; position: absolute; margin-top: 11em; left: 0em; }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad img { max-height: 9em; }
+  html.frontpage body #values #slider .slide#rwd .container figure#mbp { margin-top: 10em; margin-left: 9em; } }
+@media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#mbp { margin-top: 12em; margin-left: 8em; }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad { margin-top: 15em; left: 0em; }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad img { max-height: 9em; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#ux { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#ux .container p { font-family: 'Montserrat', sans-serif; font-style: normal; font-size: 1.6154em; font-weight: 700; max-width: 15.625em; text-transform: uppercase; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#ux .container p { font-size: 2.1154em; } }

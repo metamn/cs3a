@@ -94,7 +94,16 @@
       display: inline-block;
       position: absolute;
       margin-top: 11em;
-      left: 14em;
+      left: 0em;
+      
+      img {
+        max-height: 9em;
+      }
+    }
+    
+    &#mbp {
+      margin-top: 10em;
+      margin-left: 9em;
     }
   }
 }
@@ -104,11 +113,16 @@
   figure {
     &#mbp {
       margin-top: 12em;
+      margin-left: 8em;
     }
     
     &#ipad {
-      margin-top: 13em;
-      left: 16em;
+      margin-top: 15em;
+      left: 0em;
+      
+      img {
+        max-height: 9em;
+      }
     }
   }
 }
