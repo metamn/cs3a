@@ -9,16 +9,30 @@ $(document).ready(function() {
   //  swipeLeft(index);
   //});
   
-  $('#slider-for-cms').swipe({
-    swipe:function(event) {
-      swipeLeft(1); 
+  $('#slider-for-cms .slide').swipe({
+    swipeLeft:function(event) {
+      var index = $('#slider-for-cms .slide').index(this) + 1;
+      swipeLeft(index); 
+    },
+    swipeRight:function(event) {
+      var index = $('#slider-for-cms .slide').index(this) + 1;
+      swipeRight(index); 
     },
     threshold: 0
   });
   
   function swipeLeft(index) {
+    if (index == 4) { index = 0 }
+    
     $('#slider-for-cms').removeClass();
     $('#slider-for-cms').addClass('left-' + index);
+  }
+  
+  function swipeRight(index) {
+    if (index == 1) { index = 5 }
+    
+    $('#slider-for-cms').removeClass();
+    $('#slider-for-cms').addClass('right-' + index);
   }
   
   

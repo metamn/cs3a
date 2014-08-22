@@ -33,11 +33,17 @@
   }
   
   
-  // This scrolls left the slides
-  @for $i from 1 through 4 {
+  // This scrolls left and right the slides
+  @for $i from 1 through 5 {
     &.left-#{$i} {
       .slide {
         @include move-slides($i);
+      }
+    }
+    
+    &.right-#{$i} {
+      .slide {
+        @include move-slides($i, right);
       }
     }
   }
@@ -61,11 +67,15 @@
 }
 
 
-@mixin move-slides($index) {
-  @for $i from 1 through 5 {
-    &:nth-of-type(#{$i - 1}) {
-      $counter: $i - 2 - $index;
-      @include transform(translateX(calc(100% * #{$counter})));
+@mixin move-slides($index, $direction: left) {
+  @for $i from 1 through 4 {
+    &:nth-of-type(#{$i}) {
+      @if ($direction == left) {
+        @include transform(translateX(calc(100% * #{$i - $index - 1})));
+      } @else {
+        @include transform(translateX(calc(100% * #{$i - $index + 1})));
+      }
+      
     }
   }
 }

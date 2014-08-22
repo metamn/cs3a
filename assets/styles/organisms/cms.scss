@@ -75,65 +75,6 @@
 
 
 
-
-
-
-@mixin cms2 {
-  .container {
-    figure, div {
-      @include block;
-      margin-bottom: $gutter;
-    }
-    
-    aside {
-      .cms {
-        @include fixed-width-grid(20em, 5%);
-      }
-    }
-    
-    @include landscape {
-      @include cms-landscape;
-    }
-    
-    @include portrait {
-      @include cms-portrait;
-    }
-  }
-}
-
-
-@mixin cms-portrait {
-  aside {
-    @include slider(300%);
-    min-height: 30em;
-    
-    .cms {  
-      div {
-        max-width: $text-width / 2;
-        
-        p {
-          font-size: large;
-        }
-
-        &.type {
-          p {
-            font-size: $heading-level-1;
-            font-weight: 700;
-          }
-        }
-      }
-      
-      figure {
-        img {
-          max-height: $gutter * 6;
-        }
-      }
-    }
-  }
-}
-
-
-
 @mixin cms-landscape {
   width: 95%;
   margin-right: 5%;
