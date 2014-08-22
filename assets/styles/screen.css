@@ -41,7 +41,7 @@ html body section > h3, html body article > h3, html body nav > h3, html body he
 
 @media only screen and (min-width: 64em) { html.frontpage { height: 100%; }
   html.frontpage body, html.frontpage section, html.frontpage .container { height: 100%; } }
-@media only screen and (min-width: 64em) { html.frontpage body header { width: 25%; height: 100%; overflow: hidden; background-color: #011915; background-image: url("/assets/images/subtle-zebra-3d.png"); } }
+@media only screen and (min-width: 64em) { html.frontpage body header { width: 25%; height: 100%; overflow: hidden; background-color: #011915; } }
 @media only screen and (min-width: 64em) { html.frontpage body #values { padding-left: 5%; padding-top: 5%; width: 70%; overflow: hidden; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values { width: 100%; float: left; }
   html.frontpage body #values .container { width: 90%; padding-left: 5%; } }
@@ -82,9 +82,9 @@ html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-h
 html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 25.8em; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 32.25em; } }
 @media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#rwd .container figure { position: absolute; }
-  html.frontpage body #values #slider .slide#rwd .container figure#ipad { bottom: 55%; z-index: 0; left: 1%; }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad { bottom: 55%; left: 1%; z-index: 0; }
   html.frontpage body #values #slider .slide#rwd .container figure#mbp { bottom: 50%; left: 20%; z-index: 1; }
-  html.frontpage body #values #slider .slide#rwd .container figure#imac { bottom: 35%; right: 2%; z-index: 2; float: right; } }
+  html.frontpage body #values #slider .slide#rwd .container figure#imac { bottom: 35%; right: 0; float: right; text-align: right; z-index: 2; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#rwd .container figure { width: auto; max-width: 100%; float: left; }
   html.frontpage body #values #slider .slide#rwd .container figure#imac { float: right; }
   html.frontpage body #values #slider .slide#rwd .container figure#ipad { padding-top: 1.25em; padding-bottom: 1.25em; } }
@@ -172,7 +172,7 @@ html.frontpage body #values #slider .slide#cms .container aside .cms div.type { 
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#psd { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#psd .container p + p { margin-top: 1.25em; }
 html.frontpage body footer { padding-left: 5%; }
-@media only screen and (min-width: 64em) { html.frontpage body footer { position: absolute; bottom: 5%; left: 30%; width: 70%; } }
+@media only screen and (min-width: 64em) { html.frontpage body footer { position: absolute; bottom: 5%; left: 25%; width: 70%; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body footer { width: 90%; } }
 html.frontpage body footer ul { font-family: 'Montserrat', sans-serif; font-style: normal; }
 html.frontpage body footer ul li { display: inline-block; float: left; padding-right: 1.25em; }

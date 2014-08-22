@@ -70,8 +70,8 @@
 
     &#ipad {
       bottom: 55%;
-      z-index: 0;
       left: 1%;
+      z-index: 0;
     }
 
     &#mbp {
@@ -82,9 +82,10 @@
 
     &#imac {
       bottom: 35%;
-      right: 2%;
-      z-index: 2;
+      right: 0;
       float: right;
+      text-align: right;
+      z-index: 2;
     }
   }
 }
