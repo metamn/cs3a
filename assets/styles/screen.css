@@ -45,7 +45,7 @@ html body section > h3, html body article > h3, html body nav > h3, html body he
 @media only screen and (min-width: 64em) { html.frontpage body #values { padding-left: 5%; padding-top: 5%; width: 70%; overflow: hidden; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values { width: 100%; float: left; }
   html.frontpage body #values .container { width: 90%; padding-left: 5%; } }
-html.frontpage body #values #about { font-family: 'Montserrat', sans-serif; font-style: normal; /* skills is already inside a .container, so here we avoid double padding 
+html.frontpage body #values #about { font-family: 'Montserrat', sans-serif; font-style: normal; position: relative; z-index: 1; /* skills is already inside a .container, so here we avoid double padding 
 */ }
 html.frontpage body #values #about h2 { max-width: 20.83333em; }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #about { padding-top: 6.25em; } }
@@ -74,6 +74,7 @@ html.frontpage body #values #slider .slide { padding-top: 2.5em; }
 html.frontpage body #values #slider .slide figure { width: 100%; float: left; }
 html.frontpage body #values #slider .slide figure img { max-width: 100%; }
 html.frontpage body #values #slider .slide figure figcaption { display: none; }
+html.frontpage body #values #slider .slide#rwd { position: relative; z-index: 0; }
 html.frontpage body #values #slider .slide#rwd .container { position: relative; }
 html.frontpage body #values #slider .slide#rwd .container figure#ipad img { max-height: 10em; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#ipad img { max-height: 12.5em; } }
@@ -81,15 +82,17 @@ html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-h
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#mbp img { max-height: 15em; } }
 html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 25.8em; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#imac img { max-height: 32.25em; } }
-@media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#rwd .container figure { position: absolute; }
-  html.frontpage body #values #slider .slide#rwd .container figure#ipad { bottom: 55%; left: 1%; z-index: 0; }
-  html.frontpage body #values #slider .slide#rwd .container figure#mbp { bottom: 50%; left: 20%; z-index: 1; }
-  html.frontpage body #values #slider .slide#rwd .container figure#imac { bottom: 35%; right: 0; float: right; text-align: right; z-index: 2; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#rwd .container figure { width: auto; max-width: 100%; float: left; }
   html.frontpage body #values #slider .slide#rwd .container figure#imac { float: right; }
   html.frontpage body #values #slider .slide#rwd .container figure#ipad { padding-top: 1.25em; padding-bottom: 1.25em; } }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.frontpage body #values #slider .slide#rwd .container { overflow: hidden; }
-  html.frontpage body #values #slider .slide#rwd .container figure#ipad { position: relative; top: 27em; left: 22em; } }
+@media only screen and (min-width: 37.5em) { html.frontpage body #values #slider .slide#rwd .container figure { position: relative; }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad { display: none; }
+  html.frontpage body #values #slider .slide#rwd .container figure#mbp { margin-top: 10em; position: absolute; z-index: 1; float: left; }
+  html.frontpage body #values #slider .slide#rwd .container figure#imac { z-index: 2; float: right; text-align: right; } }
+@media only screen and (min-width: 64em) { html.frontpage body #values #slider .slide#rwd .container figure { top: -5em; }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad { display: inline-block; position: absolute; margin-top: 11em; left: 14em; } }
+@media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#rwd .container figure#mbp { margin-top: 12em; }
+  html.frontpage body #values #slider .slide#rwd .container figure#ipad { margin-top: 13em; left: 16em; } }
 @media only screen and (max-width: 63.999em) { html.frontpage body #values #slider .slide#ux { color: white; background-color: #011915; } }
 html.frontpage body #values #slider .slide#ux .container p { font-family: 'Montserrat', sans-serif; font-style: normal; font-size: 1.6154em; font-weight: 700; max-width: 15.625em; text-transform: uppercase; }
 @media only screen and (min-width: 90.001em) { html.frontpage body #values #slider .slide#ux .container p { font-size: 2.1154em; } }

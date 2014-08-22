@@ -68,6 +68,7 @@ $(document).ready(function() {
   
   // Values
   // - the Slider 
+  $('#slider .slide').first().addClass('active');
   $('#skills ul li').click(function() {
     var index = $('#skills ul li').index(this);
     $('#slider .slide').removeClass('active');

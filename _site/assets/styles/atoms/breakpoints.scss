@@ -10,8 +10,8 @@ $breakpoint-large-screen: 90em; // 1440px
   }
 }
 
-@mixin tablet {
-  @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-normal-screen - 0.001) {
+@mixin tablet-and-up {
+  @media only screen and (min-width: $breakpoint-tablet) {
     @content
   }
 }

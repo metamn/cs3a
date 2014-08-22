@@ -1,6 +1,11 @@
 @mixin about {
   @include font(title);
   
+  // the rwd slide might overlap this section
+  // - we are rising this section above the slider
+  position: relative;
+  z-index: 1;
+  
   h2 {
     max-width: $text-width / 1.5;
   }
