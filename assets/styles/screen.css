@@ -212,10 +212,28 @@ html.ux body, html.ux section, html.ux .container { height: 100%; }
 html.ux body article { height: 100%; overflow: hidden; }
 html.ux body article .container { position: relative; }
 html.ux body article .container p { top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; text-align: left; font-family: 'Montserrat', sans-serif; font-style: normal; font-weight: 700; text-transform: uppercase; font-size: 1.6154em; }
-@media only screen and (min-width: 90.001em) { html.ux body article .container p { font-size: 2.1154em; } }
-html.ux body article .container figure { width: 100%; float: left; display: none; }
+@media only screen and (min-width: 37.5em) { html.ux body article .container p { font-size: 2.1154em; } }
+html.ux body article .container p span { cursor: pointer; display: inline-block; margin-bottom: 0.15625em; }
+@media only screen and (min-width: 64em) { html.ux body article .container p span { padding: 0.15625em; } }
+html.ux body article .container p span:nth-of-type(1) { background-color: #e2ff27; color: #e2ff27; }
+html.ux body article .container p span:nth-of-type(2) { background-color: #e6ff40; color: #e6ff40; }
+html.ux body article .container p span:nth-of-type(3) { background-color: #e9ff5a; color: #e9ff5a; }
+html.ux body article .container p span:nth-of-type(4) { background-color: #ffc65c; color: #ffc65c; }
+html.ux body article .container p span:nth-of-type(5) { background-color: #ffcf75; color: #ffcf75; }
+html.ux body article .container p span:nth-of-type(6) { background-color: #ffd88f; color: #ffd88f; }
+html.ux body article .container p span:nth-of-type(7) { background-color: #1aff5e; color: #1aff5e; }
+html.ux body article .container p span:nth-of-type(8) { background-color: #33ff70; color: #33ff70; }
+html.ux body article .container p span:nth-of-type(9) { background-color: #4dff82; color: #4dff82; }
+html.ux body article .container p span:nth-of-type(10) { background-color: #d968ca; color: #d968ca; }
+html.ux body article .container p span:nth-of-type(11) { background-color: #de7cd1; color: #de7cd1; }
+html.ux body article .container p span:nth-of-type(12) { background-color: #e391d8; color: #e391d8; }
+html.ux body article .container p span.active { background: #011915; }
+html.ux body article .container p span:nth-of-type(1), html.ux body article .container p span:nth-of-type(4), html.ux body article .container p span:nth-of-type(7) { background-color: #011915; cursor: default; }
+html.ux body article .container p.done span { cursor: default; }
+html.ux body article .container figure { width: 100%; float: left; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; top: 105%; }
 html.ux body article .container figure img { max-width: 100%; }
 html.ux body article .container figure figcaption { display: none; }
+@media only screen and (min-width: 90.001em) { html.ux body article .container figure { top: 100%; } }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

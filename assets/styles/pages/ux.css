@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'full-height'.
-        on line 14 of /home/cs/work/cs2/assets/styles/pages/ux.scss, in `full-height'
-        from line 14 of /home/cs/work/cs2/assets/styles/pages/ux.scss
+        on line 67 of /home/cs/work/cs2/assets/styles/pages/ux.scss, in `full-height'
+        from line 67 of /home/cs/work/cs2/assets/styles/pages/ux.scss
 
 Backtrace:
-/home/cs/work/cs2/assets/styles/pages/ux.scss:14:in `full-height'
-/home/cs/work/cs2/assets/styles/pages/ux.scss:14
+/home/cs/work/cs2/assets/styles/pages/ux.scss:67:in `full-height'
+/home/cs/work/cs2/assets/styles/pages/ux.scss:67
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'full-height'.\A         on line 14 of /home/cs/work/cs2/assets/styles/pages/ux.scss, in `full-height'\A         from line 14 of /home/cs/work/cs2/assets/styles/pages/ux.scss"; }
+  content: "Syntax error: Undefined mixin 'full-height'.\A         on line 67 of /home/cs/work/cs2/assets/styles/pages/ux.scss, in `full-height'\A         from line 67 of /home/cs/work/cs2/assets/styles/pages/ux.scss"; }

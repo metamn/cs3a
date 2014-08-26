@@ -1,12 +1,65 @@
-@mixin ux-interactive-text {
+@mixin ux-font {
   @include font(title);
   font-weight: 700;
   text-transform: uppercase;
   
   font-size: $heading-level-2;
-  @include large-screen-and-up {
+  @include tablet-and-up {
     font-size: $heading-level-3;
   }
+}
+
+
+
+
+
+
+@mixin final-effect {
+  span {
+    cursor: default;
+  }
+}
+
+
+@mixin reveal-span {
+  cursor: pointer;
+  
+  @include landscape {
+    padding: $gutter/8;
+  }
+  
+  display: inline-block;
+  margin-bottom: $gutter/8;
+  @include gradients($yellow $orange $green $violet, 11, 5%);
+
+  &.active {
+    background: $black;
+  }
+}
+
+
+@mixin ux-words {
+  span {
+    @include reveal-span;
+
+    // These are always active
+    &:nth-of-type(1), &:nth-of-type(4), &:nth-of-type(7) {
+      background-color: $black;
+      cursor: default;
+    }
+  }
+
+  &.done {
+    @include final-effect;
+  }
+}
+
+
+
+
+@mixin ux-interactive-text {
+  @include ux-font;
+  @include ux-words;
 }
 
 
@@ -31,7 +84,14 @@ html.ux {
         
         figure {
           @include figure;
-          display: none;
+          
+          @include t-center;
+          position: absolute;
+          
+          top: 105%;
+          @include large-screen-and-up {
+            top: 100%;
+          }
         }
       }
     }
