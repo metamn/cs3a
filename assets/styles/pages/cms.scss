@@ -70,7 +70,7 @@ html.cms {
         margin-right: $article-margin;
         
         &#wordpress, &#jekyll {
-          //display: none;
+          display: none;
         }
         
         &#craft, &#docpad {
@@ -89,7 +89,7 @@ html.cms {
       @include t-center;
       position: absolute;
       overflow: hidden;
-      top: 80%;
+      top: 85%;
   
       div {
         width: $article-width / 2;

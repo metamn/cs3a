@@ -33,6 +33,7 @@ html.cms { height: 100%; }
 html.cms body, html.cms section, html.cms .container { height: 100%; }
 html.cms body .slider { height: 25em; width: calc(19.375em * 2 + 5% * 2); top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; overflow: hidden; }
 html.cms body .slider article { width: 19.375em; margin-right: 5%; }
+html.cms body .slider article#wordpress, html.cms body .slider article#jekyll { display: none; }
 html.cms body .slider article .container { width: 100%; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 0px); padding: 2.5em 1.25em; }
 html.cms body .slider article .container figure, html.cms body .slider article .container div { width: 100%; float: left; text-align: left; }
 html.cms body .slider article .container figure { width: 100%; float: left; height: 6.25em; }
@@ -45,7 +46,7 @@ html.cms body .slider article .container div { margin-top: 1.25em; }
 html.cms body .slider article .container div.type { font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; }
 html.cms body .slider article .container div.description { line-height: 1.5; }
 html.cms body .slider article .container div.projects span { font-style: italic; }
-html.cms body .timeline { height: 3.75em; width: calc(19.375em * 2 + 5% * 2); top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; overflow: hidden; top: 80%; }
+html.cms body .timeline { height: 3.75em; width: calc(19.375em * 2 + 5% * 2); top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; overflow: hidden; top: 85%; }
 html.cms body .timeline div { width: 9.6875em; margin-right: 2.5%; float: left; position: relative; z-index: 1; }
 html.cms body .timeline div .circle { width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; color: #011915; background-color: white; border-width: 1px; margin-left: calc(19.375em / 4 - 1.25em); }
 html.cms body .timeline div .circle span { position: relative; top: 1.25em; }
