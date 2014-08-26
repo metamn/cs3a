@@ -38,6 +38,8 @@ html.cms body .slider article .container figure { width: 100%; float: left; heig
 html.cms body .slider article .container figure img { max-width: 100%; }
 html.cms body .slider article .container figure figcaption { display: none; }
 html.cms body .slider article .container figure img { height: 6.25em; }
+html.cms body .slider article .container figure#craft { position: relative; top: 1.25em; }
+html.cms body .slider article .container figure#craft img { height: 4.375em; }
 html.cms body .slider article .container div { margin-top: 1.25em; }
 
 html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #011915; background-color: white; }

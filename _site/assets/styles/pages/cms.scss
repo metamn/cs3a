@@ -12,6 +12,15 @@
     img {
       height: row(1);
     }
+    
+    &#craft {
+      position: relative;
+      top: $gutter;
+      
+      img {
+        height: row(0.7);
+      }
+    }
   }
   
   div {
