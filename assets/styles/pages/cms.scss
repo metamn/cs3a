@@ -53,9 +53,9 @@
 html.cms {
   @include full-height;
   
-  $article-width: col(2);
+  $article-width: col(3);
   $article-margin: 5%;
-  $articles-in-a-row: 4;
+  $articles-in-a-row: 2;
 
   body {
     .slider {
@@ -92,8 +92,8 @@ html.cms {
       top: 80%;
   
       div {
-        width: $article-width;
-        margin-right: $article-margin;
+        width: $article-width / 2;
+        margin-right: $article-margin / 2;
         float: left;
         
         position: relative;
@@ -103,7 +103,7 @@ html.cms {
           @include circle-with-text($gutter * 3);
           @include colors;
           border-width: 1px;
-          margin-left: calc(#{$article-width} / 2 - #{$gutter} * 1.5);
+          margin-left: calc(#{$article-width} / 4 - #{$gutter});
         }
       }
   
