@@ -1,0 +1,39 @@
+@mixin ux-interactive-text {
+  @include font(title);
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  font-size: $heading-level-2;
+  @include large-screen-and-up {
+    font-size: $heading-level-3;
+  }
+}
+
+
+html.ux {
+  @include full-height;
+
+  body {
+    article {
+      height: 100%;
+      overflow: hidden;
+      
+      .container {
+        position: relative;
+        
+        p {
+          @include t-center;
+          position: absolute;
+          text-align: left;
+          
+          @include ux-interactive-text;
+        }
+        
+        figure {
+          @include figure;
+          display: none;
+        }
+      }
+    }
+  }
+}
