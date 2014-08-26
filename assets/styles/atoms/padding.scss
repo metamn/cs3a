@@ -1,0 +1,5 @@
+@mixin padding($width: 100%, $padding: $gutter, $border: 0px) {
+  padding-left: $padding;
+  padding-right: $padding;
+  width: calc(#{$width} - #{$padding * 2} - #{$border * 2});
+}

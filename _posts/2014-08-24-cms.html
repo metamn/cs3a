@@ -33,3 +33,14 @@ images:
     {% include organisms/cms-entry.html image=image id=forloop.index %}
   {% endfor %}
 </div>
+
+<div class="timeline">
+  {% for image in page.images %}
+    <div id="{% include atoms/classname.html title=image.title %}">
+      <div class="circle">
+        <span>{{ image.year }}</span>
+      </div>
+    </div>
+  {% endfor %}
+  <span class="line"></span>
+</div>

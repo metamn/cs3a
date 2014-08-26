@@ -1,7 +1,9 @@
 @mixin cms-item {
-  background: lightgrey;
-  padding: $gutter;
   @include block;
+  
+  @include padding(100%, $gutter, 0px);
+  padding: $gutter * 2 $gutter;
+  
   
   figure, div {
     @include block;
@@ -50,20 +52,21 @@
 
 html.cms {
   @include full-height;
+  
+  $article-width: col(2);
+  $article-margin: 5%;
+  $articles-in-a-row: 4;
 
   body {
     .slider {
-      $article-width: col(2);
-      $article-margin: 5%;
-      $articles-in-a-row: 4;
-      
-      height: 60%;
+      height: row(4);
       width: calc(#{$article-width} * #{$articles-in-a-row} + #{$article-margin} * #{$articles-in-a-row});
       @include t-center;
       position: absolute;
+      overflow: hidden;
       
       article {
-        width: $article-width;;
+        width: $article-width;
         margin-right: $article-margin;
         
         &#wordpress, &#jekyll {
@@ -77,6 +80,41 @@ html.cms {
         .container {
           @include cms-item;
         }
+      }
+    }
+  
+    .timeline {
+      height: $gutter * 3;
+      width: calc(#{$article-width} * #{$articles-in-a-row} + #{$article-margin} * #{$articles-in-a-row});
+      @include t-center;
+      position: absolute;
+      overflow: hidden;
+      top: 80%;
+  
+      div {
+        width: $article-width;
+        margin-right: $article-margin;
+        float: left;
+        
+        position: relative;
+        z-index: 1;
+        
+        .circle {
+          @include circle-with-text($gutter * 3);
+          @include colors;
+          border-width: 1px;
+          margin-left: calc(#{$article-width} / 2 - #{$gutter} * 1.5);
+        }
+      }
+  
+      .line {
+        @include block;
+        border-top: 1px solid;
+        
+        position: relative;
+        top: -$gutter - $gutter / 6;
+        
+        z-index: 0;
       }
     }
   }
