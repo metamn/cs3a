@@ -70,11 +70,11 @@ html.cms {
         margin-right: $article-margin;
         
         &#wordpress, &#jekyll {
-          display: none;
+          //display: none;
         }
         
         &#craft, &#docpad {
-          //display: none;
+          display: none;
         }
           
         .container {
@@ -102,14 +102,35 @@ html.cms {
         .circle {
           @include circle-with-text($gutter * 3);
           @include colors;
-          border-width: 1px;
           margin-left: calc(#{$article-width} / 4 - #{$gutter});
+        
+          span {
+            font-weight: bold;
+          }
+        }
+  
+        &#wordpress.active .circle {
+          @include colors(black-on-orange);
+          background-color: $yellow;
+        }
+        
+        &#jekyll.active .circle {
+          @include colors(black-on-orange);
+        }
+  
+        &#docpad.active .circle {
+          @include colors(black-on-green);
+        }
+  
+        &#craft.active .circle {
+          @include colors(white-on-violet);
+          border-color: $black;
         }
       }
   
       .line {
         @include block;
-        border-top: 1px solid;
+        border-top: 2px solid;
         
         position: relative;
         top: -$gutter - $gutter / 6;
