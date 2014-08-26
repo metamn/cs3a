@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300,300italic,700);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -33,6 +33,7 @@ html.cms { height: 100%; }
 html.cms body, html.cms section, html.cms .container { height: 100%; }
 html.cms body .slider { height: 60%; width: calc(12.91667em * 4 + 5% * 4); top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; }
 html.cms body .slider article { width: 12.91667em; margin-right: 5%; }
+html.cms body .slider article .container { background: lightgrey; padding: 1.25em; width: 100%; float: left; }
 html.cms body .slider article .container figure, html.cms body .slider article .container div { width: 100%; float: left; text-align: left; }
 html.cms body .slider article .container figure { width: 100%; float: left; height: 6.25em; }
 html.cms body .slider article .container figure img { max-width: 100%; }
@@ -41,6 +42,9 @@ html.cms body .slider article .container figure img { height: 6.25em; }
 html.cms body .slider article .container figure#craft { position: relative; top: 1.25em; }
 html.cms body .slider article .container figure#craft img { height: 4.375em; }
 html.cms body .slider article .container div { margin-top: 1.25em; }
+html.cms body .slider article .container div.type { font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; }
+html.cms body .slider article .container div.description { line-height: 1.5; }
+html.cms body .slider article .container div.projects span { font-style: italic; }
 
 html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #011915; background-color: white; }
 @media only screen and (max-width: 63.999em) { html body { font-size: 100%; } }

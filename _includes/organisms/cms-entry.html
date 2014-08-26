@@ -20,7 +20,7 @@
 
     <div class="projects">
       <p>
-        {{ figure.projects }} done since {{ figure.year }}
+        <span>{{ figure.projects }}</span> {% include atoms/pluralize.html number=figure.projects text="project" %} done since {{ figure.year }}
       </p>  
     </div>
   </div>
