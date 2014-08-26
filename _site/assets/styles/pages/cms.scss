@@ -1,0 +1,52 @@
+@mixin cms-item {
+  figure, div {
+    @include block;
+    text-align: left;
+  }
+  
+  
+  figure {
+    @include figure;
+    height: row(1);
+    
+    img {
+      height: row(1);
+    }
+  }
+  
+  div {
+    margin-top: $gutter;
+  }
+}
+
+
+
+html.cms {
+  @include full-height;
+
+  body {
+    .slider {
+      $article-width: col(3);
+      $article-margin: 5%;
+      $articles-in-a-row: 2;
+      
+      height: 60%;
+      width: calc(#{$article-width} * #{$articles-in-a-row} + #{$article-margin} * #{$articles-in-a-row});
+      @include t-center;
+      position: absolute;
+      
+      article {
+        width: $article-width;;
+        margin-right: $article-margin;
+        
+        &#craft, &#docpad {
+          display: none;
+        }
+          
+        .container {
+          @include cms-item;
+        }
+      }
+    }
+  }
+}

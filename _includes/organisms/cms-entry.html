@@ -1,27 +1,28 @@
-{% assign id = include.id | times: 1 %}
-{% assign figure = page.images[id] %}
+{% assign figure = include.image %}
 
 <article id="{% include atoms/classname.html title=figure.title %}" class="cms slide">
   <h3>{{ figure.title }}</h3>
   
-  {% include atoms/figure.html id=include.id %}
+  <div class="container">
+    {% include atoms/figure.html id=include.id %}
   
-  <div class="type">
-    <p>
-      {{ figure.type }}
-    </p>
-  </div>
-  
-  <div class="description">
-    <p>
-      {{ figure.description }}
-    </p>
-  </div>
-  
-  <div class="projects">
-    <p>
-      {{ figure.projects }} done since {{ figure.year }}
-    </p>  
+    <div class="type">
+      <p>
+        {{ figure.type }}
+      </p>
+    </div>
+
+    <div class="description">
+      <p>
+        {{ figure.description }}
+      </p>
+    </div>
+
+    <div class="projects">
+      <p>
+        {{ figure.projects }} done since {{ figure.year }}
+      </p>  
+    </div>
   </div>
 </article>
 
