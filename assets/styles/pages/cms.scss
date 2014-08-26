@@ -26,9 +26,9 @@ html.cms {
 
   body {
     .slider {
-      $article-width: col(3);
+      $article-width: col(2);
       $article-margin: 5%;
-      $articles-in-a-row: 2;
+      $articles-in-a-row: 4;
       
       height: 60%;
       width: calc(#{$article-width} * #{$articles-in-a-row} + #{$article-margin} * #{$articles-in-a-row});
@@ -39,8 +39,12 @@ html.cms {
         width: $article-width;;
         margin-right: $article-margin;
         
+        &#wordpress, &#jekyll {
+          //display: none;
+        }
+        
         &#craft, &#docpad {
-          display: none;
+          //display: none;
         }
           
         .container {

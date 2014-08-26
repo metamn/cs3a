@@ -31,9 +31,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in molecules/* */
 html.cms { height: 100%; }
 html.cms body, html.cms section, html.cms .container { height: 100%; }
-html.cms body .slider { height: 60%; width: calc(19.375em * 2 + 5% * 2); top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; }
-html.cms body .slider article { width: 19.375em; margin-right: 5%; }
-html.cms body .slider article#craft, html.cms body .slider article#docpad { display: none; }
+html.cms body .slider { height: 60%; width: calc(12.91667em * 4 + 5% * 4); top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: absolute; }
+html.cms body .slider article { width: 12.91667em; margin-right: 5%; }
 html.cms body .slider article .container figure, html.cms body .slider article .container div { width: 100%; float: left; text-align: left; }
 html.cms body .slider article .container figure { width: 100%; float: left; height: 6.25em; }
 html.cms body .slider article .container figure img { max-width: 100%; }
