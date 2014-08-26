@@ -1,0 +1,13 @@
+@mixin device-mockups {
+  &#ipad img {
+    @include mockup-size(ipad);
+  }
+
+  &#mbp img {
+    @include mockup-size(mbp);
+  }
+
+  &#imac img {
+    @include mockup-size(imac);
+  }
+}

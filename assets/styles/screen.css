@@ -23,10 +23,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
 */
+/* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
+*/
 /* Center vertically or horizontally using transformations
 - http://davidwalsh.name/css-vertical-center
-*/
-/* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
 */
 /* No files to import found in molecules/* */
 html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #011915; background-color: white; }
@@ -185,6 +185,27 @@ html.frontpage body footer ul li { display: inline-block; float: left; padding-r
 html.frontpage body footer ul li:last-of-type { padding-right: 0; }
 html.frontpage body footer ul li { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-size: medium; margin-right: 1.25em; }
 html.frontpage body footer ul li a { text-decoration: none; }
+
+html.slide { height: 100%; }
+html.slide body, html.slide section, html.slide .container { height: 100%; }
+html.slide body article { height: 100%; overflow: hidden; }
+html.slide body article .container { position: relative; max-width: 48em; margin: 0 auto; }
+@media only screen and (min-width: 90.001em) { html.slide body article .container { max-width: 64em; } }
+html.slide body article .container figure { width: 100%; float: left; width: auto; position: absolute; }
+html.slide body article .container figure img { max-width: 100%; }
+html.slide body article .container figure figcaption { display: none; }
+html.slide body article .container figure#ipad img { max-height: 10em; }
+@media only screen and (min-width: 90.001em) { html.slide body article .container figure#ipad img { max-height: 12.5em; } }
+html.slide body article .container figure#mbp img { max-height: 12em; }
+@media only screen and (min-width: 90.001em) { html.slide body article .container figure#mbp img { max-height: 15em; } }
+html.slide body article .container figure#imac img { max-height: 25.8em; }
+@media only screen and (min-width: 90.001em) { html.slide body article .container figure#imac img { max-height: 32.25em; } }
+html.slide body article .container figure#ipad { z-index: 1; }
+html.slide body article .container figure#mbp { z-index: 2; }
+html.slide body article .container figure#imac { z-index: 3; }
+html.slide body article .container figure#ipad { top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); }
+html.slide body article .container figure#mbp { top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; left: 45%; }
+html.slide body article .container figure#imac { top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); right: 0; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

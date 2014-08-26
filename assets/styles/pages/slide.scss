@@ -1,0 +1,74 @@
+@mixin device-z-index {
+  &#ipad {
+    z-index: 1;
+  }
+  
+  &#mbp {
+    z-index: 2;
+  }
+
+  &#imac {
+    z-index: 3;
+  }
+}
+
+
+// This makes devices closer to each other, touching their edges
+// - this is responsive-safe
+@mixin device-container {
+  max-width: 48em;
+  margin: 0 auto;
+  
+  @include large-screen-and-up {
+    max-width: 64em;
+  }
+}
+
+
+
+
+
+html.slide {
+  @include full-height;
+  
+  body {
+    article {
+      height: 100%;
+      overflow: hidden;
+      
+      .container {
+        position: relative;
+        @include device-container;
+
+        figure {
+          @include figure;
+          @include device-mockups;
+          @include device-z-index;
+
+          width: auto;
+          position: absolute;
+
+          &#ipad {
+            @include t-center(vertical);
+          }
+
+          &#mbp {
+            @include t-center;
+            // small adjustement to make it more harmonic for the eye
+            left: 45%;
+          }
+
+          &#imac {
+            @include t-center(vertical);
+            right: 0;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+
+
